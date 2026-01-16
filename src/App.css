@@ -537,6 +537,86 @@ body {
 
 
 
+/* --- ESTILOS HAMBURGUESA --- */
+.hamburger {
+  display: none; /* Oculto en PC */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2000;
+  padding: 10px;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: #ffcc00; /* Tu color mostaza */
+  transition: 0.3s;
+}
+
+/* --- RESPONSIVE MÓVIL (Media Query) --- */
+@media (max-width: 1300px) {
+  .hamburger {
+    display: flex; /* Aparece en móvil */
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Escondido a la derecha */
+    width: 80%;
+    height: 100vh;
+    padding-top: 100px;
+    gap: 30px;                  /* Reduce el espacio entre categorías si están muy separadas */
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.886);
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+    z-index: 1500;
+    overflow-y: auto;
+  }
+
+  .navbar-idiomas {
+    position: fixed;
+    bottom: 50px; /* Los ponemos abajo del todo en el móvil */
+    right: -100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    z-index: 1501;
+  }
+
+  .navbar-menu.active,
+  .navbar-idiomas.active {
+    right: 0; /* Ambos entran a la vez */
+  }
+
+  /* Animación de las rayas a X cuando se abre */
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 6px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -7px); }
+
+  .categorias-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de botones en la carta */
+    gap: 10px;
+    width: 90%;
+  }
+
+  .navbar-idiomas.active .btn-idioma {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}
+
+
+
+
+
 
 .mapa-seccion {
   text-align: center;

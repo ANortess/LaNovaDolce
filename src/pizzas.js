@@ -27,7 +27,7 @@ export const EntrantesImages = {
 };
 
 export const cartaPizzeria = [
-  // --- ENTRADAS (100+) ---
+  // --- ENTRADAS ---
   { 
     id: 100, 
     categoria: "Entrantes", 

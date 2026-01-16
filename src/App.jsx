@@ -24,7 +24,10 @@ const ScrollToTop = () => {
 const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
   const location = useLocation(); // Detecta la URL actual
   const esCarta = location.pathname === '/carta';
+  const [menuAbierto, setMenuAbierto] = useState(false);
   const categorias = ['Entrantes', 'Ensaladas', 'Pizzas', 'Pastas', 'Carnes', 'Postres', 'Bebidas', 'Vinos'];
+
+  const cerrarMenu = () => setMenuAbierto(false);
 
   return (
     <nav className="navbar">
@@ -33,27 +36,23 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
           <img src={logoPizzeria} alt="Logo" className="logo-img" />
         </Link>
       </div>
-
-      {/* --- LÓGICA DINÁMICA AQUÍ --- */}
       {!esCarta ? (
-        /* Si NO es la carta, muestra el menú normal */
-        <ul className="navbar-menu">
-          <li><a href="/#inicio">{t.inicio}</a></li>
-          <li><a href="/#info">{t.info}</a></li>
-          <li><a href="/#carta">{t.carta}</a></li>
-          <li><a href="/#contacto">{t.mapa}</a></li>
+        <ul className={`navbar-menu ${menuAbierto ? 'active' : ''}`}>
+          <li><a href="/#inicio" onClick={cerrarMenu}>{t.inicio}</a></li>
+          <li><a href="/#info" onClick={cerrarMenu}>{t.info}</a></li>
+          <li><a href="/#carta" onClick={cerrarMenu}>{t.carta}</a></li>
+          <li><a href="/#contacto" onClick={cerrarMenu}>{t.mapa}</a></li>
         </ul>
       ) : (
-        /* Si ES la carta, el menú se convierte en las categorías */
-        /* Nota: Necesitarás pasar la función setCategoria aquí o manejarlo con un estado global */
-        <div className="navbar-menu">
-           {categorias.map(cat => (
+        <div className={`navbar-menu ${menuAbierto ? 'active' : ''}`}>
+          {categorias.map(cat => (
             <button 
               key={cat} 
               className={`btn-cat-nav ${categoriaActual === cat ? 'activo' : ''}`}
               onClick={() => {
                 setCategoria(cat);
                 window.scrollTo(0, 0);
+                cerrarMenu();
               }}
             >
               {t[cat] || cat}
@@ -62,16 +61,23 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
         </div>
       )}
 
-      <div className="navbar-idiomas">
+      {/* IDIOMAS INCORPORADOS */}
+      <div className={`navbar-idiomas ${menuAbierto ? 'active' : ''}`}>
         {['es', 'en', 'fr', 'de'].map((idm) => (
           <button 
             key={idm}
             className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
-            onClick={() => setIdioma(idm)}
+            onClick={() => { setIdioma(idm); cerrarMenu(); }}
           >
             {idm.toUpperCase()}
           </button>
         ))}
+      </div>
+
+      <div className={`hamburger ${menuAbierto ? 'open' : ''}`} onClick={() => setMenuAbierto(!menuAbierto)}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   );
