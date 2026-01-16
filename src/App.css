@@ -25,9 +25,10 @@ body {
   padding: 10px 40px;
   background-color: var(--negro);
   border-bottom: 2px solid var(--mostaza);
-  position: fixed; /* Se queda arriba al hacer scroll */
+  position: fixed; /* Se queda arriba al hacer scroll */top: 0;
+  left: 0;
+  width: 100%;
   box-sizing: border-box;
-  top: 0;
   z-index: 1000;
 }
 
