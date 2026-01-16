@@ -19,13 +19,14 @@ body {
 
 
 .navbar {
-  display: fixed;
+  display: flex;
   justify-content: space-between; /* Separa los 3 bloques */
   align-items: center;
   padding: 10px 40px;
   background-color: var(--negro);
   border-bottom: 2px solid var(--mostaza);
-  position: sticky; /* Se queda arriba al hacer scroll */
+  position: fixed; /* Se queda arriba al hacer scroll */
+  box-sizing: border-box;
   top: 0;
   z-index: 1000;
 }
