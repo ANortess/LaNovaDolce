@@ -1,29 +1,29 @@
 
 
-import ruedaMixtaImg from '../assets/Entrantes/RuedaMixta.jpeg';
-import patatasImg from '../assets/Entrantes/Croquetas.jpeg';
-import patatasGajoImg from '../assets/Entrantes/Croquetas.jpeg';
-import panAjoImg from '../assets/Entrantes/PanDeAjo.jpeg';
-import dadosImg from '../assets/Entrantes/DadosDeQueso.jpeg';
-import jalapenosImg from '../assets/Entrantes/Jalapeños.jpeg';
-import periquitosImg from '../assets/Entrantes/Periquitos.jpeg';
-import croquetasImg from '../assets/Entrantes/Croquetas.jpeg';
-import saquitosImg from '../assets/Entrantes/Croquetas.jpeg'; 
-import papasBravasImg from '../assets/Entrantes/PapasBravas.jpeg';
-import entranteBerenjenaImg from '../assets/Entrantes/Croquetas.jpeg';
+import ruedaMixta from './assets/Entrantes/RuedaMixta.jpeg';
+import patatas from './assets/Entrantes/Croquetas.jpeg';
+import patatasGajo from './assets/Entrantes/Croquetas.jpeg';
+import panAjo from './assets/Entrantes/PanDeAjo.jpeg';
+import dados from './assets/Entrantes/DadosDeQueso.jpeg';
+import jalapenos from './assets/Entrantes/Jalapeños.jpeg';
+import periquitos from './assets/Entrantes/Periquitos.jpeg';
+import croquetas from './assets/Entrantes/Croquetas.jpeg';
+import saquitos from './assets/Entrantes/Croquetas.jpeg'; 
+import papasBravas from './assets/Entrantes/PapasBravas.jpeg';
+import entranteBerenjena from './assets/Entrantes/Croquetas.jpeg';
 
 export const EntrantesImages = {
-  ruedaMixta: ruedaMixtaImg,
-  patatas: patatasImg,
-  patatasGajo: patatasGajoImg,
-  panAjo: panAjoImg,
-  dados: dadosImg,
-  jalapenos: jalapenosImg,
-  periquitos: periquitosImg,
-  saquitos: saquitosImg,
-  croquetas: croquetasImg,
-  papasBravas: papasBravasImg,
-  entranteBerenjena: entranteBerenjenaImg,
+  ruedaMixta,
+  patatas,
+  patatasGajo,
+  panAjo,
+  dados,
+  jalapenos,
+  periquitos,
+  croquetas,
+  saquitos,
+  papasBravas,
+  entranteBerenjena
 };
 
 export const cartaPizzeria = [
