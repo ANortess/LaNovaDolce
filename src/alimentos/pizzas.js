@@ -1,10 +1,10 @@
 
-import ruedaMixta from './RuedaMixta.jpeg';
-import patatas from './Patatas.jpeg';
-import dados from './DadosDeQueso.jpeg';
-import patatasGajo from './PatatasGajo.jpeg';
-import panAjo from './PanDeAjo.jpeg';
-import jalapeños from './Jalapeños.jpeg';
+
+import patatas from '../assets/Entrantes/Patatas.jpeg';
+import dados from '../assets/Entrantes/DadosDeQueso.jpeg';
+import patatasGajo from '../assets/Entrantes/PatatasGajo.jpeg';
+import panAjo from '../assets/Entrantes/PanDeAjo.jpeg';
+import jalapeños from '../assets/Entrantes/Jalapeños.jpeg';
 
 export const EntrantesImages = {
   ruedaMixta,
@@ -23,7 +23,7 @@ export const cartaPizzeria = [
     nombre: "Rueda paté y mixta", 
     desc_es: "Variedad de patés. La mixta es con quesos (el precio varía). Incluye pan.", 
     precio: "7,60€", 
-    url: EntrantesImages.ruedaMixta 
+    url: '../assets/Entrantes/RuedaMixta.jpeg' 
   },
   { 
     id: 101, 
