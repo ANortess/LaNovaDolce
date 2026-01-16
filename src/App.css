@@ -152,7 +152,7 @@ html, body {
   background-repeat: no-repeat;
   margin-top: 75px;
   color: black;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 75px);
   
   display: flex;
   flex-direction: column;
@@ -870,7 +870,7 @@ iframe {
   
   .date {
     font-size: 24px;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
   }
 
   .carta-container.full-view {
