@@ -1,11 +1,5 @@
 
 
-import patatas from '../assets/Entrantes/Patatas.jpeg';
-import dados from '../assets/Entrantes/DadosDeQueso.jpeg';
-import patatasGajo from '../assets/Entrantes/PatatasGajo.jpeg';
-import panAjo from '../assets/Entrantes/PanDeAjo.jpeg';
-import jalapeños from '../assets/Entrantes/Jalapeños.jpeg';
-
 export const EntrantesImages = {
   ruedaMixta,
   patatas,
