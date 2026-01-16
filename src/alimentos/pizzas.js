@@ -1,6 +1,6 @@
 
 
-import dados from './Entrantes/DadosDeQueso.jpeg';
+import dados from './assets/Entrantes/DadosDeQueso.jpeg';
 
 export const EntrantesImages = {
   dados,
