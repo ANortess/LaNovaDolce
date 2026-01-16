@@ -19,7 +19,7 @@ body {
 
 
 .navbar {
-  display: flex;
+  display: fixed;
   justify-content: space-between; /* Separa los 3 bloques */
   align-items: center;
   padding: 10px 40px;
