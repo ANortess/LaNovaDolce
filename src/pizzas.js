@@ -34,7 +34,7 @@ export const cartaPizzeria = [
     nombre: "Rueda paté y mixta", 
     desc_es: "Variedad de patés. La mixta es con quesos (el precio varía). Incluye pan.", 
     precio: "7,60€", 
-    url: './src/assets/Entrantes/RuedaMixta.jpeg' 
+    url: EntrantesImages.ruedaMixta
   },
   { 
     id: 101, 
@@ -42,7 +42,7 @@ export const cartaPizzeria = [
     nombre: "Patatas", 
     desc_es: "Patatas fritas ración.", 
     precio: "4,40€", 
-    url: "./src/assets/Entrantes/.jpeg" 
+    url: EntrantesImages.patatas 
   },
   { 
     id: 102, 
@@ -50,7 +50,7 @@ export const cartaPizzeria = [
     nombre: "Patatas Gajo", 
     desc_es: "Sazonadas estilo rústico.", 
     precio: "5,00€", 
-    url: "./src/assets/Entrantes/.jpeg" 
+    url: EntrantesImages.patatasGajo
   },
   { 
     id: 103, 
@@ -58,7 +58,7 @@ export const cartaPizzeria = [
     nombre: "Pan de ajo (1 Ud.)", 
     desc_es: "Base de pan con ajo y aceite.", 
     precio: "2,60€", 
-    url: "./src/assets/Entrantes/PanDeAjo.jpeg" 
+    url: EntrantesImages.panAjo
   },
   { 
     id: 104, 
@@ -74,7 +74,7 @@ export const cartaPizzeria = [
     nombre: "Crujiente de Jalapeño (2 Ud.)", 
     desc_es: "Jalapeños rellenos y rebozados.", 
     precio: "2,60€", 
-    url: "./src/assets/Entrantes/Jalapeños.jpeg" 
+    url: EntrantesImages.jalapenos
   },
   { 
     id: 106, 
@@ -82,7 +82,7 @@ export const cartaPizzeria = [
     nombre: "Periquitos", 
     desc_es: "Trocitos de pollo rebozado.", 
     precio: "8,50€", 
-    url: "./src/assets/Entrantes/Periquitos.jpeg" 
+    url: EntrantesImages.periquitos
   },
   { 
     id: 107, 
@@ -90,7 +90,7 @@ export const cartaPizzeria = [
     nombre: "Croquetas (2 Ud.)", 
     desc_es: "Jamón ibérico, setas o carrillada.", 
     precio: "2,50€", 
-    url: "./src/assets/Entrantes/Croquetas.jpeg" 
+    url: EntrantesImages.croquetas
   },
   { 
     id: 108, 
@@ -98,7 +98,7 @@ export const cartaPizzeria = [
     nombre: "Saquitos de Queso de Cabra (2 Ud.)", 
     desc_es: "Crujiente relleno de queso.", 
     precio: "2,30€", 
-    url: "./src/assets/Entrantes/.jpeg" 
+    url: EntrantesImages.saquitos
   },
   { 
     id: 109, 
@@ -106,15 +106,15 @@ export const cartaPizzeria = [
     nombre: "Papas Bravas", 
     desc_es: "Con allioli y pimentón.", 
     precio: "5,00€", 
-    url: "./src/assets/Entrantes/PapasBravas.jpeg" 
+    url: EntrantesImages.papasBravas
   },
   { 
     id: 110, 
     categoria: "Entrantes", 
-    nombre: "Berenjena en Tempura (Pizza pequeña)", 
+    nombre: "Entrante de berenjena en Tempura", 
     desc_es: "Tomate, berenjena, cebolla frita, queso y miel de caña.", 
     precio: "8,50€", 
-    url: "./src/assets/Entrantes/.jpeg" 
+    url: EntrantesImages.entranteBerenjena
   },
 
   // --- ENSALADAS (200+) ---
