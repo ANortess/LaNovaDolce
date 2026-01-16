@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './App.css';
-import { cartaPizzeria } from './alimentos/pizzas.js';
+import { cartaPizzeria } from './pizzas.js';
 import { textos } from './textos.js';
 import logoPizzeria from './assets/Varios/Cocinero.png';
 import imagenHistoria from './assets/Varios/Pizza.jpg';

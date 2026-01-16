@@ -1,6 +1,4 @@
 
-
-
 export const cartaPizzeria = [
   // --- ENTRADAS (100+) ---
   { 
@@ -9,7 +7,7 @@ export const cartaPizzeria = [
     nombre: "Rueda paté y mixta", 
     desc_es: "Variedad de patés. La mixta es con quesos (el precio varía). Incluye pan.", 
     precio: "7,60€", 
-    url: '../assets/Entrantes/RuedaMixta.jpeg' 
+    url: './Entrantes/RuedaMixta.jpeg' 
   },
   { 
     id: 101, 
