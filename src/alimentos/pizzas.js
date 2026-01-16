@@ -1,13 +1,5 @@
 
 
-export const EntrantesImages = {
-  ruedaMixta,
-  patatas,
-  dados,
-  patatasGajo,
-  panAjo,
-  jalapeños,
-};
 
 export const cartaPizzeria = [
   // --- ENTRADAS (100+) ---
