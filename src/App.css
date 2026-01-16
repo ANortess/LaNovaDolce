@@ -600,13 +600,6 @@ body {
   .hamburger.open span:nth-child(2) { opacity: 0; }
   .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -7px); }
 
-  .categorias-mobile {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas de botones en la carta */
-    gap: 10px;
-    width: 90%;
-  }
-
   .navbar-idiomas.active .btn-idioma {
     font-size: 0.8rem;
     padding: 8px 16px;

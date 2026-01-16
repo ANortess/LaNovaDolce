@@ -37,12 +37,32 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
         </Link>
       </div>
       {!esCarta ? (
-        <ul className={`navbar-menu ${menuAbierto ? 'active' : ''}`}>
-          <li><a href="/#inicio" onClick={cerrarMenu}>{t.inicio}</a></li>
-          <li><a href="/#info" onClick={cerrarMenu}>{t.info}</a></li>
-          <li><a href="/#carta" onClick={cerrarMenu}>{t.carta}</a></li>
-          <li><a href="/#contacto" onClick={cerrarMenu}>{t.mapa}</a></li>
-        </ul>
+        <div className={`navbar-menu ${menuAbierto ? 'active' : ''}`}>
+          <button 
+            className="btn-cat-nav" 
+            onClick={() => { window.location.href = "/#inicio"; cerrarMenu(); }}
+          >
+            {t.inicio}
+          </button>
+          <button 
+            className="btn-cat-nav" 
+            onClick={() => { window.location.href = "/#info"; cerrarMenu(); }}
+          >
+            {t.info}
+          </button>
+          <button 
+            className="btn-cat-nav" 
+            onClick={() => { window.location.href = "/#carta"; cerrarMenu(); }}
+          >
+            {t.carta}
+          </button>
+          <button 
+            className="btn-cat-nav" 
+            onClick={() => { window.location.href = "/#contacto"; cerrarMenu(); }}
+          >
+            {t.mapa}
+          </button>
+        </div>
       ) : (
         <div className={`navbar-menu ${menuAbierto ? 'active' : ''}`}>
           {categorias.map(cat => (
