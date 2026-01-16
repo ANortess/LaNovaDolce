@@ -1,4 +1,11 @@
 
+
+import dados from './Entrantes/DadosDeQueso.jpeg';
+
+export const EntrantesImages = {
+  dados,
+};
+
 export const cartaPizzeria = [
   // --- ENTRADAS (100+) ---
   { 
@@ -7,7 +14,7 @@ export const cartaPizzeria = [
     nombre: "Rueda paté y mixta", 
     desc_es: "Variedad de patés. La mixta es con quesos (el precio varía). Incluye pan.", 
     precio: "7,60€", 
-    url: './Entrantes/RuedaMixta.jpeg' 
+    url: './assets/Entrantes/RuedaMixta.jpeg' 
   },
   { 
     id: 101, 
@@ -39,7 +46,7 @@ export const cartaPizzeria = [
     nombre: "Dados queso en tempura (6 Ud.)", 
     desc_es: "Servidos con salsa de tomate.", 
     precio: "6,60€", 
-    url: "./src/assets/Entrantes/DadosDeQueso.jpeg" 
+    url: EntrantesImages.dados 
   },
   { 
     id: 105, 
