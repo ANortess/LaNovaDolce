@@ -1,9 +1,29 @@
 
 
-import dados from './assets/Entrantes/DadosDeQueso.jpeg';
+import ruedaMixtaImg from '../assets/Entrantes/RuedaMixta.jpeg';
+import patatasImg from '../assets/Entrantes/Croquetas.jpeg';
+import patatasGajoImg from '../assets/Entrantes/Croquetas.jpeg';
+import panAjoImg from '../assets/Entrantes/PanDeAjo.jpeg';
+import dadosImg from '../assets/Entrantes/DadosDeQueso.jpeg';
+import jalapenosImg from '../assets/Entrantes/Jalapeños.jpeg';
+import periquitosImg from '../assets/Entrantes/Periquitos.jpeg';
+import croquetasImg from '../assets/Entrantes/Croquetas.jpeg';
+import saquitosImg from '../assets/Entrantes/Croquetas.jpeg'; 
+import papasBravasImg from '../assets/Entrantes/PapasBravas.jpeg';
+import entranteBerenjenaImg from '../assets/Entrantes/Croquetas.jpeg';
 
 export const EntrantesImages = {
-  dados,
+  ruedaMixta: ruedaMixtaImg,
+  patatas: patatasImg,
+  patatasGajo: patatasGajoImg,
+  panAjo: panAjoImg,
+  dados: dadosImg,
+  jalapenos: jalapenosImg,
+  periquitos: periquitosImg,
+  saquitos: saquitosImg,
+  croquetas: croquetasImg,
+  papasBravas: papasBravasImg,
+  entranteBerenjena: entranteBerenjenaImg,
 };
 
 export const cartaPizzeria = [
@@ -14,7 +34,7 @@ export const cartaPizzeria = [
     nombre: "Rueda paté y mixta", 
     desc_es: "Variedad de patés. La mixta es con quesos (el precio varía). Incluye pan.", 
     precio: "7,60€", 
-    url: './assets/Entrantes/RuedaMixta.jpeg' 
+    url: './src/assets/Entrantes/RuedaMixta.jpeg' 
   },
   { 
     id: 101, 
