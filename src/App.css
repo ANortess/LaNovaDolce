@@ -54,15 +54,10 @@ html, body {
 }
 
 .logo-img {
-  height: 35px; /* Lo he subido un poco para que se aprecie mejor el detalle */
+  height: 35px;
   width: 35px;
-  
-  /* DEGRADADO: De un mostaza claro en el centro a uno más oscuro fuera */
   background: radial-gradient(circle, #dfcb89 0%, #dfa213 70%, #000000 100%);
-  
   border-radius: 50%;
-  
-  /* Al poner poco padding, la imagen de dentro se ve más grande */
   padding: 2px; 
   
   object-fit: contain;
@@ -78,8 +73,6 @@ html, body {
   transform: scale(1.15); 
 }
 
-
-/* Menu */
 .navbar-menu {
   flex: 2; /* Le damos un poco más de prioridad de espacio */
   display: flex;
@@ -123,7 +116,6 @@ html, body {
   display: flex;
 }
 
-/* Idiomas */
 .navbar-idiomas {
   justify-content: flex-end;
   gap: 8px;
@@ -216,7 +208,7 @@ html, body {
 
 
 .sobre-nosotros {
-  padding: 80px 20px;
+  padding: 80px 30px;
 }
 
 .sobre-contenido {
@@ -241,7 +233,7 @@ html, body {
 
 .sobre-texto p {
   color: #ddd;
-  line-height: 1.8;
+  line-height: 1.9;
   font-size: 1.1rem;
   text-align: justify;
 }
@@ -250,7 +242,10 @@ html, body {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .sellos-calidad span {
@@ -276,11 +271,24 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .sobre-imagen {
-    order: -1; /* En móviles la foto sale arriba */
-  }
   .sobre-texto h2 {
     text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+  }
+
+  .sobre-texto p {
+    line-height: 1.8;
+    font-size: 1.0rem;
+  }
+
+  .sellos-calidad span {
+    padding: 7px 12px;
+    font-size: 0.80rem;
+  }
+
+  .sobre-imagen img {
+    box-shadow: -10px 10px 0px #e1ad01;
   }
 }
 
@@ -404,6 +412,89 @@ html, body {
   box-shadow: 0 5px 15px rgba(255, 194, 68, 0.3);
 }
 
+/* --- RESPONSIVE PARA SECCIÓN INFO --- */
+@media (max-width: 768px) {
+  .info-grid {
+    /* 1. Pasamos de filas a columnas */
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+  }
+
+  .info-card {
+    width: 100%; /* Que cada tarjeta ocupe el ancho disponible */
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .info-grid .info-card:nth-child(2) {
+    flex: 1; 
+    min-width: 0; 
+    order: -1; /* Opcional: Esto pone la tarjeta del horario arriba del todo */
+  }
+
+  .info-card h3 {
+    font-size: 20px;
+  }
+
+  .eventos-lista li {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .horario-fila {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+.carta-preview {
+  padding: 10px 20px;
+  margin-bottom: 4%;
+}
+
+.carta-intro p {
+  font-size: 1.2rem;
+  color: #bebebe;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.p-resalte {
+  margin-top: 15px;
+  color: var(--mostaza);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Botones Estilo Restaurante */
+.btn-mostrar {
+  display: inline-block;
+  background-color: var(--mostaza);
+  color: var(--negro);
+  text-decoration: none;
+  padding: 10px 60px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn-mostrar:hover {
+  transform: scale(1.05);
+  background-color: #e1ad01; /* Cambia a tu mostaza al pasar el ratón */
+  box-shadow: 0 5px 15px rgba(255, 194, 68, 0.3);
+}
+
+
 
 
 
@@ -421,29 +512,6 @@ html, body {
   position: relative;
   display: inline-block; /* Para que la línea de abajo ocupe solo el ancho del texto */
 }
-
-/* Botones Estilo Restaurante */
-.btn-mostrar {
-  background-color: var(--mostaza);
-  color: var(--negro);
-  padding: 15px 40px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.btn-mostrar:hover {
-  background-color: var(--mostaza);
-  transform: scale(1.03);
-}
-
-
-
 
 .btn-cat-nav {
   background: none;
@@ -551,11 +619,6 @@ html, body {
 }
 
 
-
-
-
-
-
 /* --- ESTILOS HAMBURGUESA --- */
 .hamburger {
   display: none; /* Oculto en PC */
@@ -571,6 +634,156 @@ html, body {
   height: 3px;
   background-color: #ffcc00; /* Tu color mostaza */
   transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+.contacto-seccion {
+  padding: 20px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.contacto-container {
+  display: flex;
+  justify-content: space-between; /* Separa info a la izquierda y mapa a la derecha */
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.contacto-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Todo a la izquierda en PC */
+  text-align: left;
+}
+
+.info-bloque-central {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-item .icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--mostaza);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.telefonos {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-info a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.contacto-info a:hover {
+  color: var(--mostaza);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-icon {
+  background: var(--mostaza);
+  color: var(--negro) !important;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.mapa-wrapper {
+  flex: 1.2; /* El mapa un poco más ancho que la info */
+  width: 100%;
+  height: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.mapa-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .contacto-container {
+    flex-direction: column;
+    align-items: center; /* Centra el bloque de info y el mapa */
+    text-align: center;
+  }
+
+  .contacto-info {
+    align-items: center; /* Centra el bloque de iconos en móvil */
+    text-align: center;
+    width: 100%;
+  }
+
+  .info-bloque-central {
+    align-items: flex-start; /* Mantiene iconos y texto alineados entre sí pero centrados en pantalla */
+    display: inline-flex; 
+  }
+
+  .mapa-wrapper {
+    height: 350px;
+    margin-top: 20px;
+  }
+}
+
+
+
+.separador-contenedor-negro {
+  width: 100%;
+  padding: 30px 0; /* Espacio arriba y abajo de la línea */
+  display: flex;
+  justify-content: center;
+}
+
+.separador-mostaza {
+  height: 1px;
+  background-color: #e1ad01; /* Tu color mostaza */
+  margin: 40px 50px; /* 40px arriba/abajo para separar, 50px a los lados */
+  border: none;
+  /* Esto asegura que el ancho se ajuste restando los 50px de cada lado */
+  width: calc(100% - 100px); 
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  border-radius: 15px;
+  border: 2px solid var(--mostaza);
 }
 
 /* --- RESPONSIVE MÓVIL (Media Query) --- */
@@ -627,49 +840,6 @@ html, body {
 }
 
 
-
-
-
-
-.mapa-seccion {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-
-
-
-.separador-contenedor-negro {
-  width: 100%;
-  padding: 30px 0; /* Espacio arriba y abajo de la línea */
-  display: flex;
-  justify-content: center;
-}
-
-.separador-mostaza {
-  height: 1px;
-  background-color: #e1ad01; /* Tu color mostaza */
-  margin: 40px 50px; /* 40px arriba/abajo para separar, 50px a los lados */
-  border: none;
-  /* Esto asegura que el ancho se ajuste restando los 50px de cada lado */
-  width: calc(100% - 100px); 
-}
-
-iframe {
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  border-radius: 15px;
-  border: 2px solid var(--mostaza);
-}
-
-@media (max-width: 900px) {
-  .info-grid {
-    flex-wrap: wrap;
-  }
-}
-
-
 @media (max-width: 768px) {
   .inicio-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.462), rgba(0, 0, 0, 0.468)), 
@@ -700,9 +870,8 @@ iframe {
   
   .date {
     font-size: 24px;
+    margin-bottom: 5px;
   }
-
-
 
   .carta-container.full-view {
     padding-top: 20px;

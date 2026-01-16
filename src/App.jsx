@@ -176,18 +176,74 @@ const Home = ({ t, idioma }) => (
       </div>
     </section>
 
-    <section id="carta" className="info-seccion">
+    <div className="separador-contenedor-negro">
+      <div className="separador-mostaza"></div>
+    </div>
+
+    <section id="carta" className="info-seccion carta-preview">
       <h2>{t.carta}</h2>
-      <div style={{ marginTop: '50px' }}>
-        <Link to="/carta" className="btn-mostrar" onClick={() => window.scrollTo(0,0)}>
+      
+      <div className="carta-intro">
+        <p>
+          Pizzas artesanas, pastas tradicionales y postres caseros. 
+          <strong> Calidad y sabor desde 1996.</strong>
+        </p>
+        <p className="p-resalte">¿Te vas a quedar con las ganas?</p>
+      </div>
+
+      <div style={{ marginTop: '40px' }}>
+        <Link to="/carta" className="btn-mostrar" onClick={() => window.scrollTo(0, 0)}>
           {t.verCarta}
         </Link>
       </div>
     </section>
 
-    <section id="contacto" className="mapa-seccion">
+    <div className="separador-contenedor-negro">
+      <div className="separador-mostaza"></div>
+    </div>
+
+    <section id="contacto" className="info-seccion contacto-seccion">
       <h2>{t.mapa}</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391.97755362655556!2d-0.5537276520828864!3d38.19084508643081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd624c4d7b7c4185%3A0xc34fad40499659a2!2sLa%20Nova%20Dolce!5e0!3m2!1ses!2ses!4v1768302889580!5m2!1ses!2ses" style={{border:0}} allowFullScreen="" loading="lazy"></iframe>
+
+      <div className="contacto-container">
+        {/* Columna de Información */}
+        <div className="contacto-info">
+          <div className="info-bloque-central"> {/* Contenedor para alinear todo el bloque */}
+            <div className="info-item">
+              <span className="icon">📍</span>
+              <p>Calle Castaños, 34, Santa Pola</p>
+            </div>
+
+            <div className="info-item">
+              <span className="icon">📞</span>
+              <div className="telefonos">
+                <a href="tel:965416041">965 41 60 41</a>
+                <a href="tel:966694073">966 69 40 73</a>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <span className="icon">✉️</span>
+              <p>contacto@lanovadolce.com</p>
+            </div>
+          </div>
+
+          <div className="social-links">
+            <a href="https://facebook.com" target="_blank" className="social-icon">Facebook</a>
+            <a href="https://instagram.com" target="_blank" className="social-icon">Instagram</a>
+          </div>
+        </div>
+
+        {/* Columna del Mapa */}
+        <div className="mapa-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.5323537233!2d-0.5601131!3d38.1975871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6248da509c6933%3A0xc6657c917957905d!2sC%2F%20Casta%C3%B1os%2C%2034%2C%2003130%20Santa%20Pola%2C%20Alicante!5e0!3m2!1ses!2ses!4v1700000000000" 
+            style={{ border: 0 }} 
+            allowFullScreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
     </section>
   </>
 );
