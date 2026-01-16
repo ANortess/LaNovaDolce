@@ -4,6 +4,7 @@ import patatas from './Patatas.jpeg';
 import dados from './DadosDeQueso.jpeg';
 import patatasGajo from './PatatasGajo.jpeg';
 import panAjo from './PanDeAjo.jpeg';
+import jalapeños from './Jalapeños.jpeg';
 
 export const EntrantesImages = {
   ruedaMixta,
@@ -11,6 +12,7 @@ export const EntrantesImages = {
   dados,
   patatasGajo,
   panAjo,
+  jalapeños,
 };
 
 export const cartaPizzeria = [
