@@ -553,7 +553,6 @@ html, body {
   flex-direction: row;
   background-color: #ffffff;
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   box-sizing: border-box; 
 
@@ -578,19 +577,19 @@ html, body {
 
 /* Contenedor de la información */
 .pizza-info {
+  position: relative;
   flex: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
   width: 100%;
-  margin-bottom: 10px;
 }
 
 .card-header h3 {
@@ -598,6 +597,8 @@ html, body {
   font-size: 1.4rem;
   color: #900707;
   text-transform: uppercase;
+  text-align: left;
+  width: 100%;
 }
 
 .precio {
@@ -615,7 +616,7 @@ html, body {
   color: #555;
   line-height: 1.4;
   text-align: left;
-    font-size: 1.0rem;
+  font-size: 1.0rem;
 }
 
 
@@ -893,7 +894,7 @@ iframe {
   }
 
   .pizza-info {
-    padding: 15px;
+    padding: 6px;
   }
 
   .card-header {
@@ -901,25 +902,125 @@ iframe {
   }
 
   .card-header h3 {
-    font-size: 1.0rem;
-    color: #900707;
-    text-transform: uppercase;
+    font-size: 0.9rem;
   }
 
   .precio {
-    font-weight: bold;
-    font-size: 0.8rem;
-    color: #333;
-    background-color: #fdf5e6; /* Un fondo crema muy suave para el precio */
-    padding: 5px 12px;
-    border-radius: 8px;
+    font-size: 0.7rem;
+    padding: 4px 10px;
   }
 
   .descripcion {
-    margin: 0;
-    font-style: italic;
-    color: #555;
-    text-align: left;
     font-size: 0.7rem;
   }
+}
+
+
+
+
+
+.seccion-alergenos {
+  margin: 30px auto;
+  /* La caja ocupará el 60% en PC y hasta el 95% en móvil */
+  width: 90%; 
+  max-width: 700px; 
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.seccion-alergenos h3 {
+  color: var(--mostaza);
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Tamaño fluido */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.alergenos-grid-completo {
+  display: grid;
+  /* Usamos un minmax más pequeño para que quepan más si es necesario */
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.alergeno-item-mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+
+.alergeno-item-mini img {
+  /* La imagen se adapta: mínimo 30px, ideal 4vw, máximo 45px */
+  width: clamp(30px, 5vw, 45px);
+  height: clamp(30px, 5vw, 45px);
+  object-fit: contain;
+  filter: grayscale(0.2);
+  transition: 0.3s;
+}
+
+.alergeno-item-mini span {
+  /* Texto que también encoge en pantallas pequeñas */
+  font-size: clamp(0.6rem, 1.5vw, 0.75rem);
+  color: #888;
+  text-align: center;
+  word-wrap: break-word; /* Evita que nombres largos rompan la caja */
+}
+
+.aviso-alergenos {
+  margin-top: 20px;
+  font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+/* --- AJUSTES DE RESPONSIVIDAD EXTRA --- */
+
+@media (max-width: 768px) {
+  .seccion-alergenos {
+    width: 95%; /* En tablets y móviles aprovecha más el ancho */
+    padding: 15px;
+  }
+  
+  .alergenos-grid-completo {
+    /* En móviles forzamos a que sean un poco más pequeños para que no se amontonen */
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .alergenos-grid-completo {
+    /* Para móviles muy estrechos, aseguramos 3 o 4 por fila */
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+.plato-alergenos {
+  position: absolute;
+  /* Valores negativos para que salgan de la caja */
+  bottom: -12px; 
+  right: -10px; 
+  margin-right: 5px;
+  
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  z-index: 10; /* Asegura que esté por encima de todo */
+}
+
+.alergeno-icon-plato {
+  width: 20px; 
+  height: 20px;
+  object-fit: contain;
 }

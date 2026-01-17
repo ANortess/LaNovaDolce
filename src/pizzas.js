@@ -27,14 +27,14 @@ export const EntrantesImages = {
 };
 
 export const cartaPizzeria = [
-  // --- ENTRADAS ---
   { 
     id: 100, 
     categoria: "Entrantes", 
     nombre: "Rueda paté y mixta", 
-    desc_es: "Variedad de patés. La mixta es con quesos (el precio varía). Incluye pan.", 
+    desc_es: "Variedad de patés y quesos", 
     precio: "7,60€", 
-    url: EntrantesImages.ruedaMixta
+    url: EntrantesImages.ruedaMixta,
+    alergenos: ['lacteos', 'gluten'] // Ejemplo: pan y queso
   },
   { 
     id: 101, 
@@ -42,7 +42,8 @@ export const cartaPizzeria = [
     nombre: "Patatas", 
     desc_es: "Patatas fritas ración.", 
     precio: "4,40€", 
-    url: EntrantesImages.patatas 
+    url: EntrantesImages.patatas,
+    alergenos: [] // Suelen ser seguras, pero puedes poner 'gluten' si hay contaminación
   },
   { 
     id: 102, 
@@ -50,31 +51,35 @@ export const cartaPizzeria = [
     nombre: "Patatas Gajo", 
     desc_es: "Sazonadas estilo rústico.", 
     precio: "5,00€", 
-    url: EntrantesImages.patatasGajo
+    url: EntrantesImages.patatasGajo,
+    alergenos: ['gluten'] 
   },
   { 
     id: 103, 
     categoria: "Entrantes", 
-    nombre: "Pan de ajo (1 Ud.)", 
-    desc_es: "Base de pan con ajo y aceite.", 
+    nombre: "Pan de ajo", 
+    desc_es: "(1 Ud.) Base de pan con ajo y aceite.", 
     precio: "2,60€", 
-    url: EntrantesImages.panAjo
+    url: EntrantesImages.panAjo,
+    alergenos: ['gluten']
   },
   { 
     id: 104, 
     categoria: "Entrantes", 
-    nombre: "Dados queso en tempura (6 Ud.)", 
-    desc_es: "Servidos con salsa de tomate.", 
+    nombre: "Dados de queso", 
+    desc_es: "(6 Ud.) Servidos en tempura con salsa de tomate.", 
     precio: "6,60€", 
-    url: EntrantesImages.dados 
+    url: EntrantesImages.dados,
+    alergenos: ['lacteos', 'gluten']
   },
   { 
     id: 105, 
     categoria: "Entrantes", 
-    nombre: "Crujiente de Jalapeño (2 Ud.)", 
-    desc_es: "Jalapeños rellenos y rebozados.", 
+    nombre: "Crujiente de Jalapeño", 
+    desc_es: "(2 Ud.) Jalapeños rellenos y rebozados.", 
     precio: "2,60€", 
-    url: EntrantesImages.jalapenos
+    url: EntrantesImages.jalapenos,
+    alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 106, 
@@ -82,23 +87,26 @@ export const cartaPizzeria = [
     nombre: "Periquitos", 
     desc_es: "Trocitos de pollo rebozado.", 
     precio: "8,50€", 
-    url: EntrantesImages.periquitos
+    url: EntrantesImages.periquitos,
+    alergenos: ['gluten', 'huevos']
   },
   { 
     id: 107, 
     categoria: "Entrantes", 
-    nombre: "Croquetas (2 Ud.)", 
-    desc_es: "Jamón ibérico, setas o carrillada.", 
+    nombre: "Croquetas", 
+    desc_es: "(2 Ud.) Jamón ibérico, setas o carrillada.", 
     precio: "2,50€", 
-    url: EntrantesImages.croquetas
+    url: EntrantesImages.croquetas,
+    alergenos: ['gluten', 'lacteos', 'huevos']
   },
   { 
     id: 108, 
     categoria: "Entrantes", 
-    nombre: "Saquitos de Queso de Cabra (2 Ud.)", 
-    desc_es: "Crujiente relleno de queso.", 
+    nombre: "Saquitos", 
+    desc_es: "(2 Ud.) Crujiente relleno de queso de cabra.", 
     precio: "2,30€", 
-    url: EntrantesImages.saquitos
+    url: EntrantesImages.saquitos,
+    alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 109, 
@@ -106,17 +114,19 @@ export const cartaPizzeria = [
     nombre: "Papas Bravas", 
     desc_es: "Con allioli y pimentón.", 
     precio: "5,00€", 
-    url: EntrantesImages.papasBravas
+    url: EntrantesImages.papasBravas,
+    alergenos: ['huevos'] // Por el allioli
   },
   { 
     id: 110, 
     categoria: "Entrantes", 
-    nombre: "Entrante de berenjena en Tempura", 
-    desc_es: "Tomate, berenjena, cebolla frita, queso y miel de caña.", 
+    nombre: "Entrante de berenjena", 
+    desc_es: "Tomate, berenjena en tempura, cebolla frita, queso y miel de caña.", 
     precio: "8,50€", 
-    url: EntrantesImages.entranteBerenjena
+    url: EntrantesImages.entranteBerenjena,
+    alergenos: ['gluten', 'lacteos']
   },
-
+  
   // --- ENSALADAS (200+) ---
   { 
     id: 200, 

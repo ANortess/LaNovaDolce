@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import { cartaPizzeria } from './pizzas.js';
 import { textos } from './textos.js';
+import { textosAlergenos, listaAlergenos } from './alergenosData.js';
 import logoPizzeria from './assets/Varios/Cocinero.png';
 import imagenHistoria from './assets/Varios/Pizza.jpg';
 
@@ -271,9 +272,39 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
               <p className="descripcion">
                 {idioma === 'es' ? p.desc_es : p.desc_en}
               </p>
+
+              <div className="plato-alergenos">
+                {p.alergenos?.map(alergenoId => {
+                  const infoAlergeno = listaAlergenos.find(a => a.id === alergenoId);
+                  return infoAlergeno ? (
+                    <img 
+                      key={alergenoId}
+                      src={infoAlergeno.url} 
+                      alt={infoAlergeno.nombre[idioma]} 
+                      title={infoAlergeno.nombre[idioma]}
+                      className="alergeno-icon-plato"
+                    />
+                  ) : null;
+                })}
+              </div>
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="seccion-alergenos">
+        <h3>{textosAlergenos.titulo[idioma]}</h3>
+        
+        <div className="alergenos-grid-completo">
+          {listaAlergenos.map((item) => (
+            <div key={item.id} className="alergeno-item-mini">
+              <img src={item.url} alt={item.nombre[idioma]} />
+              <span>{item.nombre[idioma]}</span>
+            </div>
+          ))}
+        </div>
+
+        <p className="aviso-alergenos">{textosAlergenos.descripcion[idioma]}</p>
       </div>
     </section>
   );
