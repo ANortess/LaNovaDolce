@@ -40,6 +40,16 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
       </div>
       {!esCarta ? (
         <div className={`navbar-menu ${menuAbierto ? 'active' : ''}`}>
+          {menuAbierto && (
+            <button 
+              className="btn-cat-nav inicio" 
+              onClick={() => { 
+                window.location.href = "/#inicio"; 
+                cerrarMenu(); 
+              }}
+            >
+            </button>
+          )}
           <button 
             className="btn-cat-nav" 
             onClick={() => { window.location.href = "/#inicio"; cerrarMenu(); }}
@@ -64,9 +74,35 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
           >
             {t.mapa}
           </button>
+
+          {menuAbierto && (
+            <div className="navbar-idiomas-mobile">
+              {['es', 'en', 'fr', 'de'].map((idm) => (
+                <button 
+                  key={idm}
+                  className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
+                  onClick={() => { setIdioma(idm); cerrarMenu(); }}
+                >
+                  {idm.toUpperCase()}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       ) : (
         <div className={`navbar-menu ${menuAbierto ? 'active' : ''}`}>
+          {menuAbierto && (
+            <button 
+              className="btn-cat-nav inicio" 
+              onClick={() => { 
+                window.location.href = "/#inicio"; 
+                cerrarMenu(); 
+              }}
+            >
+              {t.inicio || "INICIO"}
+            </button>
+          )}
+          
           {categorias.map(cat => (
             <button 
               key={cat} 
@@ -80,6 +116,19 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
               {t[cat] || cat}
             </button>
           ))}
+          {menuAbierto && (
+            <div className="navbar-idiomas-mobile">
+              {['es', 'en', 'fr', 'de'].map((idm) => (
+                <button 
+                  key={idm}
+                  className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
+                  onClick={() => { setIdioma(idm); cerrarMenu(); }}
+                >
+                  {idm.toUpperCase()}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       )}
 

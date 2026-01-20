@@ -818,6 +818,30 @@ iframe {
   border: 2px solid var(--mostaza);
 }
 
+.navbar-idiomas-mobile {
+  grid-column: 1 / -1;
+  position: static; 
+  width: 100%;
+  margin-top: auto; 
+
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  width: 100%;
+  
+  position: static;
+}
+.navbar-idiomas-mobile.active {
+  right: 0; /* Ambos entran a la vez */
+}
+.btn-cat-nav.inicio {
+  grid-column: 1 / -1;
+  margin-bottom: 3%;
+}
+
 /* --- RESPONSIVE MÓVIL (Media Query) --- */
 @media (max-width: 1300px) {
   .hamburger {
@@ -830,7 +854,7 @@ iframe {
     right: -100%; /* Escondido a la derecha */
     width: 80%;
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 7%;
     padding-bottom: 100px;
     gap: 30px;
     background-color: rgba(0, 0, 0, 0.886);
@@ -838,6 +862,9 @@ iframe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: min-content;
+
+    align-items: center;
+    justify-content: flex-start;
 
     gap: 20px;
     transition: 0.4s;
@@ -849,14 +876,14 @@ iframe {
     position: fixed;
     right: -100%;
     width: 80%;
+    margin-top: 100%;
     display: flex;
     justify-content: center;
     transition: 0.4s;
     z-index: 1501;
   }
 
-  .navbar-menu.active,
-  .navbar-idiomas.active {
+  .navbar-menu.active {
     right: 0; /* Ambos entran a la vez */
   }
 
