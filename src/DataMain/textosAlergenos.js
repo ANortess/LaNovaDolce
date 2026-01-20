@@ -1,18 +1,18 @@
 // Importación de imágenes
-import glutenImg from './assets/Alergenos/Gluten.png';
-import lacteosImg from './assets/Alergenos/Lacteos.png';
-import huevosImg from './assets/Alergenos/Huevos.png';
-import pescadoImg from './assets/Alergenos/Pescado.png';
-import crustaceosImg from './assets/Alergenos/Crustaceos.png';
-import moluscosImg from './assets/Alergenos/Moluscos.png';
-import cacahuetesImg from './assets/Alergenos/Cacahuetes.png';
-import sojaImg from './assets/Alergenos/Soja.png';
-import frutosCascarImg from './assets/Alergenos/FrutosDeCascara.png';
-import apioImg from './assets/Alergenos/Apio.png';
-import mostazaImg from './assets/Alergenos/Mostaza.png';
-import sesamoImg from './assets/Alergenos/GranosDeSesamo.png';
-import sulfitosImg from './assets/Alergenos/DioxidoDeAzufreYSulfitos.png';
-import altramucesImg from './assets/Alergenos/Altramuces.png';
+import glutenImg from '../assets/Alergenos/Gluten.png';
+import lacteosImg from '../assets/Alergenos/Lacteos.png';
+import huevosImg from '../assets/Alergenos/Huevos.png';
+import pescadoImg from '../assets/Alergenos/Pescado.png';
+import crustaceosImg from '../assets/Alergenos/Crustaceos.png';
+import moluscosImg from '../assets/Alergenos/Moluscos.png';
+import cacahuetesImg from '../assets/Alergenos/Cacahuetes.png';
+import sojaImg from '../assets/Alergenos/Soja.png';
+import frutosCascarImg from '../assets/Alergenos/FrutosDeCascara.png';
+import apioImg from '../assets/Alergenos/Apio.png';
+import mostazaImg from '../assets/Alergenos/Mostaza.png';
+import sesamoImg from '../assets/Alergenos/GranosDeSesamo.png';
+import sulfitosImg from '../assets/Alergenos/DioxidoDeAzufreYSulfitos.png';
+import altramucesImg from '../assets/Alergenos/Altramuces.png';
 
 export const textosAlergenos = {
     titulo: {
@@ -22,24 +22,15 @@ export const textosAlergenos = {
         de: 'Allergen-Legende' 
     },
     descripcion: {
-        es: '* Consulte con nuestro personal ante cualquier duda sobre alergias.', 
-        en: '* Please consult our staff regarding any allergy concerns.', 
-        fr: '* Veuillez consulter notre personnel pour toute question concernant les allergies.', 
-        de: '* Bitte wenden Sie sich bei Fragen zu Allergien an unser Personal.' 
+        es: 'Consulte con nuestro personal ante cualquier duda sobre alergias.', 
+        en: 'Please consult our staff regarding any allergy concerns.', 
+        fr: 'Veuillez consulter notre personnel pour toute question concernant les allergies.', 
+        de: 'Bitte wenden Sie sich bei Fragen zu Allergien an unser Personal.' 
     }
 };
 
 export const listaAlergenos = [
-    { 
-        id: 'gluten', 
-        url: glutenImg, 
-        nombre: { 
-        es: 'Gluten', 
-        en: 'Gluten', 
-        fr: 'Gluten', 
-        de: 'Gluten' 
-        } 
-    },
+    
     { 
         id: 'lacteos', 
         url: lacteosImg, 
@@ -48,6 +39,16 @@ export const listaAlergenos = [
         en: 'Dairy', 
         fr: 'Produits laitiers', 
         de: 'Milchprodukte' 
+        } 
+    },
+    { 
+        id: 'gluten', 
+        url: glutenImg, 
+        nombre: { 
+        es: 'Gluten', 
+        en: 'Gluten', 
+        fr: 'Gluten', 
+        de: 'Gluten' 
         } 
     },
     { 

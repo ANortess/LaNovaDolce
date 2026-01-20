@@ -343,43 +343,74 @@ html, body {
   font-size: 24px;
 }
 
-.horario-fila {
+.horario-compacto {
   display: flex;
-  padding: 10px 0;
-  font-size: 0.95rem;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
 }
 
-.turnos p {
-  margin: 2px 0;
-  font-size: 0.9rem;
-  color: #ccc;
+.horario-linea {
+  display: flex;
+  justify-content: space-between; /* Día a la izquierda, hora a la derecha */
+  padding: 4px 0; /* Espacio mínimo entre líneas */
+  border-bottom: 1px solid var(--mostaza);
+  font-size: 0.85rem; /* Un pelín más pequeño para que entre todo en una línea */
+  width: 100%;
 }
 
-.eventos-intro {
-  font-size: 0.9rem;
-  margin-top: 20px;
+.horario-linea:last-child {
+  border-bottom: none;
+}
+
+.horario-linea .dia {
+  font-size: 16px;
   font-style: italic;
+}
+
+.horario-linea .horas {
   color: #ccc;
+  white-space: nowrap; /* Evita que la hora se baje a la siguiente línea */
+  font-size: 16px;
+}
+
+/* Estilo para el martes */
+.horario-linea.cerrado .dia,
+.horario-linea.cerrado .horas {
+  color: #d32f2f;
+  font-size: 16px;
+  font-style: italic;
 }
 
 .eventos-lista {
+  margin-top: 14px;
   list-style: none;
   padding: 0;
-  margin: 0;
-  text-align: left; /* Alineamos a la izquierda para que los iconos queden rectos */
+  flex-grow: 1; /* Esto empuja lo que haya debajo hacia el fondo */
 }
 
 .eventos-lista li {
-  font-size: 16px;
-  margin-top: 15px;
+  font-size: 1rem;
+  margin-bottom: 30px; /* Aumentamos el espacio entre cada punto */
   line-height: 1.4;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Icono al lado del texto para ahorrar altura */
   align-items: center;
-  gap: 10px;
+  gap: 15px; /* Más espacio entre el emoji y la frase */
+  color: #fff;
+}
+
+.evento-icono {
+  font-size: 1.5rem; /* Iconos un poco más grandes */
+}
+
+.eventos-intro {
+  font-size: 0.85rem;
+  margin-top: auto; /* Empuja el texto al fondo del cajón */
+  padding-top: 20px;
+  font-style: italic;
+  color: #ccc;
+  border-top: 1px solid var(--mostaza); /* Opcional: una línea para separar el cierre */
 }
 
 .glovo-card p {
@@ -401,7 +432,8 @@ html, body {
   padding: 10px 20px;
   border-radius: 25px;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   transition: 0.3s;
   border: none;
 }
@@ -532,7 +564,6 @@ html, body {
 
 
 
-
 .carta-container.full-view {
   margin-top: 75px;
   padding-top: 40px;
@@ -553,7 +584,6 @@ html, body {
   flex-direction: row;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   box-sizing: border-box; 
 
   height: 100px;
@@ -573,6 +603,7 @@ html, body {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 12px 0 0 12px;
 }
 
 /* Contenedor de la información */
@@ -598,7 +629,7 @@ html, body {
   color: #900707;
   text-transform: uppercase;
   text-align: left;
-  width: 100%;
+  flex: 1;
 }
 
 .precio {
@@ -606,7 +637,7 @@ html, body {
   font-size: 1.2rem;
   color: #333;
   background-color: #fdf5e6; /* Un fondo crema muy suave para el precio */
-  padding: 5px 12px;
+  padding: 1px 12px;
   border-radius: 8px;
 }
 
@@ -800,13 +831,15 @@ iframe {
     width: 80%;
     height: 100vh;
     padding-top: 100px;
-    gap: 30px;                  /* Reduce el espacio entre categorías si están muy separadas */
-    height: 100vh;
+    padding-bottom: 100px;
+    gap: 30px;
     background-color: rgba(0, 0, 0, 0.886);
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: min-content;
+
+    gap: 20px;
     transition: 0.4s;
     z-index: 1500;
     overflow-y: auto;
@@ -906,7 +939,7 @@ iframe {
   }
 
   .precio {
-    font-size: 0.7rem;
+    font-size: 0.70rem;
     padding: 4px 10px;
   }
 
@@ -1010,7 +1043,7 @@ iframe {
   /* Valores negativos para que salgan de la caja */
   bottom: -12px; 
   right: -10px; 
-  margin-right: 5px;
+  margin-right: 10px;
   
   display: flex;
   gap: 5px;

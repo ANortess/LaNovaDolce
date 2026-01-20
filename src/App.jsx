@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './App.css';
-import { cartaPizzeria } from './pizzas.js';
-import { textos } from './textos.js';
-import { textosAlergenos, listaAlergenos } from './alergenosData.js';
+import { cartaPizzeria } from './DataMain/dataPizzas.js';
+import { textosPlatos } from './DataMain/textosPlatos.js';
+import { textosMain } from './DataMain/textosMain.js';
+import { textosAlergenos, listaAlergenos } from './DataMain/textosAlergenos.js';
 import logoPizzeria from './assets/Varios/Cocinero.png';
 import imagenHistoria from './assets/Varios/Pizza.jpg';
 
@@ -110,8 +111,8 @@ const Home = ({ t, idioma }) => (
     <section id="inicio" className="inicio-section">
       <div className="content">
         <h1>LA NOVA DOLCE</h1>
-        <p className="subtitle">PIZZERIA - RESTAURANTE</p>
-        <p className="date">Desde 1996</p>
+        <p className="subtitle">{t.subtitulo}</p>
+        <p className="date">{t.fecha}</p>
       </div>
     </section>
 
@@ -122,8 +123,8 @@ const Home = ({ t, idioma }) => (
           <p>{t.sobreNosotrosTexto}</p>
           <div className="sellos-calidad">
             <span>📍 Santa Pola (Alicante)</span>
-            <span>🍕 Masa Artesanal Diaria</span>
-            <span>⏱️ Desde 1996</span>
+            <span>🍕 {t.sobreNosotrosMasa}</span>
+            <span>⏱️ {t.fecha}</span>
           </div>
         </div>
         <div className="sobre-imagen">
@@ -143,36 +144,71 @@ const Home = ({ t, idioma }) => (
         {/* (He omitido el contenido interno para abreviar el código, mantenlo igual) */}
         <div className="info-card">
           <h3>{t.horario}</h3>
-          <div className="horario-fila">
-            <span>Lun, Mié, Jue</span>
-            <div className="turnos">
-              <p>20:00 - 23:00</p>
+          
+          <div className="horario-compacto">
+            <div className="horario-linea">
+              <span className="dia">{t.lunes}: </span>
+              <span className="horas">20:00 - 23:00</span>
             </div>
-          </div>
-          <div className="horario-fila">
-            <span>Vie, Sáb, Dom</span>
-            <div className="turnos">
-              <p>13:00 - 16:00</p>
-              <p>20:00 - 23:00</p>
+
+            <div className="horario-linea cerrado">
+              <span className="dia">{t.martes}: </span>
+              <span className="horas">{t.cerrado}</span>
+            </div>
+
+            <div className="horario-linea">
+              <span className="dia">{t.miercoles}: </span>
+              <span className="horas">20:00 - 23:00</span>
+            </div>
+
+            <div className="horario-linea">
+              <span className="dia">{t.jueves}: </span>
+              <span className="horas">20:00 - 23:00</span>
+            </div>
+
+            <div className="horario-linea">
+              <span className="dia">{t.viernes}: </span>
+              <span className="horas">13:00-16:00 / 20:00-23:00</span>
+            </div>
+
+            <div className="horario-linea">
+              <span className="dia">{t.sabado}: </span>
+              <span className="horas">13:00-16:00 / 20:00-23:00</span>
+            </div>
+
+            <div className="horario-linea">
+              <span className="dia">{t.domingo}: </span>
+              <span className="horas">13:00-16:00 / 20:00-23:00</span>
             </div>
           </div>
         </div>
         <div className="info-card">
           <h3>{t.eventos}</h3>
+          
           <ul className="eventos-lista">
-            <li>🎂 {t.normaTarta}</li>
-            <li>🍼 {t.normaBebes}</li>
-            <li>👥 {t.normaReservas}</li>
+            <li>
+              <span className="evento-texto">🎂 {t.normaTarta}</span>
+            </li>
+            <li>
+              <span className="evento-texto">🍼 {t.normaBebes}</span>
+            </li>
+            <li>
+              <span className="evento-texto">👥 {t.normaReservas}</span>
+            </li>
           </ul>
+
+          {/* Ahora el texto intro está abajo del todo */}
           <p className="eventos-intro">{t.eventosSub}</p>
         </div>
         <div className="info-card glovo-card">
           <h3>{t.glovoTitulo}</h3>
           <p>{t.glovoTexto}</p>
           <p className="txt-exclusivo">📍 {t.glovoExclusivo}</p>
+          <p className="txt-exclusivo">⏱️ {t.glovoTiempo}</p>
           <a href="https://glovoapp.com/es/es/santa-pola/stores/la-nova-dolce-santa-pola" target="_blank" rel="noopener noreferrer" className="btn-glovo">
             {t.glovoBoton}
           </a>
+          
         </div>
       </div>
     </section>
@@ -186,10 +222,10 @@ const Home = ({ t, idioma }) => (
       
       <div className="carta-intro">
         <p>
-          Pizzas artesanas, pastas tradicionales y postres caseros. 
-          <strong> Calidad y sabor desde 1996.</strong>
+          {t.cartaDescripcion} 
+          <strong> {t.cartaCalidad}</strong>
         </p>
-        <p className="p-resalte">¿Te vas a quedar con las ganas?</p>
+        <p className="p-resalte">{t.cartaPregunta}</p>
       </div>
 
       <div style={{ marginTop: '40px' }}>
@@ -212,7 +248,7 @@ const Home = ({ t, idioma }) => (
           <div className="info-bloque-central"> {/* Contenedor para alinear todo el bloque */}
             <div className="info-item">
               <span className="icon">📍</span>
-              <p>Calle Castaños, 34, Santa Pola</p>
+              <p>{t.contactoDireccion}</p>
             </div>
 
             <div className="info-item">
@@ -225,7 +261,7 @@ const Home = ({ t, idioma }) => (
 
             <div className="info-item">
               <span className="icon">✉️</span>
-              <p>contacto@lanovadolce.com</p>
+              <p>pizzerianovadolce@gmail.com</p>
             </div>
           </div>
 
@@ -255,46 +291,56 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
   return (
     <section id="carta" className="carta-container full-view">
       <div className="pizza-grid">
-        {platosFiltrados.map((p) => (
-          <div key={p.id} className="pizza-card">
-            <div className="pizza-image-container">
-              <img src={p.url} alt={p.nombre} className="pizza-img" />
-            </div>
-            <div className="pizza-info">
-              <div className="card-header">
-                <h3>{p.nombre}</h3>
-                <span className="precio">
-                  {typeof p.precio === 'object' 
-                    ? `P: ${p.precio.pequena} / G: ${p.precio.grande}` 
-                    : p.precio}
-                </span>
-              </div>
-              <p className="descripcion">
-                {idioma === 'es' ? p.desc_es : p.desc_en}
-              </p>
+        {platosFiltrados.map((p) => {
+          // 2. BUSCAMOS LA TRADUCCIÓN USANDO EL ID
+          const info = textosPlatos[p.id];
+          const nombre = info?.nombre[idioma] || "Nombre no definido";
+          const descripcion = info?.descripcion[idioma] || "";
 
-              <div className="plato-alergenos">
-                {p.alergenos?.map(alergenoId => {
-                  const infoAlergeno = listaAlergenos.find(a => a.id === alergenoId);
-                  return infoAlergeno ? (
-                    <img 
-                      key={alergenoId}
-                      src={infoAlergeno.url} 
-                      alt={infoAlergeno.nombre[idioma]} 
-                      title={infoAlergeno.nombre[idioma]}
-                      className="alergeno-icon-plato"
-                    />
-                  ) : null;
-                })}
+          return (
+            <div key={p.id} className="pizza-card">
+              <div className="pizza-image-container">
+                {/* Usamos la variable 'nombre' que acabamos de crear */}
+                <img src={p.url} alt={nombre} className="pizza-img" />
+              </div>
+              
+              <div className="pizza-info">
+                <div className="card-header">
+                  {/* CAMBIO: Usamos 'nombre' en lugar de p.nombre[idioma] */}
+                  <h3>{nombre}</h3>
+                  <span className="precio">
+                    {typeof p.precio === 'object' 
+                      ? `${textosMain[idioma].pequeña}: ${p.precio.pequena} / ${textosMain[idioma].grande}: ${p.precio.grande}` 
+                      : p.precio}
+                  </span>
+                </div>
+                
+                {/* CAMBIO: Usamos 'descripcion' en lugar de p.descripcion[idioma] */}
+                <p className="descripcion">{descripcion}</p>
+
+                <div className="plato-alergenos">
+                  {p.alergenos?.map(alergenoId => {
+                    const infoAlergeno = listaAlergenos.find(a => a.id === alergenoId);
+                    return infoAlergeno ? (
+                      <img 
+                        key={alergenoId}
+                        src={infoAlergeno.url} 
+                        alt={infoAlergeno.nombre[idioma]} 
+                        title={infoAlergeno.nombre[idioma]}
+                        className="alergeno-icon-plato"
+                      />
+                    ) : null;
+                  })}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
+      {/* La sección de abajo se queda igual porque usa listaAlergenos directamente */}
       <div className="seccion-alergenos">
         <h3>{textosAlergenos.titulo[idioma]}</h3>
-        
         <div className="alergenos-grid-completo">
           {listaAlergenos.map((item) => (
             <div key={item.id} className="alergeno-item-mini">
@@ -303,7 +349,6 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
             </div>
           ))}
         </div>
-
         <p className="aviso-alergenos">{textosAlergenos.descripcion[idioma]}</p>
       </div>
     </section>
@@ -314,7 +359,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
 function App() {
   const [idioma, setIdioma] = useState('es');
   const [categoria, setCategoria] = useState('Entrantes'); // Estado global de categoría
-  const t = textos[idioma];
+  const t = textosMain[idioma];
 
   return (
     <Router>
