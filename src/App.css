@@ -847,7 +847,6 @@ iframe {
 
   .navbar-idiomas {
     position: fixed;
-    bottom: 50px; /* Los ponemos abajo del todo en el móvil */
     right: -100%;
     width: 80%;
     display: flex;
