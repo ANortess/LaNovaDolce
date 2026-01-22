@@ -28,119 +28,7 @@ html, body {
 }
 
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px; /* Reducimos el padding lateral en móvil */
-  background-color: #1a1a1a; /* Usa tu variable --negro */
-  border-bottom: 2px solid #e1ad01; /* Usa tu variable --mostaza */
-  
-  /* CAMBIO CLAVE: Usa fixed en vez de sticky */
-  position: fixed; 
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  
-  height: 75px; /* Dale una altura fija para que no varíe */
-  z-index: 1000;
-  box-sizing: border-box;
-}
 
-/* Estilo del Logo */
-.navbar-logo {
-  justify-content: flex-start;
-}
-
-.logo-img {
-  height: 35px;
-  width: 35px;
-  background: radial-gradient(circle, #dfcb89 0%, #dfa213 70%, #000000 100%);
-  border-radius: 50%;
-  padding: 2px; 
-  
-  object-fit: contain;
-  border: 2px solid #503e02;
-  display: block;
-  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3); /* Un brillo sutil opcional */
-
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; 
-  cursor: pointer;
-}
-
-.logo-img:hover {
-  transform: scale(1.15); 
-}
-
-.navbar-menu {
-  flex: 2; /* Le damos un poco más de prioridad de espacio */
-  display: flex;
-  justify-content: center; /* ¡ESTO lo centra de verdad! */
-  list-style: none;
-  gap: 40px; /* Más espacio entre opciones para que luzca */
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-menu a, .btn-cat-nav {
-  text-decoration: none;
-  color: white;
-  position: relative;
-  padding-bottom: 5px;
-}
-
-/* Línea mostaza que aparece debajo al pasar el ratón */
-.navbar-menu a::after, .btn-cat-nav::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #e1ad01; /* Tu mostaza */
-  transition: 0.3s;
-}
-
-.navbar-menu a:hover::after,  .btn-cat-nav:hover::after {
-  width: 100%;
-}
-
-.navbar-menu a:hover,  .btn-cat-nav:hover {
-  color: var(--mostaza);
-}
-
-.navbar-logo, 
-.navbar-idiomas {
-  flex: 1; 
-  display: flex;
-}
-
-.navbar-idiomas {
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.btn-idioma {
-  background: none;
-  border: 1px solid var(--mostaza);
-  color: var(--mostaza);
-  padding: 5px 12px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn-idioma:hover {
-  background-color: var(--mostaza);
-  color: black;
-}
-
-.btn-idioma.activo {
-  background-color: var(--mostaza);
-  color: black;
-}
 
 /*------------------------------------------------------------------------*/
 
@@ -652,21 +540,7 @@ html, body {
 
 
 /* --- ESTILOS HAMBURGUESA --- */
-.hamburger {
-  display: none; /* Oculto en PC */
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
-  z-index: 2000;
-  padding: 10px;
-}
 
-.hamburger span {
-  width: 30px;
-  height: 3px;
-  background-color: #ffcc00; /* Tu color mostaza */
-  transition: 0.3s;
-}
 
 
 
@@ -818,86 +692,7 @@ iframe {
   border: 2px solid var(--mostaza);
 }
 
-.navbar-idiomas-mobile {
-  grid-column: 1 / -1;
-  position: static; 
-  width: 100%;
-  margin-top: auto; 
 
-  padding-top: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-
-  width: 100%;
-  
-  position: static;
-}
-.navbar-idiomas-mobile.active {
-  right: 0; /* Ambos entran a la vez */
-}
-.btn-cat-nav.inicio {
-  grid-column: 1 / -1;
-  margin-bottom: 3%;
-}
-
-/* --- RESPONSIVE MÓVIL (Media Query) --- */
-@media (max-width: 1300px) {
-  .hamburger {
-    display: flex; /* Aparece en móvil */
-  }
-
-  .navbar-menu {
-    position: fixed;
-    top: 0;
-    right: -100%; /* Escondido a la derecha */
-    width: 80%;
-    height: 100vh;
-    padding-top: 7%;
-    padding-bottom: 100px;
-    gap: 30px;
-    background-color: rgba(0, 0, 0, 0.886);
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-auto-rows: min-content;
-
-    align-items: center;
-    justify-content: flex-start;
-
-    gap: 20px;
-    transition: 0.4s;
-    z-index: 1500;
-    overflow-y: auto;
-  }
-
-  .navbar-idiomas {
-    position: fixed;
-    right: -100%;
-    width: 80%;
-    margin-top: 100%;
-    display: flex;
-    justify-content: center;
-    transition: 0.4s;
-    z-index: 1501;
-  }
-
-  .navbar-menu.active {
-    right: 0; /* Ambos entran a la vez */
-  }
-
-  /* Animación de las rayas a X cuando se abre */
-  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 6px); }
-  .hamburger.open span:nth-child(2) { opacity: 0; }
-  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -7px); }
-
-
-  .navbar-idiomas.active .btn-idioma {
-    font-size: 0.8rem;
-    padding: 8px 16px;
-  }
-}
 
 
 @media (max-width: 768px) {

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './App.css';
+import './navBar.css';
 import { cartaPizzeria } from './DataMain/dataPizzas.js';
 import { textosPlatos } from './DataMain/textosPlatos.js';
 import { textosMain } from './DataMain/textosMain.js';
@@ -39,97 +40,101 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
         </Link>
       </div>
       {!esCarta ? (
-        <div className={`navbar-menu ${menuAbierto ? 'active' : ''}`}>
-          {menuAbierto && (
-            <button 
-              className="btn-cat-nav inicio" 
-              onClick={() => { 
-                window.location.href = "/#inicio"; 
-                cerrarMenu(); 
-              }}
-            >
-            </button>
-          )}
-          <button 
-            className="btn-cat-nav" 
-            onClick={() => { window.location.href = "/#inicio"; cerrarMenu(); }}
-          >
-            {t.inicio}
-          </button>
-          <button 
-            className="btn-cat-nav" 
-            onClick={() => { window.location.href = "/#info"; cerrarMenu(); }}
-          >
-            {t.info}
-          </button>
-          <button 
-            className="btn-cat-nav" 
-            onClick={() => { window.location.href = "/#carta"; cerrarMenu(); }}
-          >
-            {t.carta}
-          </button>
-          <button 
-            className="btn-cat-nav" 
-            onClick={() => { window.location.href = "/#contacto"; cerrarMenu(); }}
-          >
-            {t.mapa}
-          </button>
+        <>
+          {!menuAbierto ? (
+            <div className="navbar-menu">
+              <button className="btn-cat-nav" onClick={() => { window.location.href = "/#inicio"; cerrarMenu(); }}>{t.inicio}</button>
+              <button className="btn-cat-nav" onClick={() => { window.location.href = "/#info"; cerrarMenu(); }}>{t.info}</button>
+              <button className="btn-cat-nav" onClick={() => { window.location.href = "/#carta"; cerrarMenu(); }}>{t.carta}</button>
+              <button className="btn-cat-nav" onClick={() => { window.location.href = "/#contacto"; cerrarMenu(); }}>{t.mapa}</button>
+            </div>
+          ) : (
+            <div className="navbar-mobile-background">
+              <div className="navbar-mobile-space"></div>
+              <div className="navbar-mobile-sections">
+                <button className="btn-cat-nav" onClick={() => { window.location.href = "/#inicio"; cerrarMenu(); }}>{t.inicio}</button>
+                <button className="btn-cat-nav" onClick={() => { window.location.href = "/#info"; cerrarMenu(); }}>{t.info}</button>
+                <button className="btn-cat-nav" onClick={() => { window.location.href = "/#carta"; cerrarMenu(); }}>{t.carta}</button>
+                <button className="btn-cat-nav" onClick={() => { window.location.href = "/#contacto"; cerrarMenu(); }}>{t.mapa}</button>
+              </div>
 
-          {menuAbierto && (
-            <div className="navbar-idiomas-mobile">
-              {['es', 'en', 'fr', 'de'].map((idm) => (
-                <button 
-                  key={idm}
-                  className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
-                  onClick={() => { setIdioma(idm); cerrarMenu(); }}
-                >
-                  {idm.toUpperCase()}
-                </button>
-              ))}
+              <div className="navbar-mobile-space"></div>
+              <div className="navbar-mobile-idiomas">
+                {['es', 'en', 'fr', 'de'].map((idm) => (
+                  <button 
+                    key={idm}
+                    className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
+                    onClick={() => { setIdioma(idm); cerrarMenu(); }}
+                  >
+                    {idm.toUpperCase()}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
-        </div>
+        </>
       ) : (
-        <div className={`navbar-menu ${menuAbierto ? 'active' : ''}`}>
-          {menuAbierto && (
-            <button 
-              className="btn-cat-nav inicio" 
-              onClick={() => { 
-                window.location.href = "/#inicio"; 
-                cerrarMenu(); 
-              }}
-            >
-              {t.inicio || "INICIO"}
-            </button>
-          )}
-          
-          {categorias.map(cat => (
-            <button 
-              key={cat} 
-              className={`btn-cat-nav ${categoriaActual === cat ? 'activo' : ''}`}
-              onClick={() => {
-                setCategoria(cat);
-                window.scrollTo(0, 0);
-                cerrarMenu();
-              }}
-            >
-              {t[cat] || cat}
-            </button>
-          ))}
-          {menuAbierto && (
-            <div className="navbar-idiomas-mobile">
-              {['es', 'en', 'fr', 'de'].map((idm) => (
+        <>
+          {!menuAbierto ? (
+            <>
+            <div className="navbar-menu">
+              {categorias.map(cat => (
                 <button 
-                  key={idm}
-                  className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
-                  onClick={() => { setIdioma(idm); cerrarMenu(); }}
+                  key={cat} 
+                  className={`btn-cat-nav ${categoriaActual === cat ? 'activo' : ''}`}
+                  onClick={() => {
+                    setCategoria(cat);
+                    window.scrollTo(0, 0);
+                    cerrarMenu();
+                  }}
                 >
-                  {idm.toUpperCase()}
+                  {t[cat] || cat}
                 </button>
               ))}
             </div>
+          </>
+          ) : (
+            <div className="navbar-mobile-background">
+              <button 
+                className="btn-cat-nav inicio" 
+                onClick={() => { 
+                  window.location.href = "/#inicio"; 
+                  cerrarMenu(); 
+                }}
+              >
+                {t.inicio || "INICIO"}
+              </button>
+              <div className="navbar-mobile-sections">
+                {categorias.map(cat => (
+                  <button 
+                    key={cat} 
+                    className={`btn-cat-nav ${categoriaActual === cat ? 'activo' : ''}`}
+                    onClick={() => {
+                      setCategoria(cat);
+                      window.scrollTo(0, 0);
+                      cerrarMenu();
+                    }}
+                  >
+                    {t[cat] || cat}
+                  </button>
+                ))}
+              </div>
+
+              <div className="navbar-mobile-idiomas">
+                {['es', 'en', 'fr', 'de'].map((idm) => (
+                  <button 
+                    key={idm}
+                    className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
+                    onClick={() => { setIdioma(idm); cerrarMenu(); }}
+                  >
+                    {idm.toUpperCase()}
+                  </button>
+                ))}
+              </div>
+            </div>
           )}
-        </div>
+        </>
+        
       )}
 
       {/* IDIOMAS INCORPORADOS */}
