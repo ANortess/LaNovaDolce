@@ -453,9 +453,11 @@ html, body {
 
 
 .carta-container.full-view {
-  margin-top: 75px;
-  padding-top: 40px;
+  margin-top: 70px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pizza-grid {
@@ -464,6 +466,16 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 20px; /* Espacio entre cada carta */
+}
+
+.pizza-grid.pizzas {
+  margin: 6% auto;
+}
+
+@media (min-width: 1000px) {
+  .pizza-grid.pizzas {
+    margin: 2% auto;
+  }
 }
 
 .pizza-card {
@@ -728,9 +740,6 @@ iframe {
     margin-bottom: 10%;
   }
 
-  .carta-container.full-view {
-    padding-top: 20px;
-  }
 
   .pizza-grid {
     width: 100%;
@@ -850,6 +859,33 @@ iframe {
     gap: 10px;
   }
 }
+.aviso-cambio-precio {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1%;
+    border-top: 1px solid rgba(225, 173, 1, 0.3); /* Un mostaza sutil */
+    border-bottom: 1px solid rgba(225, 173, 1, 0.3);
+    display: block;
+}
+
+.aviso-cambio-precio p {
+    color: #e1ad01; /* Tu color mostaza */
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Ajuste para móvil para que no coma mucho espacio */
+@media (max-width: 768px) {
+    .aviso-cambio-precio {
+        padding: 1%;
+    }
+    .aviso-cambio-precio p {
+        font-size: 0.8rem;
+    }
+}
 
 @media (max-width: 400px) {
   .alergenos-grid-completo {
@@ -877,4 +913,30 @@ iframe {
   width: 20px; 
   height: 20px;
   object-fit: contain;
+}
+
+.titulo-subcategoria {
+    width: 100%;
+    text-align: center;
+    color: var(--mostaza);
+    font-family: 'TuFuenteDeTitulos', sans-serif;
+    font-size: 1.8rem; /* Tamaño para escritorio */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid rgba(225, 173, 1, 0.2);
+    padding-bottom: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .titulo-subcategoria {
+        font-size: 1.3rem !important;      /* Texto más pequeño */
+        letter-spacing: 1px !important;    /* Menos espacio entre letras */
+        margin-bottom: 5px !important;    /* Menos margen inferior */
+        padding-bottom: 8px !important;    /* Ajuste fino del borde inferior */
+        max-width: 90% !important;         /* Un poco más ancho en móvil para aprovechar espacio */
+    }
 }

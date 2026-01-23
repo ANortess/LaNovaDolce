@@ -44,7 +44,9 @@ export const textosMain = {
         Postres: "POSTRES",
         Bebidas: "BEBIDAS",
         pequeña: "P",
-        grande: "G" 
+        grande: "G",
+        incrementoDelPrecio: "Cualquier cambio en los ingredientes llevará un incremento en el precio.",
+        consultarSalsas: "Le invitamos a descubrir nuestra selección de salsas en el apartado correspondiente."
     },
     en: { 
         inicio: "HOME", 
@@ -91,7 +93,9 @@ export const textosMain = {
         Postres: "DESSERTS",
         Bebidas: "DRINKS",
         pequeña: "S",
-        grande: "L" 
+        grande: "L",
+        incrementoDelPrecio: "Any change in ingredients will lead to a price increase.",
+        consultarSalsas: "We invite you to discover our selection of sauces in the corresponding section."
     },
     fr: { 
         inicio: "ACCUEIL", 
@@ -138,7 +142,9 @@ export const textosMain = {
         Postres: "DESSERTS",
         Bebidas: "BOISSONS",
         pequeña: "P",
-        grande: "G" 
+        grande: "G",
+        incrementoDelPrecio: "Tout changement d'ingrédients entraînera una augmentation du prix.",
+        consultarSalsas: "Nous vous invitons à découvrir notre sélection de sauces dans la section correspondante."
     },
     de: { 
         inicio: "START", 
@@ -185,6 +191,8 @@ export const textosMain = {
         Postres: "DESSERTS",
         Bebidas: "GETRÄNKE",
         pequeña: "K",
-        grande: "G" 
+        grande: "G",
+        incrementoDelPrecio: "Jede Änderung der Zutaten führt zu einer Preiserhöhung.",
+        consultarSalsas: "Wir laden Sie ein, unsere Saucenauswahl im entsprechenden Abschnitt zu entdecken."
     }
 };

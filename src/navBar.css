@@ -140,6 +140,7 @@
     flex-direction: column;
     padding: 25px;
     box-sizing: border-box;
+    overflow-y: auto;
     transition: 0.4s;
 }
 

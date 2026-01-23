@@ -333,59 +333,134 @@ const Home = ({ t, idioma }) => (
 );
 
 const PaginaCarta = ({ t, idioma, categoria }) => {
-  const platosFiltrados = cartaPizzeria.filter(p => p.categoria.toLowerCase() === categoria.toLowerCase());
+  // 1. Filtrado inicial por categoría
+  const platosFiltrados = cartaPizzeria.filter(
+    (p) => p.categoria.toLowerCase() === categoria.toLowerCase()
+  );
+
+  const salsasCalientes = platosFiltrados.filter((p) => p.id >= 600 && p.id < 603);
+  const salsasFrias = platosFiltrados.filter((p) => p.id >= 603);
+
+  const pastaEspecial = platosFiltrados.filter((p) => p.id >= 404);
+  const pastaNormal = platosFiltrados.filter((p) => p.id < 404);
+
+  // 3. Función interna para renderizar cada tarjeta (mantiene tu estructura original)
+  const renderCard = (p) => {
+    const info = textosPlatos[p.id];
+    const nombre = info?.nombre[idioma] || "Nombre no definido";
+    const descripcion = info?.descripcion[idioma] || "";
+
+    return (
+      <div key={p.id} className="pizza-card">
+        <div className="pizza-image-container">
+          <img src={p.url} alt={nombre} className="pizza-img" />
+        </div>
+
+        <div className="pizza-info">
+          <div className="card-header">
+            <h3>{nombre}</h3>
+            <span className="precio">
+              {typeof p.precio === "object"
+                ? `${textosMain[idioma].pequeña}: ${p.precio.pequena} / ${textosMain[idioma].grande}: ${p.precio.grande}`
+                : `${p.precio}€`}
+            </span>
+          </div>
+
+          <p className="descripcion">{descripcion}</p>
+
+          <div className="plato-alergenos">
+            {p.alergenos?.map((alergenoId) => {
+              const infoAlergeno = listaAlergenos.find((a) => a.id === alergenoId);
+              return infoAlergeno ? (
+                <img
+                  key={alergenoId}
+                  src={infoAlergeno.url}
+                  alt={infoAlergeno.nombre[idioma]}
+                  title={infoAlergeno.nombre[idioma]}
+                  className="alergeno-icon-plato"
+                />
+              ) : null;
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <section id="carta" className="carta-container full-view">
-      <div className="pizza-grid">
-        {platosFiltrados.map((p) => {
-          // 2. BUSCAMOS LA TRADUCCIÓN USANDO EL ID
-          const info = textosPlatos[p.id];
-          const nombre = info?.nombre[idioma] || "Nombre no definido";
-          const descripcion = info?.descripcion[idioma] || "";
+      {/* --- AVISOS SUPERIORES --- */}
+      {categoria === "Pizzas" && (
+        <div className="aviso-cambio-precio">
+          <p>{textosMain[idioma].incrementoDelPrecio}</p>
+        </div>
+      )}
+      {categoria === "Ensaladas" && (
+        <div className="aviso-cambio-precio">
+          <p>{textosMain[idioma].incrementoDelPrecio}</p>
+          <p>{textosMain[idioma].consultarSalsas}</p>
+        </div>
+      )}
+      {(categoria === "Entrantes" ||
+        categoria === "Carnes" ||
+        categoria === "Pastas") && (
+        <div className="aviso-cambio-precio">
+          <p>{textosMain[idioma].consultarSalsas}</p>
+        </div>
+      )}
 
-          return (
-            <div key={p.id} className="pizza-card">
-              <div className="pizza-image-container">
-                {/* Usamos la variable 'nombre' que acabamos de crear */}
-                <img src={p.url} alt={nombre} className="pizza-img" />
-              </div>
-              
-              <div className="pizza-info">
-                <div className="card-header">
-                  {/* CAMBIO: Usamos 'nombre' en lugar de p.nombre[idioma] */}
-                  <h3>{nombre}</h3>
-                  <span className="precio">
-                    {typeof p.precio === 'object' 
-                      ? `${textosMain[idioma].pequeña}: ${p.precio.pequena} / ${textosMain[idioma].grande}: ${p.precio.grande}` 
-                      : p.precio}
-                  </span>
-                </div>
-                
-                {/* CAMBIO: Usamos 'descripcion' en lugar de p.descripcion[idioma] */}
-                <p className="descripcion">{descripcion}</p>
+      {/* --- RENDERIZADO CONDICIONAL --- */}
+      
+      {/* CASO A: SALSAS */}
+      {categoria === "Salsas" && (
+        <>
+          <h2 className="titulo-subcategoria">{idioma === "es" ? "Salsas Calientes" : "Warm Sauces"}</h2>
+          <div className="pizza-grid pizzas">{salsasCalientes.map((p) => renderCard(p))}</div>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{idioma === "es" ? "Salsas Frías" : "Cold Sauces"}</h2>
+          <div className="pizza-grid pizzas">{salsasFrias.map((p) => renderCard(p))}</div>
+        </>
+      )}
 
-                <div className="plato-alergenos">
-                  {p.alergenos?.map(alergenoId => {
-                    const infoAlergeno = listaAlergenos.find(a => a.id === alergenoId);
-                    return infoAlergeno ? (
-                      <img 
-                        key={alergenoId}
-                        src={infoAlergeno.url} 
-                        alt={infoAlergeno.nombre[idioma]} 
-                        title={infoAlergeno.nombre[idioma]}
-                        className="alergeno-icon-plato"
-                      />
-                    ) : null;
-                  })}
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      {/* CASO B: PASTAS */}
+      {categoria === "Pastas" && (
+        <>
+          {/* Aquí puedes poner un título para la pasta normal si quieres, o dejarlo vacío */}
+          <div className="pizza-grid pizzas">{pastaNormal.map((p) => renderCard(p))}</div>
+          
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>
+            MACARRONES, ESPAGUETIS O RIGATONI
+          </h2>
+          <div className="pizza-grid pizzas">{pastaEspecial.map((p) => renderCard(p))}</div>
+        </>
+      )}
+      
+      {!["Salsas", "Pastas"].includes(categoria) && (
+        <div className={`pizza-grid ${["Pizzas", "Entrantes", "Carnes", "Ensaladas"].includes(categoria) ? "pizzas" : ""}`}>
+          {platosFiltrados.map((p) => renderCard(p))}
+        </div>
+      )}
 
-      {/* La sección de abajo se queda igual porque usa listaAlergenos directamente */}
+      {/* --- AVISOS INFERIORES --- */}
+      {categoria === "Pizzas" && (
+        <div className="aviso-cambio-precio">
+          <p>{textosMain[idioma].incrementoDelPrecio}</p>
+        </div>
+      )}
+      {categoria === "Ensaladas" && (
+        <div className="aviso-cambio-precio">
+          <p>{textosMain[idioma].incrementoDelPrecio}</p>
+          <p>{textosMain[idioma].consultarSalsas}</p>
+        </div>
+      )}
+      {(categoria === "Entrantes" ||
+        categoria === "Carnes" ||
+        categoria === "Pastas") && (
+        <div className="aviso-cambio-precio">
+          <p>{textosMain[idioma].consultarSalsas}</p>
+        </div>
+      )}
+
+      {/* --- SECCIÓN ALÉRGENOS --- */}
       <div className="seccion-alergenos">
         <h3>{textosAlergenos.titulo[idioma]}</h3>
         <div className="alergenos-grid-completo">

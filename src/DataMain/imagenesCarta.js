@@ -1,4 +1,7 @@
 
+  // IMAGENES DIRECTAMENTE DE LA CARPETA LAS GUARDAMOS EN VARIABLES
+
+  // ENTRANTES
 import ruedaMixta from '../assets/Entrantes/RuedaMixta.jpeg';
 import patatas from '../assets/Entrantes/Fritas.jpeg';
 import patatasGajo from '../assets/Entrantes/Gajo.jpeg';
@@ -11,6 +14,7 @@ import saquitos from '../assets/Entrantes/Saquitos.jpeg';
 import papasBravas from '../assets/Entrantes/PapasBravas.jpeg';
 import entranteBerenjena from '../assets/Entrantes/Croquetas.jpeg';
 
+  // ENSALADAS
 import ensCesar from '../assets/Ensaladas/EnsaladaCesar.jpeg';
 import ensLaNova from '../assets/Ensaladas/EnsaladaLaNovaDolce.jpeg';
 import ensMixta from '../assets/Ensaladas/EnsaladaMixta.jpeg';
@@ -19,6 +23,7 @@ import ensModena from '../assets/Ensaladas/EnsaladaRica.jpeg';
 import ensTropical from '../assets/Ensaladas/EnsaladaRica.jpeg';
 import ensExotica from '../assets/Ensaladas/EnsaladaRica.jpeg';
 
+  // PIZZAS
 import margarita from '../assets/Pizzas/DeJamon.jpeg';
 import jamon from '../assets/Pizzas/DeJamon.jpeg';
 import catalana from '../assets/Pizzas/DeJamon.jpeg';
@@ -48,6 +53,40 @@ import huertana from '../assets/Pizzas/DeJamon.jpeg';
 import marinera from '../assets/Pizzas/DeJamon.jpeg';
 import barbacoa from '../assets/Pizzas/DeJamon.jpeg';
 import pompeya from '../assets/Pizzas/DeJamon.jpeg';
+
+  // PASTAS Y LASAÑAS
+import lasaña from '../assets/Lasañas/Lasaña.jpeg';
+import lasañaEspinacas from '../assets/Lasañas/LasañaEspinacas.jpeg';
+import lasañaBerejenas from '../assets/Lasañas/LasañaBerenjenas.jpeg';
+import canelones from '../assets/Lasañas/Canelones.jpeg';
+import boloñesaPasta from '../assets/Lasañas/Lasaña.jpeg';
+import carbonaraPasta from '../assets/Lasañas/Lasaña.jpeg';
+import alAjoPasta from '../assets/Lasañas/Lasaña.jpeg';
+import blancosPasta from '../assets/Lasañas/Lasaña.jpeg';
+import roquefortPasta from '../assets/Lasañas/Lasaña.jpeg';
+import vesubioPasta from '../assets/Lasañas/Lasaña.jpeg';
+import cuatroQuesosPasta from '../assets/Lasañas/Lasaña.jpeg';
+
+  // CARNES
+import aLaPlancha from '../assets/Lasañas/Lasaña.jpeg';
+import aLaPimienta from '../assets/Lasañas/Lasaña.jpeg';
+import alRoquefort from '../assets/Lasañas/Lasaña.jpeg';
+import aLaCrema from '../assets/Lasañas/Lasaña.jpeg';
+import aLaMilanesa from '../assets/Lasañas/Lasaña.jpeg';
+
+  // SALSAS
+import roquefortCaliente from '../assets/Lasañas/Lasaña.jpeg';
+import cremaCaliente from '../assets/Lasañas/Lasaña.jpeg';
+import pimientaCaliente from '../assets/Lasañas/Lasaña.jpeg';
+import bravaKetchupMayonesa from '../assets/Lasañas/Lasaña.jpeg';
+import cesar from '../assets/Lasañas/Lasaña.jpeg';
+import rosa from '../assets/Lasañas/Lasaña.jpeg';
+import barbacoaSalsa from '../assets/Lasañas/Lasaña.jpeg';
+import roquefortFria from '../assets/Lasañas/Lasaña.jpeg';
+import allili from '../assets/Lasañas/Lasaña.jpeg';
+  // BEBIDAS
+  
+  // VINOS
 
 export const EntrantesImages = {
   ruedaMixta,
@@ -103,4 +142,38 @@ export const PizzasImages = {
   marinera,
   barbacoa,
   pompeya
+}
+
+export const PastaImages = {
+  lasaña,
+  lasañaEspinacas,
+  lasañaBerejenas,
+  canelones,
+  boloñesaPasta,
+  carbonaraPasta,
+  alAjoPasta,
+  blancosPasta,
+  roquefortPasta,
+  vesubioPasta,
+  cuatroQuesosPasta,
+}
+
+export const CarnesImages = {
+  aLaPlancha,
+  aLaPimienta,
+  alRoquefort,
+  aLaCrema,
+  aLaMilanesa
+}
+
+export const SalsasImages = {
+  roquefortCaliente,
+  cremaCaliente,
+  pimientaCaliente,
+  bravaKetchupMayonesa,
+  cesar,
+  rosa,
+  barbacoaSalsa,
+  roquefortFria,
+  allili
 }

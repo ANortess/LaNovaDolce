@@ -1,7 +1,9 @@
 
-import { EntrantesImages, EnsaladasImages, PizzasImages } from './imagenesCarta.js';
+import { EntrantesImages, EnsaladasImages, PizzasImages, PastaImages, CarnesImages, SalsasImages } from './imagenesCarta.js';
 
 export const cartaPizzeria = [
+
+  // #region ENTRANTES
   { 
     id: 100, 
     categoria: "Entrantes",
@@ -79,8 +81,9 @@ export const cartaPizzeria = [
     url: EntrantesImages.entranteBerenjena,
     alergenos: ['huevos', 'gluten']
   },
+  // #endregion
   
-  // --- ENSALADAS (200+) ---
+  // #regionEnsaladas
   { 
     id: 200, 
     categoria: "Ensaladas", 
@@ -130,8 +133,9 @@ export const cartaPizzeria = [
     url: EnsaladasImages.ensCesar,
     alergenos: ['gluten', 'lacteos']
   },
+  // #endregion
 
-  // --- PIZZAS (300+) ---
+  // #region PIZZAS
   { 
     id: 300, 
     categoria: "Pizzas", 
@@ -335,162 +339,251 @@ export const cartaPizzeria = [
     url: PizzasImages.pompeya,
     alergenos: ['gluten', 'lacteos']
   },
+  // #endregion
 
-  // --- PASTAS (400+) ---
+  // #region PASTAS Y LASAÑAS
   { 
     id: 400, 
     categoria: "Pastas", 
     precio: "9,30€",
+    url: PastaImages.lasaña,
     alergenos: ['lacteos']
   },
   { 
     id: 401, 
     categoria: "Pastas", 
     precio: "9,20€",
+    url: PastaImages.lasañaEspinacas,
     alergenos: ['lacteos']
   },
   { 
     id: 402, 
     categoria: "Pastas", 
     precio: "9,40€",
+    url: PastaImages.lasañaBerejenas,
     alergenos: ['lacteos']
   },
   { 
     id: 403, 
     categoria: "Pastas", 
     precio: "9,60€",
+    url: PastaImages.canelones,
     alergenos: ['lacteos']
   },
   { 
     id: 404, 
     categoria: "Pastas", 
     precio: "8,00€",
+    url: PastaImages.lasaña,
     alergenos: []
   },
   { 
     id: 405, 
     categoria: "Pastas", 
     precio: "8,20€",
+    url: PastaImages.lasaña,
     alergenos: ['lacteos']
   },
   { 
     id: 406, 
     categoria: "Pastas", 
     precio: "8,00€",
+    url: PastaImages.lasaña,
     alergenos: []
   },
   { 
     id: 407, 
     categoria: "Pastas", 
     precio: "7,30€",
+    url: PastaImages.lasaña,
     alergenos: []
   },
   { 
     id: 408, 
     categoria: "Pastas", 
     precio: "8,20€",
+    url: PastaImages.lasaña,
     alergenos: ['lacteos']
   },
   { 
     id: 409, 
     categoria: "Pastas", 
     precio: "8,20€",
+    url: PastaImages.lasaña,
     alergenos: []
   },
   { 
     id: 410, 
     categoria: "Pastas", 
     precio: "8,20€",
+    url: PastaImages.lasaña,
     alergenos: ['lacteos']
   },
+  // #endregion
 
-  // --- CARNES (500+) ---
+  // #region CARNES
   { 
     id: 500, 
     categoria: "Carnes", 
-    nombre: "Pollo a la Plancha", 
-    desc_es: "Con guarnición.", 
-    precio: "13,10€" 
+    precio: "13,10",
+    url: CarnesImages.aLaPlancha,
+    alergenos: []
   },
   { 
     id: 501, 
     categoria: "Carnes", 
-    nombre: "Pollo a la Pimienta", 
-    desc_es: "Con salsa pimienta.", 
-    precio: "14,20€" 
+    precio: "14,20",
+    url: CarnesImages.aLaPimienta,
+    alergenos: ["gluten"]
   },
   { 
     id: 502, 
     categoria: "Carnes", 
-    nombre: "Pollo al Roquefort", 
-    desc_es: "Con salsa roquefort.", 
-    precio: "14,30€" 
+    precio: "14,30",
+    url: CarnesImages.alRoquefort,
+    alergenos: ["gluten", "lacteos"]
   },
   { 
     id: 503, 
     categoria: "Carnes", 
-    nombre: "Pollo a la Milanesa", 
-    desc_es: "Empanado crujiente.", 
-    precio: "14,20€" 
+    precio: "14,00",
+    url: CarnesImages.aLaCrema,
+    alergenos: ["gluten", "lacteos"]
   },
+  { 
+    id: 504, 
+    categoria: "Carnes", 
+    precio: "14,20",
+    url: CarnesImages.aLaMilanesa,
+    alergenos: ["huevos", "gluten"]
+  },
+  // #endregion
 
-  // --- POSTRES (600+) ---
+  // #region SALSAS
   { 
     id: 600, 
+    categoria: "Salsas", 
+    precio: "2,90",
+    url: SalsasImages.roquefortCaliente, // Asumiendo que tienes este objeto de imágenes
+    alergenos: ["lacteos"]
+  },
+  { 
+    id: 601, 
+    categoria: "Salsas", 
+    precio: "2,70",
+    url: SalsasImages.cremaCaliente,
+    alergenos: ["lacteos", "gluten"]
+  },
+  { 
+    id: 602, 
+    categoria: "Salsas", 
+    precio: "2,80",
+    url: SalsasImages.pimientaCaliente,
+    alergenos: ["lacteos", "gluten"]
+  },
+  { 
+    id: 603, 
+    categoria: "Salsas", 
+    precio: "0,50",
+    url: SalsasImages.bravaKetchupMayonesa,
+    alergenos: ["huevos"] // Basado en la mayonesa
+  },
+  { 
+    id: 604, 
+    categoria: "Salsas", 
+    precio: "1,20",
+    url: SalsasImages.cesar,
+    alergenos: ["lacteos", "huevos", "pescado"] // Ingredientes típicos César
+  },
+  { 
+    id: 605, 
+    categoria: "Salsas", 
+    precio: "1,30",
+    url: SalsasImages.rosa,
+    alergenos: ["huevos"]
+  },
+  { 
+    id: 606, 
+    categoria: "Salsas", 
+    precio: "1,30",
+    url: SalsasImages.barbacoaSalsa,
+    alergenos: []
+  },
+  { 
+    id: 607, 
+    categoria: "Salsas", 
+    precio: "2,50",
+    url: SalsasImages.roquefortFria,
+    alergenos: ["lacteos"]
+  },
+  { 
+    id: 608, 
+    categoria: "Salsas", 
+    precio: "1,20",
+    url: SalsasImages.allili,
+    alergenos: ["huevos"]
+  },
+  // #endregion
+
+  // #region POSTRES
+  { 
+    id: 700, 
     categoria: "Postres", 
     nombre: "Tarta de Queso", 
     desc_es: "Casera.", 
     precio: "5,00€" 
   },
   { 
-    id: 601, 
+    id: 701, 
     categoria: "Postres", 
     nombre: "Tarta 3 Chocolates", 
     desc_es: "Casera.", 
     precio: "5,00€" 
   },
   { 
-    id: 602, 
+    id: 702, 
     categoria: "Postres", 
     nombre: "Tarta de Lotus", 
     desc_es: "Sabor galleta Lotus.", 
     precio: "5,00€" 
   },
   { 
-    id: 603, 
+    id: 703, 
     categoria: "Postres", 
     nombre: "Brownie", 
     desc_es: "Con chocolate y nueces.", 
     precio: "5,10€" 
   },
+  // #endregion
 
-  // --- BEBIDAS (700+) ---
+  // #region BEBIDAS
   { 
-    id: 700, 
+    id: 800, 
     categoria: "Bebidas", 
     nombre: "Cerveza Mahou (Tercio)", 
     desc_es: "Mahou, Radler o Tostada 0,0.", 
     precio: "2,50€" 
   },
   { 
-    id: 701, 
+    id: 801, 
     categoria: "Bebidas", 
     nombre: "Refrescos (Bote)", 
     desc_es: "Coca-cola, Fanta, Aquarius, Nestea.", 
     precio: "2,30€" 
   },
   { 
-    id: 702, 
+    id: 802, 
     categoria: "Bebidas", 
     nombre: "Sangría (Jarra)", 
     desc_es: "Receta de la casa.", 
     precio: "8,30€" 
   },
   { 
-    id: 703, 
+    id: 803, 
     categoria: "Bebidas", 
     nombre: "Vino de la Casa", 
     desc_es: "Copa de tinto, blanco o rosado.", 
     precio: "1,80€" 
   }
+  // #endregion
 ];

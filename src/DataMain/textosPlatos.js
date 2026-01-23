@@ -1,5 +1,6 @@
 export const textosPlatos = {
-  // --- ENTRANTES (100+) ---
+
+  // #region ENTRANTES
   100: {
     nombre: { es: "Rueda paté y mixta", en: "Mixed Pâté & Cheese Board", fr: "Planche de Pâté et Fromage", de: "Gemischte Pasteten- und Käseplatte" },
     descripcion: { es: "Variedad de patés y quesos", en: "Variety of pâtés and cheeses", fr: "Variété de pâtés et de fromages", de: "Auswahl an Pasteten und Käse" }
@@ -44,8 +45,9 @@ export const textosPlatos = {
     nombre: { es: "Entrante de berenjena", en: "Eggplant Starter", fr: "Entrée d'aubergines", de: "Auberginen-Vorspeise" },
     descripcion: { es: "Tomate, berenjena en tempura, cebolla frita, queso y miel de caña.", en: "Tomato, eggplant tempura, fried onion, cheese and cane honey.", fr: "Tomate, aubergine en tempura, oignon frit, fromage et miel de canne.", de: "Tomate, Auberginen-Tempura, Röstzwiebeln, Käse und Honig." }
   },
+  // #endregion
 
-  // --- ENSALADAS (200+) ---
+  // #region ENSALADAS
   200: {
     nombre: { es: "Ensalada Módena", en: "Modena Salad", fr: "Salade Modène", de: "Modena-Salat" },
     descripcion: { es: "Lechuga, maíz, pasas, queso cabra, módena y miel.", en: "Lettuce, corn, raisins, goat cheese, balsamic and honey.", fr: "Laitue, maïs, raisins, fromage de chèvre, balsamique et miel.", de: "Salat, Mais, Rosinen, Ziegenkäse, Modena-Essig und Honig." }
@@ -74,8 +76,9 @@ export const textosPlatos = {
     nombre: { es: "Ensalada César", en: "Caesar Salad", fr: "Salade César", de: "Caesar Salat" },
     descripcion: { es: "Lechuga, maíz, pollo, picatostes, parmesano, camembert y salsa césar.", en: "Lettuce, corn, chicken, croutons, parmesan, camembert and caesar sauce.", fr: "Laitue, maïs, poulet, croûtons, parmesan, camembert et sauce césar.", de: "Salat, Mais, Hähnchen, Croutons, Parmesan, Camembert und Caesar-Sauce." }
   },
+  // #endregion
 
-  // --- PIZZAS (300+) ---
+  // #region PIZZAS
   300: {
     nombre: { es: "Margarita", en: "Margarita", fr: "Margarita", de: "Margarita" },
     descripcion: { es: "Tomate, orégano y queso.", en: "Tomato, oregano and cheese.", fr: "Tomate, origan et fromage.", de: "Tomate, Oregano und Käse." }
@@ -192,8 +195,9 @@ export const textosPlatos = {
     nombre: { es: "Pompeya", en: "Pompeii", fr: "Pompéi", de: "Pompeji" },
     descripcion: { es: "Tomate, peperoni, salami, cebolla, carne picada y queso.", en: "Tomato, pepperoni, salami, onion, minced meat and cheese.", fr: "Tomate, pepperoni, salami, oignon, viande hachée et fromage.", de: "Tomate, Peperoni, Salami, Zwiebel, Hackfleisch und Käse." }
   },
+  // #endregion
 
-  // --- PASTAS (400+) ---
+  // #region PASTAS Y LASAÑAS
   400: {
     nombre: { es: "Lasaña", en: "Lasagna", fr: "Lasagne", de: "Lasagne" },
     descripcion: { es: "Boloñesa, bechamel y queso.", en: "Bolognese, béchamel and cheese.", fr: "Bolognaise, béchamel et fromage.", de: "Bolognese, Béchamel und Käse." }
@@ -209,45 +213,110 @@ export const textosPlatos = {
   403: {
     nombre: { es: "Canelones", en: "Cannelloni", fr: "Cannellonis", de: "Cannelloni" },
     descripcion: { es: "Carne picada, bechamel y queso.", en: "Minced meat, béchamel and cheese.", fr: "Viande hachée, béchamel et fromage.", de: "Hackfleisch, Béchamel und Käse." }
-  },// --- PASTAS POR SALSAS (404+) ---
+  },
   404: {
     nombre: { es: "Boloñesa", en: "Bolognese", fr: "Bolognaise", de: "Bolognese" },
-    descripcion: { es: "Salsa boloñesa (Espagueti, Macarrones o Rigatoni).", en: "Spaghetti, Macaroni or Rigatoni", fr: "Spaghetti, Macaronis ou Rigatoni", de: "Spaghetti, Makkaroni oder Rigatoni" }
+    descripcion: { es: "Salsa boloñesa casera.", en: "Homemade bolognese sauce.", fr: "Sauce bolognaise maison.", de: "Hausgemachte Bolognese-Sauce." }
   },
   405: {
     nombre: { es: "Carbonara", en: "Carbonara", fr: "Carbonara", de: "Carbonara" },
-    descripcion: { es: "Nata, bacon, pimienta y queso (Espagueti, Macarrones o Rigatoni).", en: "Spaghetti, Macaroni or Rigatoni", fr: "Spaghetti, Macaronis ou Rigatoni", de: "Spaghetti, Makkaroni oder Rigatoni" }
+    descripcion: { es: "Nata, bacon, pimienta y queso.", en: "Cream, bacon, pepper and cheese.", fr: "Crème, bacon, poivre et fromage.", de: "Sahne, Speck, Pfeffer und Käse." }
   },
   406: {
     nombre: { es: "Al Ajo", en: "Garlic & Oil", fr: "À l'Ail", de: "Knoblauch" },
-    descripcion: { es: "Ajo y perejil (Espagueti, Macarrones o Rigatoni).", en: "Spaghetti, Macaroni or Rigatoni", fr: "Spaghetti, Macaronis ou Rigatoni", de: "Spaghetti, Makkaroni oder Rigatoni" }
+    descripcion: { es: "Ajo y perejil con aceite de oliva.", en: "Garlic and parsley with olive oil.", fr: "Ail et persil con huile d'olive.", de: "Knoblauch und Petersilie mit Olivenöl." }
   },
   407: {
     nombre: { es: "Pasta Blanca", en: "Plain Pasta", fr: "Pâtes Nature", de: "Pasta Natur" },
-    descripcion: { es: "(Espagueti, Macarrones o Rigatoni).", en: "Spaghetti, Macaroni or Rigatoni", fr: "Spaghetti, Macaronis ou Rigatoni", de: "Spaghetti, Makkaroni oder Rigatoni" }
+    descripcion: { es: "Pasta al natural.", en: "Plain pasta.", fr: "Pâtes natures.", de: "Pasta pur." }
   },
   408: {
     nombre: { es: "Roquefort", en: "Blue Cheese", fr: "Roquefort", de: "Roquefort" },
-    descripcion: { es: "Nata, queso roquefort y queso (Espagueti, Macarrones o Rigatoni).", en: "Spaghetti, Macaroni or Rigatoni", fr: "Spaghetti, Macaronis ou Rigatoni", de: "Spaghetti, Makkaroni oder Rigatoni" }
+    descripcion: { es: "Nata, queso roquefort y queso fundido.", en: "Cream, roquefort and melted cheese.", fr: "Crème, roquefort et fromage fondu.", de: "Sahne, Roquefort und geschmolzener Käse." }
   },
   409: {
     nombre: { es: "Vesubio", en: "Vesuvio", fr: "Vesubio", de: "Vesuvio" },
-    descripcion: { es: "Salsa boloñesa con guindilla (Espagueti, Macarrones o Rigatoni).", en: "Spaghetti, Macaroni or Rigatoni", fr: "Spaghetti, Macaronis ou Rigatoni", de: "Spaghetti, Makkaroni oder Rigatoni" }
+    descripcion: { es: "Salsa boloñesa picante con guindilla.", en: "Spicy bolognese sauce with chili.", fr: "Sauce bolognaise piquante au piment.", de: "Scharfe Bolognese-Sauce mit Chili." }
   },
   410: {
     nombre: { es: "4 Quesos", en: "4 Cheeses", fr: "4 Fromages", de: "4 Käse" },
-    descripcion: { es: "Parmesano, mozzarella, emmental y roquefort (Espagueti, Macarrones o Rigatoni).", en: "Spaghetti, Macaroni or Rigatoni", fr: "Spaghetti, Macaronis ou Rigatoni", de: "Spaghetti, Makkaroni oder Rigatoni" }
+    descripcion: { es: "Parmesano, mozzarella, emmental y roquefort.", en: "Parmesan, mozzarella, emmental and roquefort.", fr: "Parmesan, mozzarella, emmental et roquefort.", de: "Parmesan, Mozzarella, Emmentaler und Roquefort." }
   },
+  // #endregion
 
-  // --- POSTRES (600+) ---
+  // #region CARNES (POLLO)
+  500: {
+    nombre: { es: "A la plancha", en: "Grilled chicken", fr: "Poulet grillé", de: "Hähnchen vom Grill" },
+    descripcion: { es: "Pechuga de pollo a la plancha con patatas.", en: "Grilled chicken breast with potatoes.", fr: "Blanc de poulet a la planche con frites.", de: "Hähnchenbrust vom Grill mit Kartoffeln." },
+  },
+  501: {
+    nombre: { es: "A la pimienta", en: "Chicken with pepper sauce", fr: "Poulet au poivre", de: "Hähnchen mit Pfeffersauce" },
+    descripcion: { es: "Con nuestra salsa especial a la pimienta y patatas.", en: "With our special pepper sauce and potatoes.", fr: "Avec notre sauce spéciale au poivre et frites.", de: "Mit unserer speziellen Pfeffersauce und Kartoffeln." },
+  },
+  502: {
+    nombre: { es: "Al roquefort", en: "Chicken with blue cheese sauce", fr: "Poulet au roquefort", de: "Hähnchen mit Roquefort" },
+    descripcion: { es: "Con nuestra salsa especial de queso azul y patatas.", en: "With our special blue cheese sauce and potatoes.", fr: "Avec notre sauce spéciale au fromage bleu et frites.", de: "Mit unserer speziellen Blauschimmelkäsesauce und Kartoffeln." },
+  },
+  503: {
+    nombre: { es: "A la crema", en: "Chicken in cream sauce", fr: "Poulet à la crème", de: "Hähnchen in Sahnesauce" },
+    descripcion: { es: "Con nuestra exclusiva salsa crema secreta y patatas.", en: "With our exclusive secret cream sauce and potatoes.", fr: "Avec notre sauce crème exclusive et frites.", de: "Mit unserer exklusiven Sahnesauce und Kartoffeln." },
+  },
+  504: {
+    nombre: { es: "A la milanesa", en: "Chicken Milanese", fr: "Poulet à la milanaise", de: "Hähnchen Mailänder Art" },
+    descripcion: { es: "Pollo empanado crujiente con patatas.", en: "Crispy breaded chicken with potatoes.", fr: "Poulet pané croustillant et frites.", de: "Knusprig paniertes Hähnchen mit Kartoffeln." },
+  },
+  // #endregion
+
+  // #region SALSAS
   600: {
+    nombre: { es: "Roquefort", en: "Roquefort Sauce", fr: "Sauce au Roquefort", de: "Roquefort-Sauce" },
+    descripcion: { es: "Salsa caliente de queso azul con nuestra receta especial.", en: "Warm blue cheese sauce made with our special recipe.", fr: "Sauce chaude au fromage bleu selon notre recette spéciale.", de: "Warme Blauschimmelkäsesauce nach unserem Spezialrezept." },
+  },
+  601: {
+    nombre: { es: "Crema", en: "Cream Sauce", fr: "Sauce à la Crème", de: "Sahnesauce" },
+    descripcion: { es: "Nuestra exclusiva salsa crema de receta secreta (se sirve caliente).", en: "Our exclusive secret recipe cream sauce (served warm).", fr: "Notre sauce crème exclusive, recette secrète (servie chaude).", de: "Unsere exklusive Sahnesauce nach Geheimrezept (warm serviert)." },
+  },
+  602: {
+    nombre: { es: "Pimienta", en: "Pepper Sauce", fr: "Sauce au Poivre", de: "Pfeffersauce" },
+    descripcion: { es: "Salsa caliente elaborada con pimienta negra seleccionada.", en: "Warm sauce made with selected black peppercorns.", fr: "Sauce chaude élaborée à partir de poivre noir sélectionné.", de: "Warme Sauce aus ausgewähltem schwarzem Pfeffer."},
+  },
+  603: {
+    nombre: { es: "Brava, Ketchup y mayonesa", en: "Brava, Ketchup and mayonnaise", fr: "Brava, Ketchup et mayonnaise", de: "Brava, Ketchup und Mayonnaise" },
+    descripcion: { es: "Selección de salsas clásicas frías.", en: "Selection of classic cold sauces.", fr: "Sélection de sauces froides classiques.", de: "Auswahl an klassischen kalten Saucen." }
+  },
+  604: {
+    nombre: { es: "César", en: "Caesar", fr: "César", de: "César" },
+    descripcion: { es: "Salsa fría ideal para ensaladas y carnes.", en: "Cold sauce ideal for salads and meats.", fr: "Sauce froide idéale pour les salades et les viandes.", de: "Kalte Sauce, ideal für Salate und Fleisch." }
+  },
+  605: {
+    nombre: { es: "Rosa", en: "Pink Sauce", fr: "Sauce Rose", de: "Cocktailsauce" },
+    descripcion: { es: "Salsa fría suave y cremosa.", en: "Smooth and creamy cold sauce.", fr: "Sauce froide douce et crémeuse.", de: "Milde und cremige kalte Sauce." }
+  },
+  606: {
+    nombre: { es: "Barbacoa", en: "Barbecue", fr: "Barbecue", de: "Barbecue" },
+    descripcion: { es: "Salsa fría con toque ahumado.", en: "Cold sauce with a smoky touch.", fr: "Sauce froide avec una touche fumée.", de: "Kalte Sauce mit rauchiger Note." }
+  },
+  607: {
+    nombre: { es: "Roquefort", en: "Roquefort", fr: "Roquefort", de: "Roquefort" },
+    descripcion: { es: "Nuestra variante de salsa de queso azul servida fría.", en: "Our blue cheese sauce variant served cold.", fr: "Notre variante de sauce au fromage bleu servie froide.", de: "Unsere Blauschimmelkäsesauce, kalt serviert." }
+  },
+  608: {
+    nombre: { es: "Allioli", en: "Garlic oil (Allioli)", fr: "Ailloli", de: "Allioli" },
+    descripcion: { es: "Salsa fría tradicional de ajo y aceite.", en: "Traditional garlic and oil cold sauce.", fr: "Sauce froide traditionnelle à l'ail et à l'huile.", de: "Traditionelle kalte Knoblauch-Öl-Sauce." }
+  },
+  // #endregion
+
+  // #region POSTRES
+  700: {
     nombre: { es: "Tarta de Queso", en: "Cheesecake", fr: "Gâteau au fromage", de: "Käsekuchen" },
     descripcion: { es: "Casera.", en: "Homemade.", fr: "Fait maison.", de: "Hausgemacht." }
   },
+  // #endregion
   
-  // --- BEBIDAS (700+) ---
-  700: {
+  // #region BEBIDAS
+  800: {
     nombre: { es: "Cerveza Mahou (Tercio)", en: "Mahou Beer (33cl)", fr: "Bière Mahou (33cl)", de: "Mahou Bier (33cl)" },
     descripcion: { es: "Mahou, Radler o Tostada 0,0.", en: "Classic, Radler or Alcohol-free.", fr: "Classique, Radler ou Sans alcool.", de: "Klassisch, Radler oder Alkoholfrei." }
   }
+  // #endregion
 };
