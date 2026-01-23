@@ -177,7 +177,7 @@ export const textosPlatos = {
   },
   324: {
     nombre: { es: "Calzone", en: "Calzone", fr: "Calzone", de: "Calzone" },
-    descripcion: { es: "Salsa boloñesa, cebolla, pimiento, atún, jamón york, huevo duro y queso.", en: "Bolognese sauce, onion, pepper, tuna, ham, boiled egg and cheese.", fr: "Sauce bolognaise, oignon, poivron, thon, jambon, œuf dur et fromage.", de: "Bolognese-Sauce, Zwiebel, Paprika, Thunfisch, Schinken, hartgekochtes Ei und Käse." }
+    descripcion: { es: "¡Sorpresa!", en: "Surprise!", fr: "Surprise !", de: "Überraschung!" }
   },
   325: {
     nombre: { es: "Huertana", en: "Garden Pizza", fr: "Potagère", de: "Garten-Pizza" },
@@ -246,24 +246,24 @@ export const textosPlatos = {
 
   // #region CARNES (POLLO)
   500: {
-    nombre: { es: "A la plancha", en: "Grilled chicken", fr: "Poulet grillé", de: "Hähnchen vom Grill" },
-    descripcion: { es: "Pechuga de pollo a la plancha con patatas.", en: "Grilled chicken breast with potatoes.", fr: "Blanc de poulet a la planche con frites.", de: "Hähnchenbrust vom Grill mit Kartoffeln." },
+    nombre: { es: "Pollo a la plancha", en: "Grilled chicken breast", fr: "Poulet grillé", de: "Gegrilltes Hähnchen" },
+    descripcion: { es: "Pechuga de pollo a la plancha con patatas.", en: "Grilled chicken breast with potatoes.", fr: "Blanc de poulet à la plancha avec frites.", de: "Hähnchenbrust vom Grill mit Kartoffeln." }
   },
   501: {
-    nombre: { es: "A la pimienta", en: "Chicken with pepper sauce", fr: "Poulet au poivre", de: "Hähnchen mit Pfeffersauce" },
-    descripcion: { es: "Con nuestra salsa especial a la pimienta y patatas.", en: "With our special pepper sauce and potatoes.", fr: "Avec notre sauce spéciale au poivre et frites.", de: "Mit unserer speziellen Pfeffersauce und Kartoffeln." },
+    nombre: { es: "Pollo a la pimienta", en: "Chicken with pepper sauce", fr: "Poulet au poivre", de: "Hähnchen mit Pfeffersauce" },
+    descripcion: { es: "Con nuestra salsa especial a la pimienta y patatas.", en: "With our special pepper sauce and potatoes.", fr: "Avec notre sauce spéciale au poivre et frites.", de: "Mit unserer speziellen Pfeffersauce und Kartoffeln." }
   },
   502: {
-    nombre: { es: "Al roquefort", en: "Chicken with blue cheese sauce", fr: "Poulet au roquefort", de: "Hähnchen mit Roquefort" },
-    descripcion: { es: "Con nuestra salsa especial de queso azul y patatas.", en: "With our special blue cheese sauce and potatoes.", fr: "Avec notre sauce spéciale au fromage bleu et frites.", de: "Mit unserer speziellen Blauschimmelkäsesauce und Kartoffeln." },
+    nombre: { es: "Pollo al roquefort", en: "Chicken with roquefort sauce", fr: "Poulet au roquefort", de: "Hähnchen mit Roquefort-Sauce" },
+    descripcion: { es: "Con nuestra salsa especial de queso azul y patatas.", en: "With our special blue cheese sauce and potatoes.", fr: "Avec notre sauce spéciale au fromage bleu et frites.", de: "Mit unserer speziellen Blauschimmelkäsesauce und Kartoffeln." }
   },
   503: {
-    nombre: { es: "A la crema", en: "Chicken in cream sauce", fr: "Poulet à la crème", de: "Hähnchen in Sahnesauce" },
-    descripcion: { es: "Con nuestra exclusiva salsa crema secreta y patatas.", en: "With our exclusive secret cream sauce and potatoes.", fr: "Avec notre sauce crème exclusive et frites.", de: "Mit unserer exklusiven Sahnesauce und Kartoffeln." },
+    nombre: { es: "Pollo a la crema", en: "Chicken in cream sauce", fr: "Poulet à la crème", de: "Hähnchen in Sahnesauce" },
+    descripcion: { es: "Con nuestra exclusiva salsa crema secreta y patatas.", en: "With our exclusive secret cream sauce and potatoes.", fr: "Avec notre sauce crème exclusive et frites.", de: "Mit unserer exklusiven Sahnesauce und Kartoffeln." }
   },
   504: {
-    nombre: { es: "A la milanesa", en: "Chicken Milanese", fr: "Poulet à la milanaise", de: "Hähnchen Mailänder Art" },
-    descripcion: { es: "Pollo empanado crujiente con patatas.", en: "Crispy breaded chicken with potatoes.", fr: "Poulet pané croustillant et frites.", de: "Knusprig paniertes Hähnchen mit Kartoffeln." },
+    nombre: { es: "Pollo a la milanesa", en: "Chicken Milanese", fr: "Poulet à la milanaise", de: "Hähnchen Mailänder Art" },
+    descripcion: { es: "Pollo empanado crujiente con patatas.", en: "Crispy breaded chicken with potatoes.", fr: "Poulet pané croustillant et frites.", de: "Knusprig paniertes Hähnchen mit Kartoffeln." }
   },
   // #endregion
 
@@ -307,9 +307,53 @@ export const textosPlatos = {
   // #endregion
 
   // #region POSTRES
-  700: {
-    nombre: { es: "Tarta de Queso", en: "Cheesecake", fr: "Gâteau au fromage", de: "Käsekuchen" },
-    descripcion: { es: "Casera.", en: "Homemade.", fr: "Fait maison.", de: "Hausgemacht." }
+  700: { 
+    nombre: { es: "Tarta de Queso", en: "Cheesecake", fr: "Gâteau au fromage", de: "Käsekuchen" }, 
+    descripcion: { es: "Tarta de queso cremosa casera.", en: "Homemade creamy cheesecake.", fr: "Gâteau au fromage crémeux maison.", de: "Hausgemachter cremiger Käsekuchen." } 
+  },
+  701: { 
+    nombre: { es: "Tarta 3 Chocolates", en: "Three Chocolate Cake", fr: "Gâteau aux trois chocolats", de: "Drei-Schokoladen-Torte" }, 
+    descripcion: { es: "Deliciosa combinación de tres tipos de chocolate.", en: "Delicious combination of three types of chocolate.", fr: "Délicieuse combinaison de trois types de chocolat.", de: "Köstliche Kombination aus drei Schokoladensorten." } 
+  },
+  702: { 
+    nombre: { es: "Tarta de Lotus", en: "Lotus Cake", fr: "Gâteau Lotus", de: "Lotus-Torte" }, 
+    descripcion: { es: "Tarta elaborada con las famosas galletas Lotus.", en: "Cake made with the famous Lotus biscuits.", fr: "Gâteau réalisé avec les célèbres biscuits Lotus.", de: "Torte aus den berühmten Lotus-Keksen." } 
+  },
+  703: { 
+    nombre: { es: "Tarta de Oreo", en: "Oreo Cake", fr: "Gâteau Oreo", de: "Oreo-Torte" }, 
+    descripcion: { es: "Tarta fría con base y trozos de galleta Oreo.", en: "Cold cake with Oreo biscuit base and pieces.", fr: "Gâteau froid avec base et morceaux de biscuits Oreo.", de: "Eistorte mit Oreo-Keksboden und -stücken." } 
+  },
+  704: { 
+    nombre: { es: "Natillas", en: "Custard", fr: "Crème dessert", de: "Pudding" }, 
+    descripcion: { es: "Natillas caseras con un toque de canela.", en: "Homemade custard with a touch of cinnamon.", fr: "Crème dessert maison avec une touche de cannelle.", de: "Hausgemachter Pudding mit einer Note Zimt." } 
+  },
+  705: { 
+    nombre: { es: "Brownie", en: "Brownie", fr: "Brownie", de: "Brownie" }, 
+    descripcion: { es: "Bizcocho de chocolate intenso con nueces.", en: "Intense chocolate sponge cake with walnuts.", fr: "Gâteau au chocolat intense aux noix.", de: "Intensiver Schokoladenkuchen mit Walnüssen." } 
+  },
+  706: { 
+    nombre: { es: "Flan de Turrón", en: "Nougat Flan", fr: "Flan au touron", de: "Nougat-Flan" }, 
+    descripcion: { es: "Flan suave con el sabor tradicional del turrón.", en: "Smooth flan with traditional nougat flavor.", fr: "Flan onctueux au goût traditionnel de touron.", de: "Zarter Flan mit traditionellem Nougat-Geschmack." } 
+  },
+  707: { 
+    nombre: { es: "Crep de Azúcar", en: "Sugar Crepe", fr: "Crêpe au sucre", de: "Zuckercrepe" }, 
+    descripcion: { es: "Crep dulce con azúcar.", en: "Sweet crepe with sugar.", fr: "Crêpe sucrée au sucre.", de: "Süßer Crepe mit Zucker." } 
+  },
+  708: { 
+    nombre: { es: "Crep de Lotus", en: "Lotus Crepe", fr: "Crêpe Lotus", de: "Lotus-Crepe" }, 
+    descripcion: { es: "Crep relleno de crema de galleta Lotus.", en: "Crepe filled with Lotus biscuit cream.", fr: "Crêpe fourrée à la crème de biscuits Lotus.", de: "Crepe gefüllt mit Lotus-Kekscreme." } 
+  },
+  709: { 
+    nombre: { es: "Crep de Chocolate", en: "Chocolate Crepe", fr: "Crêpe au chocolat", de: "Schokoladencrepe" }, 
+    descripcion: { es: "Crep relleno de chocolate fundido.", en: "Crepe filled with melted chocolate.", fr: "Crêpe fourrée au chocolat fondu.", de: "Crepe gefüllt mit geschmolzener Schokolade." } 
+  },
+  710: { 
+    nombre: { es: "Crep de Kinder", en: "Kinder Crepe", fr: "Crêpe Kinder", de: "Kinder-Crepe" }, 
+    descripcion: { es: "Crep con el inconfundible sabor de Kinder.", en: "Crepe with the unmistakable Kinder flavor.", fr: "Crêpe au goût incomparable de Kinder.", de: "Crepe mit dem unverwechselbaren Kinder-Geschmack." } 
+  },
+  711: { 
+    nombre: { es: "Pizza", en: "Pizza", fr: "Pizza", de: "Pizza" }, 
+    descripcion: { es: "Chocolate, Kinder o Lotus.", en: "Chocolate, Kinder or Lotus.", fr: "Chocolat, Kinder ou Lotus.", de: "Schokolade, Kinder oder Lotus." } 
   },
   // #endregion
   

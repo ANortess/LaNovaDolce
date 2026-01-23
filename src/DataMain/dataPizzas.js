@@ -1,5 +1,5 @@
 
-import { EntrantesImages, EnsaladasImages, PizzasImages, PastaImages, CarnesImages, SalsasImages } from './imagenesCarta.js';
+import { EntrantesImages, EnsaladasImages, PizzasImages, PastaImages, CarnesImages, SalsasImages, PostresImages } from './imagenesCarta.js';
 
 export const cartaPizzeria = [
 
@@ -529,30 +529,86 @@ export const cartaPizzeria = [
   { 
     id: 700, 
     categoria: "Postres", 
-    nombre: "Tarta de Queso", 
-    desc_es: "Casera.", 
-    precio: "5,00" 
+    precio: "5,00", 
+    url: PostresImages.tartaQueso, 
+    alergenos: ["gluten", "lacteos"] 
   },
   { 
     id: 701, 
     categoria: "Postres", 
-    nombre: "Tarta 3 Chocolates", 
-    desc_es: "Casera.", 
-    precio: "5,00" 
+    precio: "5,00", 
+    url: PostresImages.tarta3Chocolates, 
+    alergenos: ["gluten", "lacteos"] 
   },
   { 
     id: 702, 
     categoria: "Postres", 
-    nombre: "Tarta de Lotus", 
-    desc_es: "Sabor galleta Lotus.", 
-    precio: "5,00" 
+    precio: "5,00", 
+    url: PostresImages.tartaLotus, 
+    alergenos: ["huevos", "gluten", "lacteos"] 
   },
   { 
     id: 703, 
     categoria: "Postres", 
-    nombre: "Brownie", 
-    desc_es: "Con chocolate y nueces.", 
-    precio: "5,10" 
+    precio: "5,00", 
+    url: PostresImages.tartaOreo, 
+    alergenos: ["frutos_cascara", "gluten", "lacteos"] 
+  },
+  { 
+    id: 704, 
+    categoria: "Postres", 
+    precio: "4,00", 
+    url: PostresImages.natillas, 
+    alergenos: ["gluten", "lacteos"] 
+  },
+  { 
+    id: 705, 
+    categoria: "Postres", 
+    precio: "5,10", 
+    url: PostresImages.brownie, 
+    alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
+  },
+  { 
+    id: 706, 
+    categoria: "Postres", 
+    precio: "5,00", 
+    url: PostresImages.flanTurron, 
+    alergenos: ["frutos_cascara", "gluten", "lacteos"] 
+  },
+  { 
+    id: 707, 
+    categoria: "Postres", 
+    precio: "3,50", 
+    url: PostresImages.crepAzucar, 
+    alergenos: ["huevos", "gluten", "lacteos"] 
+  },
+  { 
+    id: 708, 
+    categoria: "Postres", 
+    precio: "4,00", 
+    url: PostresImages.crepLotus, 
+    alergenos: ["huevos", "gluten", "lacteos"] 
+  },
+  { 
+    id: 709, 
+    categoria: "Postres", 
+    precio: "3,80", 
+    url: PostresImages.crepChocolate, 
+    alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
+  },
+  { 
+    id: 710, 
+    categoria: "Postres", 
+    precio: "4,00", 
+    url: PostresImages.crepKinder, 
+    alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
+  },
+  { 
+    id: 711, 
+    categoria: "Postres", 
+    precio: "5,00", 
+    url: PostresImages.pizzaDulce, 
+    alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
   },
   // #endregion
 

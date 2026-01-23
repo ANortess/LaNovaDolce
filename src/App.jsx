@@ -344,6 +344,10 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
   const pastaEspecial = platosFiltrados.filter((p) => p.id >= 404);
   const pastaNormal = platosFiltrados.filter((p) => p.id < 404);
 
+  const postresCaseros = platosFiltrados.filter((p) => p.id <= 706);
+  const postresCreps = platosFiltrados.filter((p) => p.id > 706 && p.id < 711);
+  const postresPizzas = platosFiltrados.filter((p) => p.id === 711);
+
   // 3. Función interna para renderizar cada tarjeta (mantiene tu estructura original)
   const renderCard = (p) => {
     const info = textosPlatos[p.id];
@@ -408,6 +412,11 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
           <p>{textosMain[idioma].consultarSalsas}</p>
         </div>
       )}
+      {categoria === "Postres" && (
+        <div className="aviso-cambio-precio">
+          <p>{textosMain[idioma].postresCaseros}</p>
+        </div>
+      )}
 
       {/* --- RENDERIZADO CONDICIONAL --- */}
       
@@ -424,17 +433,24 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       {/* CASO B: PASTAS */}
       {categoria === "Pastas" && (
         <>
-          {/* Aquí puedes poner un título para la pasta normal si quieres, o dejarlo vacío */}
           <div className="pizza-grid pizzas">{pastaNormal.map((p) => renderCard(p))}</div>
-          
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>
-            MACARRONES, ESPAGUETIS O RIGATONI
-          </h2>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>MACARRONES, ESPAGUETIS O RIGATONI</h2>
           <div className="pizza-grid pizzas">{pastaEspecial.map((p) => renderCard(p))}</div>
         </>
       )}
+
+      {/* CASO C: POSTRES */}
+      {categoria === "Postres" && (
+        <>
+          <div className="pizza-grid pizzas">{postresCaseros.map((p) => renderCard(p))}</div>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>CREPS</h2>
+          <div className="pizza-grid pizzas">{postresCreps.map((p) => renderCard(p))}</div>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>PIZZAS</h2>
+          <div className="pizza-grid pizzas">{postresPizzas.map((p) => renderCard(p))}</div>
+        </>
+      )}
       
-      {!["Salsas", "Pastas"].includes(categoria) && (
+      {!["Salsas", "Pastas", "Postres"].includes(categoria) && (
         <div className={`pizza-grid ${["Pizzas", "Entrantes", "Carnes", "Ensaladas"].includes(categoria) ? "pizzas" : ""}`}>
           {platosFiltrados.map((p) => renderCard(p))}
         </div>

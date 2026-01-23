@@ -84,6 +84,23 @@ import rosa from '../assets/Lasañas/Lasaña.jpeg';
 import barbacoaSalsa from '../assets/Lasañas/Lasaña.jpeg';
 import roquefortFria from '../assets/Lasañas/Lasaña.jpeg';
 import allili from '../assets/Lasañas/Lasaña.jpeg';
+  
+  // Postres
+import tartaQueso from '../assets/Lasañas/Lasaña.jpeg';
+import tarta3Chocolates from '../assets/Lasañas/Lasaña.jpeg';
+import tartaLotus from '../assets/Lasañas/Lasaña.jpeg';
+import tartaOreo from '../assets/Lasañas/Lasaña.jpeg';
+import natillas from '../assets/Lasañas/Lasaña.jpeg';
+import brownie from '../assets/Lasañas/Lasaña.jpeg';
+import flanTurron from '../assets/Lasañas/Lasaña.jpeg';
+
+import crepAzucar from '../assets/Lasañas/Lasaña.jpeg';
+import crepLotus from '../assets/Lasañas/Lasaña.jpeg';
+import crepChocolate from '../assets/Lasañas/Lasaña.jpeg';
+import crepKinder from '../assets/Lasañas/Lasaña.jpeg';
+
+import pizzaDulce from '../assets/Lasañas/Lasaña.jpeg';
+
   // BEBIDAS
   
   // VINOS
@@ -176,4 +193,19 @@ export const SalsasImages = {
   barbacoaSalsa,
   roquefortFria,
   allili
+}
+
+export const PostresImages = {
+  tartaQueso,
+  tarta3Chocolates,
+  tartaLotus,
+  tartaOreo,
+  natillas,
+  brownie,
+  flanTurron,
+  crepAzucar,
+  crepLotus,
+  crepChocolate,
+  crepKinder,
+  pizzaDulce
 }

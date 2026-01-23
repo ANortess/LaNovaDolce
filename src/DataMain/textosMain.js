@@ -46,7 +46,10 @@ export const textosMain = {
         pequeña: "P",
         grande: "G",
         incrementoDelPrecio: "Cualquier cambio en los ingredientes llevará un incremento en el precio.",
-        consultarSalsas: "Le invitamos a descubrir nuestra selección de salsas en el apartado correspondiente."
+        consultarSalsas: "Le invitamos a descubrir nuestra selección de salsas en el apartado correspondiente.",
+
+
+        postresCaseros: "¡Disfruta de todos nuestros postres caseros!"
     },
     en: { 
         inicio: "HOME", 
