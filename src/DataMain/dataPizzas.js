@@ -1,5 +1,5 @@
 
-import { EntrantesImages, EnsaladasImages, PizzasImages, PastaImages, CarnesImages, SalsasImages, PostresImages } from './imagenesCarta.js';
+import { EntrantesImages, EnsaladasImages, PizzasImages, PastaImages, CarnesImages, SalsasImages, PostresImages, BebidasImages } from './imagenesCarta.js';
 
 export const cartaPizzeria = [
 
@@ -585,26 +585,19 @@ export const cartaPizzeria = [
   { 
     id: 708, 
     categoria: "Postres", 
-    precio: "4,00", 
-    url: PostresImages.crepLotus, 
-    alergenos: ["huevos", "gluten", "lacteos"] 
-  },
-  { 
-    id: 709, 
-    categoria: "Postres", 
     precio: "3,80", 
     url: PostresImages.crepChocolate, 
     alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
   },
   { 
-    id: 710, 
+    id: 709, 
     categoria: "Postres", 
     precio: "4,00", 
     url: PostresImages.crepKinder, 
     alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
   },
   { 
-    id: 711, 
+    id: 710, 
     categoria: "Postres", 
     precio: "5,00", 
     url: PostresImages.pizzaDulce, 
@@ -616,30 +609,100 @@ export const cartaPizzeria = [
   { 
     id: 800, 
     categoria: "Bebidas", 
-    nombre: "Cerveza Mahou (Tercio)", 
-    desc_es: "Mahou, Radler o Tostada 0,0.", 
-    precio: "2,50" 
+    precio: "1,80", 
+    url: BebidasImages.agua, 
+    alergenos: [] 
   },
   { 
     id: 801, 
     categoria: "Bebidas", 
-    nombre: "Refrescos (Bote)", 
-    desc_es: "Coca-cola, Fanta, Aquarius, Nestea.", 
-    precio: "2,30" 
+    precio: "1,50", 
+    url: BebidasImages.zumos, 
+    alergenos: [] 
   },
   { 
     id: 802, 
     categoria: "Bebidas", 
-    nombre: "Sangría (Jarra)", 
-    desc_es: "Receta de la casa.", 
-    precio: "8,30" 
+    precio: "2,30", 
+    url: BebidasImages.refrescos, 
+    alergenos: [] 
   },
   { 
     id: 803, 
     categoria: "Bebidas", 
-    nombre: "Vino de la Casa", 
-    desc_es: "Copa de tinto, blanco o rosado.", 
-    precio: "1,80" 
-  }
+    precio: "2,50", 
+    url: BebidasImages.mahouTercio, 
+    alergenos: ["gluten"] 
+  },
+  { 
+    id: 804, 
+    categoria: "Bebidas", 
+    precio: "2,90", 
+    url: BebidasImages.alhambra1925, 
+    alergenos: ["gluten"] 
+  },
+  { 
+    id: 805, 
+    categoria: "Bebidas", 
+    precio: "1,80", 
+    url: BebidasImages.mahouQuinto, 
+    alergenos: ["gluten"] 
+  },
+  { 
+    id: 806, 
+    categoria: "Bebidas", 
+    precio: "2,90", 
+    url: BebidasImages.heineken, 
+    alergenos: ["gluten"] 
+  },
+  { 
+    id: 807, 
+    categoria: "Bebidas", 
+    precio: "2,60", 
+    url: BebidasImages.sangriaCana, 
+    alergenos: [] 
+  },
+  { 
+    id: 808, 
+    categoria: "Bebidas", 
+    precio: "4,80", 
+    url: BebidasImages.sangriaMedia, 
+    alergenos: [] 
+  },
+  { 
+    id: 809, 
+    categoria: "Bebidas", 
+    precio: "8,30", 
+    url: BebidasImages.sangriaJarra, 
+    alergenos: [] 
+  },
+  { 
+    id: 810, 
+    categoria: "Bebidas", 
+    precio: "2,30", 
+    url: BebidasImages.tintoCana, 
+    alergenos: [] 
+  },
+  { 
+    id: 811, 
+    categoria: "Bebidas", 
+    precio: "4,20", 
+    url: BebidasImages.tintoMedia, 
+    alergenos: [] 
+  },
+  { 
+    id: 812, 
+    categoria: "Bebidas", 
+    precio: "7,90", 
+    url: BebidasImages.tintoJarra, 
+    alergenos: [] 
+  },
+  { 
+    id: 813, 
+    categoria: "Bebidas", 
+    precio: "2,80", 
+    url: BebidasImages.botesCerveza, 
+    alergenos: ["gluten"] 
+  },
   // #endregion
 ];

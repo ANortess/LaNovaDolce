@@ -340,27 +340,75 @@ export const textosPlatos = {
     descripcion: { es: "Crep dulce con azúcar.", en: "Sweet crepe with sugar.", fr: "Crêpe sucrée au sucre.", de: "Süßer Crepe mit Zucker." } 
   },
   708: { 
-    nombre: { es: "Crep de Lotus", en: "Lotus Crepe", fr: "Crêpe Lotus", de: "Lotus-Crepe" }, 
-    descripcion: { es: "Crep relleno de crema de galleta Lotus.", en: "Crepe filled with Lotus biscuit cream.", fr: "Crêpe fourrée à la crème de biscuits Lotus.", de: "Crepe gefüllt mit Lotus-Kekscreme." } 
-  },
-  709: { 
     nombre: { es: "Crep de Chocolate", en: "Chocolate Crepe", fr: "Crêpe au chocolat", de: "Schokoladencrepe" }, 
     descripcion: { es: "Crep relleno de chocolate fundido.", en: "Crepe filled with melted chocolate.", fr: "Crêpe fourrée au chocolat fondu.", de: "Crepe gefüllt mit geschmolzener Schokolade." } 
   },
-  710: { 
+  709: { 
     nombre: { es: "Crep de Kinder", en: "Kinder Crepe", fr: "Crêpe Kinder", de: "Kinder-Crepe" }, 
     descripcion: { es: "Crep con el inconfundible sabor de Kinder.", en: "Crepe with the unmistakable Kinder flavor.", fr: "Crêpe au goût incomparable de Kinder.", de: "Crepe mit dem unverwechselbaren Kinder-Geschmack." } 
   },
-  711: { 
+  710: { 
     nombre: { es: "Pizza", en: "Pizza", fr: "Pizza", de: "Pizza" }, 
-    descripcion: { es: "Chocolate, Kinder o Lotus.", en: "Chocolate, Kinder or Lotus.", fr: "Chocolat, Kinder ou Lotus.", de: "Schokolade, Kinder oder Lotus." } 
+    descripcion: { es: "Chocolate o Kinder.", en: "Chocolate or Kinder.", fr: "Chocolat ou Kinder.", de: "Schokolade oder Kinder." } 
   },
   // #endregion
   
   // #region BEBIDAS
-  800: {
-    nombre: { es: "Cerveza Mahou (Tercio)", en: "Mahou Beer (33cl)", fr: "Bière Mahou (33cl)", de: "Mahou Bier (33cl)" },
-    descripcion: { es: "Mahou, Radler o Tostada 0,0.", en: "Classic, Radler or Alcohol-free.", fr: "Classique, Radler ou Sans alcool.", de: "Klassisch, Radler oder Alkoholfrei." }
-  }
+  800: { 
+    nombre: { es: "Agua y Básicos", en: "Water & Basics", fr: "Eau et Basiques", de: "Wasser & Basics" }, 
+    descripcion: { es: "Agua, Agua con gas, Tónica, Casera o Bitter.", en: "Water, Sparkling water, Tonic, Casera or Bitter.", fr: "Eau, Eau pétillante, Tonic, Casera ou Bitter.", de: "Wasser, Sprudelwasser, Tonic, Casera oder Bitter." } 
+  },
+  801: { 
+    nombre: { es: "Zumos", en: "Juices", fr: "Jus", de: "Säfte" }, 
+    descripcion: { es: "Piña o Melocotón.", en: "Pineapple or Peach.", fr: "Ananas ou Pêche.", de: "Ananas oder Pfirsich." } 
+  },
+  802: { 
+    nombre: { es: "Refrescos (Botes)", en: "Soft Drinks (Cans)", fr: "Boissons gazeuses (Canettes)", de: "Erfrischungsgetränke (Dosen)" }, 
+    descripcion: { es: "Coca-cola, Fanta, Aquarius o Nestea.", en: "Coca-cola, Fanta, Aquarius or Nestea.", fr: "Coca-cola, Fanta, Aquarius ou Nestea.", de: "Coca-cola, Fanta, Aquarius oder Nestea." } 
+  },
+  803: { 
+    nombre: { es: "Mahou, Radler y Tostada 0,0 Tercio", en: "Mahou, Radler and Toasted 0.0 (33cl)", fr: "Mahou, Radler et Toastée 0.0 (33cl)", de: "Mahou, Radler und Tostada 0.0 (33cl)" }, 
+    descripcion: { es: "Cerveza en formato tercio.", en: "Bottled beer (33cl).", fr: "Bière en bouteille (33cl).", de: "Flaschenbier (33cl)." } 
+  },
+  804: { 
+    nombre: { es: "Alhambra 1925 (Tercio)", en: "Alhambra 1925 (33cl)", fr: "Alhambra 1925 (33cl)", de: "Alhambra 1925 (33cl)" }, 
+    descripcion: { es: "Cerveza reserva en formato tercio.", en: "Premium beer (33cl).", fr: "Bière de réserve (33cl).", de: "Premium-Bier (33cl)." } 
+  },
+  805: { 
+    nombre: { es: "Mahou Clásica (Quinto)", en: "Mahou Classic (20cl)", fr: "Mahou Classique (20cl)", de: "Mahou Klassik (20cl)" }, 
+    descripcion: { es: "Cerveza clásica en formato pequeño.", en: "Small bottled beer (20cl).", fr: "Petite bière en bouteille (20cl).", de: "Kleines Flaschenbier (20cl)." } 
+  },
+  806: { 
+    nombre: { es: "Heineken (Tercio)", en: "Heineken (33cl)", fr: "Heineken (33cl)", de: "Heineken (33cl)" }, 
+    descripcion: { es: "Cerveza internacional en formato tercio.", en: "International beer (33cl).", fr: "Bière internationale (33cl).", de: "Internationales Bier (33cl)." } 
+  },
+  807: { 
+    nombre: { es: "Sangría Caña", en: "Sangria (Glass)", fr: "Sangria (Verre)", de: "Sangria (Glas)" }, 
+    descripcion: { es: "Copa de sangría artesana.", en: "Glass of homemade sangria.", fr: "Verre de sangria artisanale.", de: "Glas hausgemachte Sangria." } 
+  },
+  808: { 
+    nombre: { es: "Sangría 1/2 Jarra", en: "Sangria (1/2 Pitcher)", fr: "Sangria (1/2 Carafe)", de: "Sangria (1/2 Krug)" }, 
+    descripcion: { es: "Media jarra de sangría con fruta.", en: "Half pitcher of sangria with fruit.", fr: "Demi-carafe de sangria aux fruits.", de: "Halber Krug Sangria mit Früchten." } 
+  },
+  809: { 
+    nombre: { es: "Sangría Jarra", en: "Sangria (Pitcher)", fr: "Sangria (Carafe)", de: "Sangria (Krug)" }, 
+    descripcion: { es: "Jarra completa de sangría artesana.", en: "Full pitcher of homemade sangria.", fr: "Carafe entière de sangria artisanale.", de: "Ganzer Krug hausgemachte Sangria." } 
+  },
+  810: { 
+    nombre: { es: "Tinto Verano Caña", en: "Wine Spritzer (Glass)", fr: "Tinto Verano (Verre)", de: "Weinschorle (Glas)" }, 
+    descripcion: { es: "Vino tinto con gaseosa o limón.", en: "Red wine with soda or lemon.", fr: "Vin rouge avec limonade ou citron.", de: "Rotwein mit Zitronenlimonade." } 
+  },
+  811: { 
+    nombre: { es: "Tinto Verano 1/2 Jarra", en: "Wine Spritzer (1/2 Pitcher)", fr: "Tinto Verano (1/2 Carafe)", de: "Weinschorle (1/2 Krug)" }, 
+    descripcion: { es: "Media jarra de tinto de verano.", en: "Half pitcher of wine spritzer.", fr: "Demi-carafe de tinto verano.", de: "Halber Krug Weinschorle." } 
+  },
+  812: { 
+    nombre: { es: "Tinto Verano Jarra", en: "Wine Spritzer (Pitcher)", fr: "Tinto Verano (Carafe)", de: "Weinschorle (Krug)" }, 
+    descripcion: { es: "Jarra completa de tinto de verano.", en: "Full pitcher of wine spritzer.", fr: "Carafe entière de tinto verano.", de: "Ganzer Krug Weinschorle." } 
+  },
+  813: { 
+    nombre: { es: "Botes Cerveza (Mahou, Tostada 0,0)", en: "Beer Cans (Mahou, Toasted 0.0)", fr: "Bières en canette (Mahou, Toastée 0.0)", de: "Bierdosen (Mahou, Tostada 0.0)" }, 
+    descripcion: { es: "Cerveza en formato lata.", en: "Canned beer.", fr: "Bière en canette.", de: "Bier in der Dose." } 
+  },
   // #endregion
 };

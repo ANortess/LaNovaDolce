@@ -345,8 +345,11 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
   const pastaNormal = platosFiltrados.filter((p) => p.id < 404);
 
   const postresCaseros = platosFiltrados.filter((p) => p.id <= 706);
-  const postresCreps = platosFiltrados.filter((p) => p.id > 706 && p.id < 711);
-  const postresPizzas = platosFiltrados.filter((p) => p.id === 711);
+  const postresCreps = platosFiltrados.filter((p) => p.id > 706 && p.id < 710);
+  const postresPizzas = platosFiltrados.filter((p) => p.id === 710);
+  
+  const cerveza = platosFiltrados.filter((p) => p.id < 803);
+  const refrescos = platosFiltrados.filter((p) => p.id >= 803);
 
   // 3. Función interna para renderizar cada tarjeta (mantiene tu estructura original)
   const renderCard = (p) => {
@@ -399,12 +402,14 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
           <p>{textosMain[idioma].incrementoDelPrecio}</p>
         </div>
       )}
+
       {categoria === "Ensaladas" && (
         <div className="aviso-cambio-precio">
           <p>{textosMain[idioma].incrementoDelPrecio}</p>
           <p>{textosMain[idioma].consultarSalsas}</p>
         </div>
       )}
+
       {(categoria === "Entrantes" ||
         categoria === "Carnes" ||
         categoria === "Pastas") && (
@@ -412,6 +417,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
           <p>{textosMain[idioma].consultarSalsas}</p>
         </div>
       )}
+
       {categoria === "Postres" && (
         <div className="aviso-cambio-precio">
           <p>{textosMain[idioma].postresCaseros}</p>
@@ -423,9 +429,9 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       {/* CASO A: SALSAS */}
       {categoria === "Salsas" && (
         <>
-          <h2 className="titulo-subcategoria">{idioma === "es" ? "Salsas Calientes" : "Warm Sauces"}</h2>
+          <h2 className="titulo-subcategoria">Salsas Calientes</h2>
           <div className="pizza-grid pizzas">{salsasCalientes.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{idioma === "es" ? "Salsas Frías" : "Cold Sauces"}</h2>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>Salsas Frías</h2>
           <div className="pizza-grid pizzas">{salsasFrias.map((p) => renderCard(p))}</div>
         </>
       )}
@@ -434,7 +440,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       {categoria === "Pastas" && (
         <>
           <div className="pizza-grid pizzas">{pastaNormal.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>MACARRONES, ESPAGUETIS O RIGATONI</h2>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>MACARRONES - ESPAGUETIS - RIGATONI</h2>
           <div className="pizza-grid pizzas">{pastaEspecial.map((p) => renderCard(p))}</div>
         </>
       )}
@@ -449,8 +455,18 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
           <div className="pizza-grid pizzas">{postresPizzas.map((p) => renderCard(p))}</div>
         </>
       )}
+
+      {/* CASO D: BEBIDAS */}
+      {categoria === "Bebidas" && (
+        <>
+          <h2 className="titulo-subcategoria">REFRESCOS</h2>
+          <div className="pizza-grid pizzas">{cerveza.map((p) => renderCard(p))}</div>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>CERVEZAS - SANGRÍA - TINTO DE VERANO</h2>
+          <div className="pizza-grid pizzas">{refrescos.map((p) => renderCard(p))}</div>
+        </>
+      )}
       
-      {!["Salsas", "Pastas", "Postres"].includes(categoria) && (
+      {!["Salsas", "Pastas", "Postres", "Bebidas"].includes(categoria) && (
         <div className={`pizza-grid ${["Pizzas", "Entrantes", "Carnes", "Ensaladas"].includes(categoria) ? "pizzas" : ""}`}>
           {platosFiltrados.map((p) => renderCard(p))}
         </div>
@@ -475,6 +491,11 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
           <p>{textosMain[idioma].consultarSalsas}</p>
         </div>
       )}
+
+      <div className="nota-iva">
+        <p>Todos los precios incluyen el I.V.A.</p>
+        <p>REGLAMENTO ( EU ) No 1169/2011</p>
+      </div>
 
       {/* --- SECCIÓN ALÉRGENOS --- */}
       <div className="seccion-alergenos">
@@ -515,6 +536,21 @@ function App() {
         <Route path="/" element={<Home t={t} idioma={idioma} />} />
         <Route path="/carta" element={<PaginaCarta t={t} idioma={idioma} categoria={categoria} />} />
       </Routes>
+
+      <footer className="footer-full-width">
+      <div className="footer-content">
+        <div className="footer-links">
+          <p>Política de Privacidad</p>
+          <p>Aviso Legal</p>
+          <p>Política de Cookies</p>
+        </div>
+
+        <div className="footer-copyright">
+          <p>© 1996-2024 La Nova Dolce</p>
+          <p className="by-nortesss">by: <span>Nortesss</span></p>
+        </div>
+      </div>
+    </footer>
     </Router>
   );
 }

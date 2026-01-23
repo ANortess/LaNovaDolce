@@ -102,7 +102,20 @@ import crepKinder from '../assets/Lasañas/Lasaña.jpeg';
 import pizzaDulce from '../assets/Lasañas/Lasaña.jpeg';
 
   // BEBIDAS
-  
+import agua from '../assets/Lasañas/Lasaña.jpeg';
+import zumos from '../assets/Lasañas/Lasaña.jpeg';
+import refrescos from '../assets/Lasañas/Lasaña.jpeg';
+import mahouTercio from '../assets/Lasañas/Lasaña.jpeg';
+import alhambra1925 from '../assets/Lasañas/Lasaña.jpeg';
+import mahouQuinto from '../assets/Lasañas/Lasaña.jpeg';
+import heineken from '../assets/Lasañas/Lasaña.jpeg';
+import sangriaCana from '../assets/Lasañas/Lasaña.jpeg';
+import sangriaMedia from '../assets/Lasañas/Lasaña.jpeg';
+import sangriaJarra from '../assets/Lasañas/Lasaña.jpeg';
+import tintoCana from '../assets/Lasañas/Lasaña.jpeg';
+import tintoMedia from '../assets/Lasañas/Lasaña.jpeg';
+import tintoJarra from '../assets/Lasañas/Lasaña.jpeg';
+import botesCerveza from '../assets/Lasañas/Lasaña.jpeg';
   // VINOS
 
 export const EntrantesImages = {
@@ -208,4 +221,21 @@ export const PostresImages = {
   crepChocolate,
   crepKinder,
   pizzaDulce
+}
+
+export const BebidasImages = {
+  agua,
+  zumos,
+  refrescos,
+  mahouTercio,
+  alhambra1925,
+  mahouQuinto,
+  heineken,
+  sangriaCana,
+  sangriaMedia,
+  sangriaJarra,
+  tintoCana,
+  tintoMedia,
+  tintoJarra,
+  botesCerveza
 }
