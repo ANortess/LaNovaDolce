@@ -47,9 +47,18 @@ export const textosMain = {
         grande: "G",
         incrementoDelPrecio: "Cualquier cambio en los ingredientes llevará un incremento en el precio.",
         consultarSalsas: "Le invitamos a descubrir nuestra selección de salsas en el apartado correspondiente.",
-
-
-        postresCaseros: "¡Disfruta de todos nuestros postres caseros!"
+        postresCaseros: "¡Disfruta de todos nuestros postres caseros!",
+        creps: "CREPS",
+        pizzas: "PIZZAS",
+        tipoPasta: "MACARRONES - ESPAGUETIS - RIGATONI",
+        salsasCalientes: "Salsas Calientes",
+        salsasfrias: "Salsas Frías",
+        cervezas: "CERVEZAS - SANGRÍA - TINTO DE VERANO",
+        iva: "Todos los precios incluyen el I.V.A.",
+        reglamento: "REGLAMENTO ( EU ) No 1169/2011",
+        politica: "Política de Privacidad",
+        avisoLegal: "Aviso Legal",
+        cookies: "Política de Cookies",
     },
     en: { 
         inicio: "HOME", 

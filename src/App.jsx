@@ -429,9 +429,9 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       {/* CASO A: SALSAS */}
       {categoria === "Salsas" && (
         <>
-          <h2 className="titulo-subcategoria">Salsas Calientes</h2>
+          <h2 className="titulo-subcategoria">{textosMain[idioma].salsasCalientes}</h2>
           <div className="pizza-grid pizzas">{salsasCalientes.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>Salsas Frías</h2>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].salsasFrias}</h2>
           <div className="pizza-grid pizzas">{salsasFrias.map((p) => renderCard(p))}</div>
         </>
       )}
@@ -440,7 +440,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       {categoria === "Pastas" && (
         <>
           <div className="pizza-grid pizzas">{pastaNormal.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>MACARRONES - ESPAGUETIS - RIGATONI</h2>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].tipoPasta}</h2>
           <div className="pizza-grid pizzas">{pastaEspecial.map((p) => renderCard(p))}</div>
         </>
       )}
@@ -449,9 +449,9 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       {categoria === "Postres" && (
         <>
           <div className="pizza-grid pizzas">{postresCaseros.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>CREPS</h2>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].creps}</h2>
           <div className="pizza-grid pizzas">{postresCreps.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>PIZZAS</h2>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].pizzas}</h2>
           <div className="pizza-grid pizzas">{postresPizzas.map((p) => renderCard(p))}</div>
         </>
       )}
@@ -461,7 +461,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
         <>
           <h2 className="titulo-subcategoria">REFRESCOS</h2>
           <div className="pizza-grid pizzas">{cerveza.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>CERVEZAS - SANGRÍA - TINTO DE VERANO</h2>
+          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].cerveza}</h2>
           <div className="pizza-grid pizzas">{refrescos.map((p) => renderCard(p))}</div>
         </>
       )}
@@ -493,8 +493,8 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       )}
 
       <div className="nota-iva">
-        <p>Todos los precios incluyen el I.V.A.</p>
-        <p>REGLAMENTO ( EU ) No 1169/2011</p>
+        <p>{textosMain[idioma].iva}</p>
+        <p>{textosMain[idioma].reglamento}</p>
       </div>
 
       {/* --- SECCIÓN ALÉRGENOS --- */}
@@ -540,9 +540,9 @@ function App() {
       <footer className="footer-full-width">
       <div className="footer-content">
         <div className="footer-links">
-          <p>Política de Privacidad</p>
-          <p>Aviso Legal</p>
-          <p>Política de Cookies</p>
+          <p>{textosMain[idioma].politica}</p>
+          <p>{textosMain[idioma].avisoLegal}</p>
+          <p>{textosMain[idioma].cookies}</p>
         </div>
 
         <div className="footer-copyright">

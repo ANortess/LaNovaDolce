@@ -1,5 +1,5 @@
 
-import { EntrantesImages, EnsaladasImages, PizzasImages, PastaImages, CarnesImages, SalsasImages, PostresImages, BebidasImages } from './imagenesCarta.js';
+import { EntrantesImages, EnsaladasImages, PizzasImages, PastaImages, CarnesImages, SalsasImages, PostresImages, BebidasImages, VinosImages } from './imagenesCarta.js';
 
 export const cartaPizzeria = [
 
@@ -651,58 +651,117 @@ export const cartaPizzeria = [
   { 
     id: 806, 
     categoria: "Bebidas", 
-    precio: "2,90", 
-    url: BebidasImages.heineken, 
-    alergenos: ["gluten"] 
-  },
-  { 
-    id: 807, 
-    categoria: "Bebidas", 
     precio: "2,60", 
     url: BebidasImages.sangriaCana, 
     alergenos: [] 
   },
   { 
-    id: 808, 
+    id: 807, 
     categoria: "Bebidas", 
     precio: "4,80", 
     url: BebidasImages.sangriaMedia, 
     alergenos: [] 
   },
   { 
-    id: 809, 
+    id: 808, 
     categoria: "Bebidas", 
     precio: "8,30", 
     url: BebidasImages.sangriaJarra, 
     alergenos: [] 
   },
   { 
-    id: 810, 
+    id: 809, 
     categoria: "Bebidas", 
     precio: "2,30", 
     url: BebidasImages.tintoCana, 
     alergenos: [] 
   },
   { 
-    id: 811, 
+    id: 810, 
     categoria: "Bebidas", 
     precio: "4,20", 
     url: BebidasImages.tintoMedia, 
     alergenos: [] 
   },
   { 
-    id: 812, 
+    id: 811, 
     categoria: "Bebidas", 
     precio: "7,90", 
     url: BebidasImages.tintoJarra, 
     alergenos: [] 
   },
   { 
-    id: 813, 
+    id: 812, 
     categoria: "Bebidas", 
     precio: "2,80", 
     url: BebidasImages.botesCerveza, 
     alergenos: ["gluten"] 
+  },
+  // #endregion
+
+  // #region VINOS
+  { 
+    id: 900, 
+    categoria: "Vinos", 
+    precio: "1,80", 
+    url: VinosImages.copaCasa, 
+    alergenos: ["sulfitos"] 
+  },
+  { 
+    id: 901, 
+    categoria: "Vinos", 
+    precio: "2,40", 
+    url: VinosImages.copaOtros, 
+    alergenos: ["sulfitos"] 
+  },
+  { 
+    id: 902, 
+    categoria: "Vinos", 
+    precio: "4,80", 
+    url: VinosImages.abadiaRoble, 
+    alergenos: ["sulfitos"] 
+  },
+  { 
+    id: 903, 
+    categoria: "Vinos", 
+    precio: "12,20", 
+    url: VinosImages.tierraBuena, 
+    alergenos: ["sulfitos"] 
+  },
+  { 
+    id: 904, 
+    categoria: "Vinos", 
+    precio: "12,20", 
+    url: VinosImages.mateusRose, 
+    alergenos: ["sulfitos"] 
+  },
+  { 
+    id: 905, 
+    categoria: "Vinos", 
+    precio: "14,00", 
+    url: VinosImages.lambrusco, 
+    alergenos: ["sulfitos"] 
+  },
+  { 
+    id: 906, 
+    categoria: "Vinos", 
+    precio: "18,00", 
+    url: VinosImages.ramonBilbao, 
+    alergenos: ["sulfitos"] 
+  },
+  { 
+    id: 907, 
+    categoria: "Vinos", 
+    precio: "14,50", 
+    url: VinosImages.marinaAlta, 
+    alergenos: ["sulfitos"] 
+  },
+  { 
+    id: 908, 
+    categoria: "Vinos", 
+    precio: "18,00", 
+    url: VinosImages.protosRoble, 
+    alergenos: ["sulfitos"] 
   },
   // #endregion
 ];

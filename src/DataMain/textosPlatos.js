@@ -379,36 +379,71 @@ export const textosPlatos = {
     descripcion: { es: "Cerveza clásica en formato pequeño.", en: "Small bottled beer (20cl).", fr: "Petite bière en bouteille (20cl).", de: "Kleines Flaschenbier (20cl)." } 
   },
   806: { 
-    nombre: { es: "Heineken (Tercio)", en: "Heineken (33cl)", fr: "Heineken (33cl)", de: "Heineken (33cl)" }, 
-    descripcion: { es: "Cerveza internacional en formato tercio.", en: "International beer (33cl).", fr: "Bière internationale (33cl).", de: "Internationales Bier (33cl)." } 
-  },
-  807: { 
     nombre: { es: "Sangría Caña", en: "Sangria (Glass)", fr: "Sangria (Verre)", de: "Sangria (Glas)" }, 
     descripcion: { es: "Copa de sangría artesana.", en: "Glass of homemade sangria.", fr: "Verre de sangria artisanale.", de: "Glas hausgemachte Sangria." } 
   },
-  808: { 
+  807: { 
     nombre: { es: "Sangría 1/2 Jarra", en: "Sangria (1/2 Pitcher)", fr: "Sangria (1/2 Carafe)", de: "Sangria (1/2 Krug)" }, 
     descripcion: { es: "Media jarra de sangría con fruta.", en: "Half pitcher of sangria with fruit.", fr: "Demi-carafe de sangria aux fruits.", de: "Halber Krug Sangria mit Früchten." } 
   },
-  809: { 
+  808: { 
     nombre: { es: "Sangría Jarra", en: "Sangria (Pitcher)", fr: "Sangria (Carafe)", de: "Sangria (Krug)" }, 
     descripcion: { es: "Jarra completa de sangría artesana.", en: "Full pitcher of homemade sangria.", fr: "Carafe entière de sangria artisanale.", de: "Ganzer Krug hausgemachte Sangria." } 
   },
-  810: { 
+  809: { 
     nombre: { es: "Tinto Verano Caña", en: "Wine Spritzer (Glass)", fr: "Tinto Verano (Verre)", de: "Weinschorle (Glas)" }, 
     descripcion: { es: "Vino tinto con gaseosa o limón.", en: "Red wine with soda or lemon.", fr: "Vin rouge avec limonade ou citron.", de: "Rotwein mit Zitronenlimonade." } 
   },
-  811: { 
+  810: { 
     nombre: { es: "Tinto Verano 1/2 Jarra", en: "Wine Spritzer (1/2 Pitcher)", fr: "Tinto Verano (1/2 Carafe)", de: "Weinschorle (1/2 Krug)" }, 
     descripcion: { es: "Media jarra de tinto de verano.", en: "Half pitcher of wine spritzer.", fr: "Demi-carafe de tinto verano.", de: "Halber Krug Weinschorle." } 
   },
-  812: { 
+  811: { 
     nombre: { es: "Tinto Verano Jarra", en: "Wine Spritzer (Pitcher)", fr: "Tinto Verano (Carafe)", de: "Weinschorle (Krug)" }, 
     descripcion: { es: "Jarra completa de tinto de verano.", en: "Full pitcher of wine spritzer.", fr: "Carafe entière de tinto verano.", de: "Ganzer Krug Weinschorle." } 
   },
-  813: { 
+  812: { 
     nombre: { es: "Botes Cerveza (Mahou, Tostada 0,0)", en: "Beer Cans (Mahou, Toasted 0.0)", fr: "Bières en canette (Mahou, Toastée 0.0)", de: "Bierdosen (Mahou, Tostada 0.0)" }, 
     descripcion: { es: "Cerveza en formato lata.", en: "Canned beer.", fr: "Bière en canette.", de: "Bier in der Dose." } 
+  },
+  // #endregion
+
+  // #region VINOS
+  900: { 
+    nombre: { es: "Copa Vino de la casa", en: "House Wine (Glass)", fr: "Verre de vin de la maison", de: "Hauswein (Glas)" }, 
+    descripcion: { es: "Nuestra selección económica por copa.", en: "Our budget selection by the glass.", fr: "Notre sélection économique au verre.", de: "Unsere günstige Auswahl im Glas." } 
+  },
+  901: { 
+    nombre: { es: "Copa Vino (Otros)", en: "Wine (Other - Glass)", fr: "Verre de vin (Autres)", de: "Wein (Andere - Glas)" }, 
+    descripcion: { es: "Otras variedades de vino por copa.", en: "Other varieties of wine by the glass.", fr: "Autres variétés de vin au verre.", de: "Andere Weinsorten im Glas." } 
+  },
+  902: { 
+    nombre: { es: "Abadía de Roble", en: "Abadía de Roble", fr: "Abadía de Roble", de: "Abadía de Roble" }, 
+    descripcion: { es: "Blanco, Tinto o Rosado.", en: "White, Red or Rosé.", fr: "Blanc, Rouge ou Rosé.", de: "Weiß, Rot oder Rosé." } 
+  },
+  903: { 
+    nombre: { es: "Tierra Buena", en: "Tierra Buena", fr: "Tierra Buena", de: "Tierra Buena" }, 
+    descripcion: { es: "Vino equilibrado con denominación.", en: "Balanced wine with designation.", fr: "Vin équilibré avec dénomination.", de: "Ausgewogener Qualitätswein." } 
+  },
+  904: { 
+    nombre: { es: "Mateus Rose", en: "Mateus Rose", fr: "Mateus Rose", de: "Mateus Rose" }, 
+    descripcion: { es: "Vino rosado suave y refrescante.", en: "Smooth and refreshing rosé wine.", fr: "Vin rosé doux et rafraîchissant.", de: "Milder und erfrischender Roséwein." } 
+  },
+  905: { 
+    nombre: { es: "Lambrusco", en: "Lambrusco", fr: "Lambrusco", de: "Lambrusco" }, 
+    descripcion: { es: "Rosado o Tinto espumoso.", en: "Sparkling Rosé or Red.", fr: "Rosé ou Rouge pétillant.", de: "Perlender Rosé- oder Rotwein." } 
+  },
+  906: { 
+    nombre: { es: "Ramón Bilbao 3/4", en: "Ramón Bilbao 3/4", fr: "Ramón Bilbao 3/4", de: "Ramón Bilbao 3/4" }, 
+    descripcion: { es: "Un clásico tinto de Rioja.", en: "A classic Rioja red wine.", fr: "Un vin rouge classique de la Rioja.", de: "Ein klassischer Rioja-Rotwein." } 
+  },
+  907: { 
+    nombre: { es: "Marina Alta", en: "Marina Alta", fr: "Marina Alta", de: "Marina Alta" }, 
+    descripcion: { es: "Vino blanco suave de uva Moscatel.", en: "Smooth white wine from Muscat grapes.", fr: "Vin blanc doux issu de raisins Muscat.", de: "Milder Weißwein aus Muskateller-Trauben." } 
+  },
+  908: { 
+    nombre: { es: "Protos Roble", en: "Protos Roble", fr: "Protos Roble", de: "Protos Roble" }, 
+    descripcion: { es: "Vino tinto Ribera del Duero.", en: "Ribera del Duero red wine.", fr: "Vin rouge Ribera del Duero.", de: "Rotwein aus Ribera del Duero." } 
   },
   // #endregion
 };
