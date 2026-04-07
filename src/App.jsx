@@ -8,6 +8,7 @@ import { textosMain } from './DataMain/textosMain.js';
 import { textosAlergenos, listaAlergenos } from './DataMain/textosAlergenos.js';
 import logoPizzeria from './assets/Varios/Cocinero.png';
 import imagenHistoria from './assets/Varios/Pizza.jpg';
+import { HashLink } from 'react-router-hash-link';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -43,19 +44,35 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
         <>
         {/* EL MENÚ DE ESCRITORIO: Siempre renderizado */}
           <div className="navbar-menu">
-            <button className="btn-cat-nav" onClick={() => { window.location.href = "/#inicio"; cerrarMenu(); }}>{t.inicio}</button>
-            <button className="btn-cat-nav" onClick={() => { window.location.href = "/#info"; cerrarMenu(); }}>{t.info}</button>
-            <button className="btn-cat-nav" onClick={() => { window.location.href = "/#carta"; cerrarMenu(); }}>{t.carta}</button>
-            <button className="btn-cat-nav" onClick={() => { window.location.href = "/#contacto"; cerrarMenu(); }}>{t.mapa}</button>
+            <HashLink smooth to="/#inicio" onClick={cerrarMenu} className="btn-cat-nav">
+              {t.inicio}
+            </HashLink>
+            <HashLink smooth to="/#info" onClick={cerrarMenu} className="btn-cat-nav">
+              {t.info}
+            </HashLink>
+            <HashLink smooth to="/#carta" onClick={cerrarMenu} className="btn-cat-nav">
+              {t.carta}
+            </HashLink>
+            <HashLink smooth to="/#contacto" onClick={cerrarMenu} className="btn-cat-nav">
+              {t.mapa}
+            </HashLink>
           </div>
 
           {/* EL MENÚ MÓVIL: Siempre renderizado, animado por CSS con la clase 'active' */}
           <div className={`navbar-mobile-background ${menuAbierto ? 'active' : ''}`}>
             <div className="navbar-mobile-sections-home">
-              <button className="btn-cat-nav" onClick={() => { window.location.href = "/#inicio"; cerrarMenu(); }}>{t.inicio}</button>
-              <button className="btn-cat-nav" onClick={() => { window.location.href = "/#info"; cerrarMenu(); }}>{t.info}</button>
-              <button className="btn-cat-nav" onClick={() => { window.location.href = "/#carta"; cerrarMenu(); }}>{t.carta}</button>
-              <button className="btn-cat-nav" onClick={() => { window.location.href = "/#contacto"; cerrarMenu(); }}>{t.mapa}</button>
+              <HashLink smooth to="/#inicio" onClick={cerrarMenu} className="btn-cat-nav">
+                {t.inicio}
+              </HashLink>
+              <HashLink smooth to="/#info" onClick={cerrarMenu} className="btn-cat-nav">
+                {t.info}
+              </HashLink>
+              <HashLink smooth to="/#carta" onClick={cerrarMenu} className="btn-cat-nav">
+                {t.carta}
+              </HashLink>
+              <HashLink smooth to="/#contacto" onClick={cerrarMenu} className="btn-cat-nav">
+                {t.mapa}
+              </HashLink>
             </div>
 
             <div className="navbar-mobile-idiomas">
