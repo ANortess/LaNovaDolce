@@ -1,4 +1,21 @@
 {
+  "redirects": [
+    {
+      "source": "/menu-esp.html",
+      "destination": "/carta",
+      "permanent": true
+    },
+    {
+      "source": "/novedades.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ingles.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
