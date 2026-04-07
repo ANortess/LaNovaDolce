@@ -6,13 +6,23 @@
       "permanent": true
     },
     {
-      "source": "/novedades.html",
-      "destination": "/",
+      "source": "/2025%20esp.pdf",
+      "destination": "/carta",
       "permanent": true
     },
     {
-      "source": "/ingles.html",
-      "destination": "/",
+      "source": "/privacidad.html",
+      "destination": "/#inicio",
+      "permanent": true
+    },
+    {
+      "source": "/legal.html",
+      "destination": "/#inicio",
+      "permanent": true
+    },
+    {
+      "source": "/menu-ing.html",
+      "destination": "/#inicio",
       "permanent": true
     }
   ],
