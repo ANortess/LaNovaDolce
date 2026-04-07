@@ -1,5 +1,5 @@
 
-import { EntrantesImages, EnsaladasImages, PizzasImages, PastaImages, CarnesImages, SalsasImages, PostresImages, BebidasImages, VinosImages } from './imagenesCarta.js';
+import { EntrantesImages, EnsaladasImages, PizzasImages, PastaImages, PollosImages, SalsasImages, PostresImages, BebidasImages, VinosImages } from './imagenesCarta.js';
 
 export const cartaPizzeria = [
 
@@ -374,87 +374,87 @@ export const cartaPizzeria = [
     id: 404, 
     categoria: "Pastas", 
     precio: "8,00",
-    url: PastaImages.lasaña,
+    url: PastaImages.boloñesaPasta,
     alergenos: []
   },
   { 
     id: 405, 
     categoria: "Pastas", 
     precio: "8,20",
-    url: PastaImages.lasaña,
+    url: PastaImages.carbonaraPasta,
     alergenos: ['lacteos']
   },
   { 
     id: 406, 
     categoria: "Pastas", 
     precio: "8,00",
-    url: PastaImages.lasaña,
+    url: PastaImages.alAjoPasta,
     alergenos: []
   },
   { 
     id: 407, 
     categoria: "Pastas", 
     precio: "7,30",
-    url: PastaImages.lasaña,
+    url: PastaImages.blancosPasta,
     alergenos: []
   },
   { 
     id: 408, 
     categoria: "Pastas", 
     precio: "8,20",
-    url: PastaImages.lasaña,
+    url: PastaImages.roquefortPasta,
     alergenos: ['lacteos']
   },
   { 
     id: 409, 
     categoria: "Pastas", 
     precio: "8,20",
-    url: PastaImages.lasaña,
+    url: PastaImages.vesubioPasta,
     alergenos: []
   },
   { 
     id: 410, 
     categoria: "Pastas", 
     precio: "8,20",
-    url: PastaImages.lasaña,
+    url: PastaImages.cuatroQuesosPasta,
     alergenos: ['lacteos']
   },
   // #endregion
 
-  // #region CARNES
+  // #region POLLOS
   { 
     id: 500, 
-    categoria: "Carnes", 
+    categoria: "Pollos", 
     precio: "13,10",
-    url: CarnesImages.aLaPlancha,
+    url: PollosImages.aLaPlancha,
     alergenos: []
   },
   { 
     id: 501, 
-    categoria: "Carnes", 
+    categoria: "Pollos", 
     precio: "14,20",
-    url: CarnesImages.aLaPimienta,
+    url: PollosImages.aLaPimienta,
     alergenos: ["gluten"]
   },
   { 
     id: 502, 
-    categoria: "Carnes", 
+    categoria: "Pollos", 
     precio: "14,30",
-    url: CarnesImages.alRoquefort,
+    url: PollosImages.alRoquefort,
     alergenos: ["gluten", "lacteos"]
   },
   { 
     id: 503, 
-    categoria: "Carnes", 
+    categoria: "Pollos", 
     precio: "14,00",
-    url: CarnesImages.aLaCrema,
+    url: PollosImages.aLaCrema,
     alergenos: ["gluten", "lacteos"]
   },
   { 
     id: 504, 
-    categoria: "Carnes", 
+    categoria: "Pollos", 
     precio: "14,20",
-    url: CarnesImages.aLaMilanesa,
+    url: PollosImages.aLaMilanesa,
     alergenos: ["huevos", "gluten"]
   },
   // #endregion
@@ -600,7 +600,14 @@ export const cartaPizzeria = [
     id: 710, 
     categoria: "Postres", 
     precio: "5,00", 
-    url: PostresImages.pizzaDulce, 
+    url: PostresImages.pizzaChocolate, 
+    alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
+  },
+  { 
+    id: 711, 
+    categoria: "Postres", 
+    precio: "5,00", 
+    url: PostresImages.pizzaKinder, 
     alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
   },
   // #endregion

@@ -12,67 +12,67 @@ import periquitos from '../assets/Entrantes/Periquitos.jpeg';
 import croquetas from '../assets/Entrantes/Croquetas.jpeg';
 import saquitos from '../assets/Entrantes/Saquitos.jpeg'; 
 import papasBravas from '../assets/Entrantes/PapasBravas.jpeg';
-import entranteBerenjena from '../assets/Entrantes/Croquetas.jpeg';
+import entranteBerenjena from '../assets/Entrantes/EntranteDeBerenjena.jpeg';
 
   // ENSALADAS
 import ensCesar from '../assets/Ensaladas/EnsaladaCesar.jpeg';
 import ensLaNova from '../assets/Ensaladas/EnsaladaLaNovaDolce.jpeg';
 import ensMixta from '../assets/Ensaladas/EnsaladaMixta.jpeg';
 import ensRica from '../assets/Ensaladas/EnsaladaRica.jpeg';
-import ensModena from '../assets/Ensaladas/EnsaladaRica.jpeg';
-import ensTropical from '../assets/Ensaladas/EnsaladaRica.jpeg';
-import ensExotica from '../assets/Ensaladas/EnsaladaRica.jpeg';
+import ensModena from '../assets/Ensaladas/EnsaladaModena.jpeg';
+import ensTropical from '../assets/Ensaladas/EnsaladaTropical.jpeg';
+import ensExotica from '../assets/Ensaladas/EnsaladaExotica.jpeg';
 
   // PIZZAS
-import margarita from '../assets/Pizzas/Carbonara.jpeg';
+import margarita from '../assets/Pizzas/Margarita.jpeg';
 import jamon from '../assets/Pizzas/Jamon.jpeg';
-import catalana from '../assets/Pizzas/Carbonara.jpeg';
-import deBacon from '../assets/Pizzas/Carbonara.jpeg';
-import caprichosa from '../assets/Pizzas/Carbonara.jpeg';
-import napolitana from '../assets/Pizzas/Carbonara.jpeg';
+import catalana from '../assets/Pizzas/Catalana.jpeg';
+import deBacon from '../assets/Pizzas/DeBacon.jpeg';
+import caprichosa from '../assets/Pizzas/Caprichosa.jpeg';
+import napolitana from '../assets/Pizzas/Napolitana.jpeg';
 import romana from '../assets/Pizzas/Romana.jpeg';
-import boloñesa from '../assets/Pizzas/Carbonara.jpeg';
+import boloñesa from '../assets/Pizzas/Boloñesa.jpeg';
 import carbonara from '../assets/Pizzas/Carbonara.jpeg';
-import deSalmon from '../assets/Pizzas/Carbonara.jpeg';
-import deliciosa from '../assets/Pizzas/Carbonara.jpeg';
+import deSalmon from '../assets/Pizzas/DeSalmon.jpeg';
+import deliciosa from '../assets/Pizzas/Deliciosa.jpeg';
 import cuatroEstaciones from '../assets/Pizzas/4Estaciones.jpeg';
-import delMonte from '../assets/Pizzas/Carbonara.jpeg';
-import peperoni from '../assets/Pizzas/Carbonara.jpeg';
-import torpedo from '../assets/Pizzas/Carbonara.jpeg';
-import especial from '../assets/Pizzas/Carbonara.jpeg';
-import cuatroQuesos from '../assets/Pizzas/Carbonara.jpeg';
+import delMonte from '../assets/Pizzas/DelMonte.jpeg';
+import peperoni from '../assets/Pizzas/Peperoni.jpeg';
+import torpedo from '../assets/Pizzas/Torpedo.jpeg';
+import especial from '../assets/Pizzas/Especial.jpeg';
+import cuatroQuesos from '../assets/Pizzas/4Quesos.jpeg';
 import mezclada from '../assets/Pizzas/Mezclada.jpeg';
-import vegetal from '../assets/Pizzas/Carbonara.jpeg';
-import tropical from '../assets/Pizzas/Carbonara.jpeg';
-import mixta from '../assets/Pizzas/Carbonara.jpeg';
-import conCostra from '../assets/Pizzas/Carbonara.jpeg';
-import siciliana from '../assets/Pizzas/Carbonara.jpeg';
+import vegetal from '../assets/Pizzas/Vegetal.jpeg';
+import tropical from '../assets/Pizzas/Tropical.jpeg';
+import mixta from '../assets/Pizzas/Mixta.jpeg';
+import conCostra from '../assets/Pizzas/ConCostra.jpeg';
+import siciliana from '../assets/Pizzas/Siciliana.jpeg';
 import ranchera from '../assets/Pizzas/Ranchera.jpeg';
 import calzone from '../assets/Pizzas/Calzone.jpeg';
-import huertana from '../assets/Pizzas/Carbonara.jpeg';
+import huertana from '../assets/Pizzas/Huertana.jpeg';
 import marinera from '../assets/Pizzas/Marinera.jpeg';
 import barbacoa from '../assets/Pizzas/Barbacoa.jpeg';
-import pompeya from '../assets/Pizzas/Carbonara.jpeg';
+import pompeya from '../assets/Pizzas/Pompeya.jpeg';
 
   // PASTAS Y LASAÑAS
 import lasaña from '../assets/Lasañas/Lasaña.jpeg';
 import lasañaEspinacas from '../assets/Lasañas/LasañaEspinacas.jpeg';
 import lasañaBerejenas from '../assets/Lasañas/LasañaBerenjenas.jpeg';
 import canelones from '../assets/Lasañas/Canelones.jpeg';
-import boloñesaPasta from '../assets/Lasañas/Lasaña.jpeg';
-import carbonaraPasta from '../assets/Lasañas/Lasaña.jpeg';
-import alAjoPasta from '../assets/Lasañas/Lasaña.jpeg';
-import blancosPasta from '../assets/Lasañas/Lasaña.jpeg';
-import roquefortPasta from '../assets/Lasañas/Lasaña.jpeg';
-import vesubioPasta from '../assets/Lasañas/Lasaña.jpeg';
-import cuatroQuesosPasta from '../assets/Lasañas/Lasaña.jpeg';
+import boloñesaPasta from '../assets/Lasañas/Espaguetis.jpeg';
+import carbonaraPasta from '../assets/Lasañas/Macarrones.jpeg';
+import alAjoPasta from '../assets/Lasañas/Rigatoni.jpeg';
+import blancosPasta from '../assets/Lasañas/Macarrones.jpeg';
+import roquefortPasta from '../assets/Lasañas/Rigatoni.jpeg';
+import vesubioPasta from '../assets/Lasañas/Espaguetis.jpeg';
+import cuatroQuesosPasta from '../assets/Lasañas/Macarrones.jpeg';
 
-  // CARNES
-import aLaPlancha from '../assets/Pollos/PolloPimienta.jpeg';
+  // POLLOS
+import aLaPlancha from '../assets/Pollos/PolloPlancha.jpeg';
 import aLaPimienta from '../assets/Pollos/PolloPimienta.jpeg';
-import alRoquefort from '../assets/Pollos/PolloPimienta.jpeg';
-import aLaCrema from '../assets/Pollos/PolloPimienta.jpeg';
-import aLaMilanesa from '../assets/Pollos/PolloPimienta.jpeg';
+import alRoquefort from '../assets/Pollos/PolloCrema.jpeg';
+import aLaCrema from '../assets/Pollos/PolloCrema.jpeg';
+import aLaMilanesa from '../assets/Pollos/PolloMilanesa.jpeg';
 
   // SALSAS
 import roquefortCaliente from '../assets/Salsas/Crema.jpeg';
@@ -81,12 +81,12 @@ import pimientaCaliente from '../assets/Salsas/Crema.jpeg';
 import bravaKetchupMayonesa from '../assets/Salsas/Brava.jpeg';
 import cesar from '../assets/Salsas/RoquefortFria.jpeg';
 import rosa from '../assets/Salsas/RoquefortFria.jpeg';
-import barbacoaSalsa from '../assets/Salsas/RoquefortFria.jpeg';
+import barbacoaSalsa from '../assets/Salsas/Barbacoa.jpeg';
 import roquefortFria from '../assets/Salsas/RoquefortFria.jpeg';
-import allili from '../assets/Salsas/RoquefortFria.jpeg';
+import allili from '../assets/Salsas/Allioli.jpeg';
   
   // Postres
-import tartaQueso from '../assets/Postres/TartaDe3Chocolates.jpeg';
+import tartaQueso from '../assets/Postres/FlanDeQueso.jpeg';
 import tarta3Chocolates from '../assets/Postres/TartaDe3Chocolates.jpeg';
 import tartaLotus from '../assets/Postres/TartaDeLotus.jpeg';
 import tartaOreo from '../assets/Postres/TartaDeOreo.jpeg';
@@ -98,7 +98,8 @@ import crepAzucar from '../assets/Postres/CrepAzucar.jpeg';
 import crepChocolate from '../assets/Postres/CrepKinder.jpeg';
 import crepKinder from '../assets/Postres/CrepKinder.jpeg';
 
-import pizzaDulce from '../assets/Postres/PizzaChololate.jpeg';
+import pizzaChocolate from '../assets/Postres/PizzaChocolate.jpeg';
+import pizzaKinder from '../assets/Postres/PizzaKinder.jpeg';
 
   // BEBIDAS
 import agua from '../assets/Bebidas/Agua.jpeg';
@@ -106,13 +107,13 @@ import zumos from '../assets/Bebidas/Zumo.jpeg';
 import refrescos from '../assets/Bebidas/Refrescos.jpeg';
 import mahouTercio from '../assets/Bebidas/MahouTercio.jpeg';
 import alhambra1925 from '../assets/Bebidas/Alhambra.jpeg';
-import mahouQuinto from '../assets/Bebidas/MahouQuinto.jpeg';
-import sangriaCana from '../assets/Bebidas/Tinto.jpeg';
-import sangriaMedia from '../assets/Bebidas/Tinto.jpeg';
-import sangriaJarra from '../assets/Bebidas/Tinto.jpeg';
-import tintoCana from '../assets/Bebidas/Tinto.jpeg';
-import tintoMedia from '../assets/Bebidas/Tinto.jpeg';
-import tintoJarra from '../assets/Bebidas/Tinto.jpeg';
+import mahouQuinto from '../assets/Bebidas/MahouQuinto.png';
+import sangriaCana from '../assets/Bebidas/SangriaCaña.jpg';
+import sangriaMedia from '../assets/Bebidas/SangriaGrande.jpg';
+import sangriaJarra from '../assets/Bebidas/SangriaJarra.jpg';
+import tintoCana from '../assets/Bebidas/TintoCaña.jpg';
+import tintoMedia from '../assets/Bebidas/TintoGrande.jpg';
+import tintoJarra from '../assets/Bebidas/TintoJarra.jpg';
 import botesCerveza from '../assets/Bebidas/MahouLata.jpeg';
 
   // VINOS
@@ -196,7 +197,7 @@ export const PastaImages = {
   cuatroQuesosPasta,
 }
 
-export const CarnesImages = {
+export const PollosImages = {
   aLaPlancha,
   aLaPimienta,
   alRoquefort,
@@ -227,7 +228,8 @@ export const PostresImages = {
   crepAzucar,
   crepChocolate,
   crepKinder,
-  pizzaDulce
+  pizzaChocolate,
+  pizzaKinder
 }
 
 export const BebidasImages = {

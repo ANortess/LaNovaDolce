@@ -49,50 +49,50 @@ export const textosPlatos = {
 
   // #region ENSALADAS
   200: {
-    nombre: { es: "Ensalada Módena", en: "Modena Salad", fr: "Salade Modène", de: "Modena-Salat" },
-    descripcion: { es: "Lechuga, maíz, pasas, queso cabra, módena y miel.", en: "Lettuce, corn, raisins, goat cheese, balsamic and honey.", fr: "Laitue, maïs, raisins, fromage de chèvre, balsamique et miel.", de: "Salat, Mais, Rosinen, Ziegenkäse, Modena-Essig und Honig." }
+    nombre: { es: "Módena", en: "Modena", fr: "Modène", de: "Modena Salat" },
+    descripcion: { es: "Lechuga, maíz, pasas, queso de cabra, módena y miel.", en: "Lettuce, corn, raisins, goat cheese, balsamic vinegar and honey.", fr: "Laitue, maïs, raisins secs, fromage de chèvre, balsamique et miel.", de: "Salat, Mais, Rosinen, Ziegenkäse, Balsamico-Essig und Honig." }
   },
   201: {
-    nombre: { es: "Ensalada Nova Dolce", en: "Nova Dolce Salad", fr: "Salade Nova Dolce", de: "Nova Dolce Salat" },
+    nombre: { es: "Nova Dolce", en: "Nova Dolce", fr: "Nova Dolce", de: "Nova Dolce Salat" },
     descripcion: { es: "Lechuga, arroz, atún, gambas y cangrejo.", en: "Lettuce, rice, tuna, prawns and crab.", fr: "Laitue, riz, thon, crevettes et crabe.", de: "Salat, Reis, Thunfisch, Garnelen und Krebsfleisch." }
   },
   202: {
-    nombre: { es: "Ensalada Mixta", en: "Mixed Salad", fr: "Salade Mixte", de: "Gemischter Salat" },
-    descripcion: { es: "Lechuga, tomate, maíz, huevo, atún, cebolla y aceitunas.", en: "Lettuce, tomato, corn, egg, tuna, onion and olives.", fr: "Laitue, tomate, maïs, œuf, thon, oignon et olives.", de: "Salat, Tomate, Mais, Ei, Thunfisch, Zwiebel und Oliven." }
+    nombre: { es: "Mixta", en: "Mixed Salad", fr: "Salade Mixte", de: "Gemischter Salat" },
+    descripcion: { es: "Lechuga, tomate, maíz, huevo, atún, cebolla y aceitunas.", en: "Lettuce, tomato, corn, egg, tuna, onion and olives.", fr: "Laitue, tomate, maïs, œuf, thon, oignon et olives.", de: "Salat, Tomaten, Mais, Ei, Thunfisch, Zwiebeln und Oliven." }
   },
   203: {
-    nombre: { es: "Ensalada Rica", en: "Rica Salad", fr: "Salade Rica", de: "Rica-Salat" },
-    descripcion: { es: "Lechuga, maíz, queso, jamón york y nueces.", en: "Lettuce, corn, cheese, ham and walnuts.", fr: "Laitue, maïs, fromage, jambon et noix.", de: "Salat, Mais, Käse, Schinken und Walnüsse." }
+    nombre: { es: "Rica", en: "Rica", fr: "Rica", de: "Rica Salat" },
+    descripcion: { es: "Lechuga, maíz, queso, jamón york y nueces.", en: "Lettuce, corn, cheese, cooked ham and walnuts.", fr: "Laitue, maïs, fromage, jambon cuit et noix.", de: "Salat, Mais, Käse, Kochschinken und Walnüsse." }
   },
   204: {
-    nombre: { es: "Ensalada Tropical", en: "Tropical Salad", fr: "Salade Tropicale", de: "Tropischer Salat" },
-    descripcion: { es: "Lechuga, tomate, arroz, palmito, maíz, zanahoria y jamón york.", en: "Lettuce, tomato, rice, hearts of palm, corn, carrot and ham.", fr: "Laitue, tomate, riz, cœurs de palmier, maïs, carotte et jambon.", de: "Salat, Tomate, Reis, Palmito, Mais, Karotte und Schinken." }
+    nombre: { es: "Tropical", en: "Tropical", fr: "Tropicale", de: "Tropischer Salat" },
+    descripcion: { es: "Lechuga, tomate, arroz, palmito, maíz, zanahoria y jamón york.", en: "Lettuce, tomato, rice, hearts of palm, corn, carrot and cooked ham.", fr: "Laitue, tomate, riz, cœurs de palmier, maïs, carotte et jambon cuit.", de: "Salat, Tomaten, Reis, Palmito, Mais, Karotten und Kochschinken." }
   },
   205: {
-    nombre: { es: "Ensalada Exótica", en: "Exotic Salad", fr: "Salade Exotique", de: "Exotischer Salat" },
-    descripcion: { es: "Lechuga, tomate, palmito, arroz, maíz y atún.", en: "Lettuce, tomato, hearts of palm, rice, corn and tuna.", fr: "Laitue, tomate, cœurs de palmier, riz, maïs et thon.", de: "Salat, Tomate, Palmito, Reis, Mais und Thunfisch." }
+    nombre: { es: "Exótica", en: "Exotic", fr: "Exotique", de: "Exotischer Salat" },
+    descripcion: { es: "Lechuga, tomate, palmito, arroz, maíz y atún.", en: "Lettuce, tomato, hearts of palm, rice, corn and tuna.", fr: "Laitue, tomate, cœurs de palmier, riz, maïs et thon.", de: "Salat, Tomaten, Palmito, Reis, Mais und Thunfisch." }
   },
   206: {
-    nombre: { es: "Ensalada César", en: "Caesar Salad", fr: "Salade César", de: "Caesar Salat" },
-    descripcion: { es: "Lechuga, maíz, pollo, picatostes, parmesano, camembert y salsa césar.", en: "Lettuce, corn, chicken, croutons, parmesan, camembert and caesar sauce.", fr: "Laitue, maïs, poulet, croûtons, parmesan, camembert et sauce césar.", de: "Salat, Mais, Hähnchen, Croutons, Parmesan, Camembert und Caesar-Sauce." }
+    nombre: { es: "César", en: "Caesar", fr: "César", de: "Caesar Salat" },
+    descripcion: { es: "Lechuga, maíz, pollo, picatostes, parmesano, camembert y salsa césar.", en: "Lettuce, corn, chicken, croutons, parmesan, camembert and Caesar dressing.", fr: "Laitue, maïs, poulet, croûtons, parmesan, camembert et sauce César.", de: "Salat, Mais, Hähnchen, Croutons, Parmesan, Camembert und Caesar-Sauce." }
   },
   // #endregion
 
   // #region PIZZAS
   300: {
-    nombre: { es: "Margarita", en: "Margarita", fr: "Margarita", de: "Margarita" },
+    nombre: { es: "Margarita", en: "Margherita", fr: "Margherita", de: "Margherita" },
     descripcion: { es: "Tomate, orégano y queso.", en: "Tomato, oregano and cheese.", fr: "Tomate, origan et fromage.", de: "Tomate, Oregano und Käse." }
   },
   301: {
-    nombre: { es: "Jamón", en: "Ham Pizza", fr: "Jambon", de: "Schinken Pizza" },
+    nombre: { es: "Jamón", en: "Ham", fr: "Jambon", de: "Schinken" },
     descripcion: { es: "Tomate, jamón york y queso.", en: "Tomato, cooked ham and cheese.", fr: "Tomate, jambon blanc et fromage.", de: "Tomate, Kochschinken und Käse." }
   },
   302: {
-    nombre: { es: "Catalana", en: "Catalan Pizza", fr: "Catalane", de: "Katalanische Pizza" },
+    nombre: { es: "Catalana", en: "Catalan", fr: "Catalane", de: "Katalanische" },
     descripcion: { es: "Tomate, jamón serrano y queso.", en: "Tomato, serrano ham and cheese.", fr: "Tomate, jambon serrano et fromage.", de: "Tomate, Serrano-Schinken und Käse." }
   },
   303: {
-    nombre: { es: "Bacon", en: "Bacon Pizza", fr: "Bacon", de: "Speck Pizza" },
+    nombre: { es: "Bacon", en: "Bacon", fr: "Bacon", de: "Speck" },
     descripcion: { es: "Tomate, bacon y queso.", en: "Tomato, bacon and cheese.", fr: "Tomate, bacon et fromage.", de: "Tomate, Speck und Käse." }
   },
   304: {
@@ -116,7 +116,7 @@ export const textosPlatos = {
     descripcion: { es: "Nata, pimienta, bacon y queso.", en: "Cream, pepper, bacon and cheese.", fr: "Crème, poivre, bacon et fromage.", de: "Sahne, Pfeffer, Speck und Käse." }
   },
   309: {
-    nombre: { es: "Salmón", en: "Salmon Pizza", fr: "Saumon", de: "Lachs Pizza" },
+    nombre: { es: "Salmón", en: "Salmon", fr: "Saumon", de: "Lachs" },
     descripcion: { es: "Tomate, salmón y queso.", en: "Tomato, salmon and cheese.", fr: "Tomate, saumon et fromage.", de: "Tomate, Lachs und Käse." }
   },
   310: {
@@ -148,7 +148,7 @@ export const textosPlatos = {
     descripcion: { es: "Tomate, emmental, mozzarella, roquefort y parmesano.", en: "Tomato, emmental, mozzarella, blue cheese and parmesan.", fr: "Tomate, emmental, mozzarella, roquefort et parmesan.", de: "Tomate, Emmentaler, Mozzarella, Roquefort und Parmesan." }
   },
   317: {
-    nombre: { es: "Mezclada", en: "Mixed Pizza", fr: "Mélangée", de: "Gemischte Pizza" },
+    nombre: { es: "Mezclada", en: "Mixed", fr: "Mélangée", de: "Gemischte" },
     descripcion: { es: "Tomate, 4 quesos mezclados.", en: "Tomato, 4 mixed cheeses.", fr: "Tomate, mélange de 4 fromages.", de: "Tomate, 4 gemischte Käsesorten." }
   },
   318: {
@@ -160,11 +160,11 @@ export const textosPlatos = {
     descripcion: { es: "Tomate, jamón york, piña y queso.", en: "Tomato, ham, pineapple and cheese.", fr: "Tomate, jambon, ananas et fromage.", de: "Tomate, Schinken, Ananas und Käse." }
   },
   320: {
-    nombre: { es: "Mixta", en: "Mixed Pizza", fr: "Mixte", de: "Gemischte" },
+    nombre: { es: "Mixta", en: "Mixed", fr: "Mixte", de: "Gemischte" },
     descripcion: { es: "Tomate, jamón york, atún y queso.", en: "Tomato, ham, tuna and cheese.", fr: "Tomate, jambon, thon et fromage.", de: "Tomate, Schinken, Thunfisch und Käse." }
   },
   321: {
-    nombre: { es: "Con Costra", en: "Crusted Pizza", fr: "Avec Croûte d'Oeuf", de: "Krusten-Pizza" },
+    nombre: { es: "Con Costra", en: "Crusted", fr: "Avec Croûte d'Oeuf", de: "Krusten" },
     descripcion: { es: "Tomate, jamón york, pollo, pimiento, huevo batido y queso.", en: "Tomato, ham, chicken, peppers, beaten egg and cheese.", fr: "Tomate, jambon, poulet, poivron, œuf battu et fromage.", de: "Tomate, Schinken, Hähnchen, Paprika, geschlagenes Ei und Käse." }
   },
   322: {
@@ -180,15 +180,15 @@ export const textosPlatos = {
     descripcion: { es: "¡Sorpresa!", en: "Surprise!", fr: "Surprise !", de: "Überraschung!" }
   },
   325: {
-    nombre: { es: "Huertana", en: "Garden Pizza", fr: "Potagère", de: "Garten-Pizza" },
+    nombre: { es: "Huertana", en: "Garden", fr: "Potagère", de: "Garten" },
     descripcion: { es: "Tomate, cebolla, pimiento, champiñones, espárragos, alcachofa y queso.", en: "Tomato, onion, pepper, mushrooms, asparagus, artichoke and cheese.", fr: "Tomate, oignon, poivron, champignons, asperges, artichaut et fromage.", de: "Tomate, Zwiebel, Paprika, Pilze, Spargel, Artischocke und Käse." }
   },
   326: {
-    nombre: { es: "Marinera", en: "Seafood Pizza", fr: "Marinière", de: "Meeresfrüchte" },
+    nombre: { es: "Marinera", en: "Seafood", fr: "Marinière", de: "Meeresfrüchte" },
     descripcion: { es: "Tomate, cangrejo, gambas, atún y queso.", en: "Tomato, crab, prawns, tuna and cheese.", fr: "Tomate, crabe, crevettes, thon et fromage.", de: "Tomate, Krebsfleisch, Garnelen, Thunfisch und Käse." }
   },
   327: {
-    nombre: { es: "Barbacoa", en: "BBQ Pizza", fr: "Pizza Barbecue", de: "BBQ-Pizza" },
+    nombre: { es: "Barbacoa", en: "BBQ", fr: "Barbecue", de: "BBQ" },
     descripcion: { es: "Tomate, cebolla, carne picada, pollo, bacon, salsa barbacoa y queso.", en: "Tomato, onion, minced meat, chicken, bacon, BBQ sauce and cheese.", fr: "Tomate, oignon, viande hachée, poulet, bacon, sauce BBQ et fromage.", de: "Tomate, Zwiebel, Hackfleisch, Hähnchen, Speck, BBQ-Sauce und Käse." }
   },
   328: {
@@ -244,7 +244,7 @@ export const textosPlatos = {
   },
   // #endregion
 
-  // #region CARNES (POLLO)
+  // #region POLLOS
   500: {
     nombre: { es: "Pollo a la plancha", en: "Grilled chicken breast", fr: "Poulet grillé", de: "Gegrilltes Hähnchen" },
     descripcion: { es: "Pechuga de pollo a la plancha con patatas.", en: "Grilled chicken breast with potatoes.", fr: "Blanc de poulet à la plancha avec frites.", de: "Hähnchenbrust vom Grill mit Kartoffeln." }
@@ -286,7 +286,7 @@ export const textosPlatos = {
   },
   604: {
     nombre: { es: "César", en: "Caesar", fr: "César", de: "César" },
-    descripcion: { es: "Salsa fría ideal para ensaladas y carnes.", en: "Cold sauce ideal for salads and meats.", fr: "Sauce froide idéale pour les salades et les viandes.", de: "Kalte Sauce, ideal für Salate und Fleisch." }
+    descripcion: { es: "Salsa fría ideal para ensaladas y pollos.", en: "Cold sauce ideal for salads and chickens.", fr: "Sauce froide idéale pour les salades et les poulet.", de: "Kalte Sauce, ideal für Salate und volaille." }
   },
   605: {
     nombre: { es: "Rosa", en: "Pink Sauce", fr: "Sauce Rose", de: "Cocktailsauce" },
@@ -348,8 +348,12 @@ export const textosPlatos = {
     descripcion: { es: "Crep con el inconfundible sabor de Kinder.", en: "Crepe with the unmistakable Kinder flavor.", fr: "Crêpe au goût incomparable de Kinder.", de: "Crepe mit dem unverwechselbaren Kinder-Geschmack." } 
   },
   710: { 
-    nombre: { es: "Pizza", en: "Pizza", fr: "Pizza", de: "Pizza" }, 
-    descripcion: { es: "Chocolate o Kinder.", en: "Chocolate or Kinder.", fr: "Chocolat ou Kinder.", de: "Schokolade oder Kinder." } 
+    nombre: { es: "Pizza de Chocolate", en: "Chocolate Pizza", fr: "Pizza au Chocolat", de: "Schokoladenpizza" }, 
+    descripcion: { es: "Base de chocolate fundido decorada con divertidas virutas de colores.", en: "Melted chocolate base decorated with fun colorful sprinkles.", fr: "Base de chocolat fondu décorée de pépites colorées amusantes.", de: "Geschmolzene Schokoladenbasis, dekoriert mit lustigen bunten Streuseln." } 
+  },
+  711: { 
+    nombre: { es: "Pizza de Kinder", en: "Kinder Pizza", fr: "Pizza Kinder", de: "Kinder-Pizza" }, 
+    descripcion: { es: "Crema de Kinder con una lluvia de fideos de colores.", en: "Kinder cream with a shower of colorful sprinkles.", fr: "Crème Kinder avec une pluie de pépites colorées.", de: "Kinder-Creme mit einem Regen aus bunten Streuseln." } 
   },
   // #endregion
   

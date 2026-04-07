@@ -28,7 +28,7 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
   const location = useLocation(); // Detecta la URL actual
   const esCarta = location.pathname === '/carta';
   const [menuAbierto, setMenuAbierto] = useState(false);
-  const categorias = ['Entrantes', 'Ensaladas', 'Pizzas', 'Pastas', 'Carnes', 'Salsas', 'Postres', 'Bebidas', 'Vinos'];
+  const categorias = ['Entrantes', 'Ensaladas', 'Pizzas', 'Pastas', 'Pollos', 'Salsas', 'Postres', 'Bebidas', 'Vinos'];
 
   const cerrarMenu = () => setMenuAbierto(false);
 
@@ -346,7 +346,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
 
   const postresCaseros = platosFiltrados.filter((p) => p.id <= 706);
   const postresCreps = platosFiltrados.filter((p) => p.id > 706 && p.id < 710);
-  const postresPizzas = platosFiltrados.filter((p) => p.id === 710);
+  const postresPizzas = platosFiltrados.filter((p) => p.id >= 710);
   
   const cerveza = platosFiltrados.filter((p) => p.id < 803);
   const refrescos = platosFiltrados.filter((p) => p.id >= 803);
@@ -411,7 +411,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       )}
 
       {(categoria === "Entrantes" ||
-        categoria === "Carnes" ||
+        categoria === "Pollos" ||
         categoria === "Pastas") && (
         <div className="aviso-cambio-precio">
           <p>{textosMain[idioma].consultarSalsas}</p>
@@ -431,7 +431,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
         <>
           <h2 className="titulo-subcategoria">{textosMain[idioma].salsasCalientes}</h2>
           <div className="pizza-grid pizzas">{salsasCalientes.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].salsasFrias}</h2>
+          <h2 className="titulo-subcategoria">{textosMain[idioma].salsasFrias}</h2>
           <div className="pizza-grid pizzas">{salsasFrias.map((p) => renderCard(p))}</div>
         </>
       )}
@@ -440,7 +440,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       {categoria === "Pastas" && (
         <>
           <div className="pizza-grid pizzas">{pastaNormal.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].tipoPasta}</h2>
+          <h2 className="titulo-subcategoria">{textosMain[idioma].tipoPasta}</h2>
           <div className="pizza-grid pizzas">{pastaEspecial.map((p) => renderCard(p))}</div>
         </>
       )}
@@ -449,9 +449,9 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       {categoria === "Postres" && (
         <>
           <div className="pizza-grid pizzas">{postresCaseros.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].creps}</h2>
+          <h2 className="titulo-subcategoria">{textosMain[idioma].Creps}</h2>
           <div className="pizza-grid pizzas">{postresCreps.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].pizzas}</h2>
+          <h2 className="titulo-subcategoria">{textosMain[idioma].Pizzas}</h2>
           <div className="pizza-grid pizzas">{postresPizzas.map((p) => renderCard(p))}</div>
         </>
       )}
@@ -459,15 +459,15 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
       {/* CASO D: BEBIDAS */}
       {categoria === "Bebidas" && (
         <>
-          <h2 className="titulo-subcategoria">REFRESCOS</h2>
+          <h2 className="titulo-subcategoria">{textosMain[idioma].Refrescos}</h2>
           <div className="pizza-grid pizzas">{cerveza.map((p) => renderCard(p))}</div>
-          <h2 className="titulo-subcategoria" style={{ marginTop: "50px" }}>{textosMain[idioma].cerveza}</h2>
+          <h2 className="titulo-subcategoria">{textosMain[idioma].Cerveza}</h2>
           <div className="pizza-grid pizzas">{refrescos.map((p) => renderCard(p))}</div>
         </>
       )}
       
       {!["Salsas", "Pastas", "Postres", "Bebidas"].includes(categoria) && (
-        <div className={`pizza-grid ${["Pizzas", "Entrantes", "Carnes", "Ensaladas"].includes(categoria) ? "pizzas" : ""}`}>
+        <div className={`pizza-grid ${["Pizzas", "Entrantes", "Pollos", "Ensaladas"].includes(categoria) ? "pizzas" : ""}`}>
           {platosFiltrados.map((p) => renderCard(p))}
         </div>
       )}
@@ -485,7 +485,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
         </div>
       )}
       {(categoria === "Entrantes" ||
-        categoria === "Carnes" ||
+        categoria === "Pollos" ||
         categoria === "Pastas") && (
         <div className="aviso-cambio-precio">
           <p>{textosMain[idioma].consultarSalsas}</p>
