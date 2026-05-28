@@ -81,9 +81,8 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
                   key={idm}
                   className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
                   onClick={() => { setIdioma(idm); cerrarMenu(); }}
-                >
-                  {idm.toUpperCase()}
-                </button>
+                  style={{ backgroundImage: `url('/flags/${idm}.png')` }} 
+                />
               ))}
             </div>
           </div>
@@ -137,9 +136,8 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
                   key={idm}
                   className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
                   onClick={() => { setIdioma(idm); cerrarMenu(); }}
-                >
-                  {idm.toUpperCase()}
-                </button>
+                  style={{ backgroundImage: `url('/flags/${idm}.png')` }} 
+                />
               ))}
             </div>
           </div>
@@ -154,9 +152,8 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
             key={idm}
             className={`btn-idioma ${idioma === idm ? 'activo' : ''}`} 
             onClick={() => { setIdioma(idm); cerrarMenu(); }}
-          >
-            {idm.toUpperCase()}
-          </button>
+            style={{ backgroundImage: `url('/flags/${idm}.png')` }} 
+          />
         ))}
       </div>
 

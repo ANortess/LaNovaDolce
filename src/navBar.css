@@ -92,24 +92,39 @@
 }
 
 .btn-idioma {
-  background: none;
-  border: 1px solid var(--mostaza);
-  color: var(--mostaza);
-  padding: 5px 12px;
-  border-radius: 20px;
+  width: 40px;       /* Ancho de la caja */
+  height: 20px;      /* Alto de la caja */
+  background-size: cover;      /* La bandera cubre toda la caja */
+  background-position: center; 
+  background-repeat: no-repeat;
+  
+  /* AQUÍ ESTÁ EL FORMATO CAJA */
+  border: 2px solid var(--mostaza); /* Borde mostaza */
+  border-radius: 10px;              /* Bordes redondeados tipo tarjeta */
   cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+  padding: 0;
 }
 
 .btn-idioma:hover {
-  background-color: var(--mostaza);
-  color: black;
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para efecto de elevación */
 }
 
 .btn-idioma.activo {
-  background-color: var(--mostaza);
-  color: black;
+  opacity: 1;
+  border-width: 3px;    /* Un poco más grueso cuando está activo */
+  transform: scale(1.1);
+  box-shadow: 0 0 5px var(--mostaza); /* Resplandor mostaza */
+}
+
+.bandera-icon {
+  width: 30px;  /* Ajusta el tamaño según necesites */
+  height: 20px;
+  object-fit: cover;
+  display: block;
 }
 
 .hamburger {
