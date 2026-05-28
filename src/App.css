@@ -414,6 +414,37 @@ html, body {
   box-shadow: 0 5px 15px rgba(255, 194, 68, 0.3);
 }
 
+.contenedor-opciones-carta {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las dos cartas/botones */
+  margin-top: 40px;
+  flex-wrap: wrap; /* Para que se apilen si la pantalla es pequeña */
+}
+
+.btn-carta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--negro); /* Fondo oscuro */
+  color: var(--mostaza); /* Texto color mostaza */
+  border: 2px solid var(--mostaza);
+  text-decoration: none;
+  padding: 20px 40px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s;
+  min-width: 250px;
+}
+
+.btn-carta:hover {
+  background-color: var(--mostaza);
+  color: var(--negro);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 
 
 

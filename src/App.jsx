@@ -26,8 +26,8 @@ const ScrollToTop = () => {
 };
 
 const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
-  const location = useLocation(); // Detecta la URL actual
-  const esCarta = location.pathname === '/carta';
+  const location = useLocation();
+  const esCarta_Comedor = location.pathname === '/carta-comedor';
   const [menuAbierto, setMenuAbierto] = useState(false);
   const categorias = ['Entrantes', 'Ensaladas', 'Pizzas', 'Pastas', 'Pollos', 'Salsas', 'Postres', 'Bebidas', 'Vinos'];
 
@@ -40,7 +40,7 @@ const Navbar = ({ idioma, setIdioma, t, setCategoria, categoriaActual }) => {
           <img src={logoPizzeria} alt="Logo" className="logo-img" />
         </Link>
       </div>
-      {!esCarta ? (
+      {!esCarta_Comedor ? (
         <>
         {/* EL MENÚ DE ESCRITORIO: Siempre renderizado */}
           <div className="navbar-menu">
@@ -292,9 +292,14 @@ const Home = ({ t, idioma }) => (
         <p className="p-resalte">{t.cartaPregunta}</p>
       </div>
 
-      <div style={{ marginTop: '40px' }}>
-        <Link to="/carta" className="btn-mostrar" onClick={() => window.scrollTo(0, 0)}>
-          {t.verCarta}
+      {/* Contenedor de las dos opciones */}
+      <div className="contenedor-opciones-carta">
+        <Link to="/carta-comedor" className="btn-carta" onClick={() => window.scrollTo(0, 0)}>
+          {t.verCartaComedor}
+        </Link>
+        
+        <Link to="/carta-recoger" className="btn-carta" onClick={() => window.scrollTo(0, 0)}>
+          {t.verCartaRecoger}
         </Link>
       </div>
     </section>
@@ -412,7 +417,7 @@ const PaginaCarta = ({ t, idioma, categoria }) => {
   };
 
   return (
-    <section id="carta" className="carta-container full-view">
+    <section id="carta-comedor" className="carta-container full-view">
       {/* --- AVISOS SUPERIORES --- */}
       {categoria === "Pizzas" && (
         <div className="aviso-cambio-precio">
@@ -551,7 +556,7 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Home t={t} idioma={idioma} />} />
-        <Route path="/carta" element={<PaginaCarta t={t} idioma={idioma} categoria={categoria} />} />
+        <Route path="/carta-comedor" element={<PaginaCarta t={t} idioma={idioma} categoria={categoria} />} />
       </Routes>
 
       <footer className="footer-full-width">

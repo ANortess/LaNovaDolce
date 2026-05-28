@@ -2,12 +2,12 @@
   "redirects": [
     {
       "source": "/menu-esp.html",
-      "destination": "/carta",
+      "destination": "/carta-comedor",
       "permanent": true
     },
     {
       "source": "/2025%20esp.pdf",
-      "destination": "/carta",
+      "destination": "/carta-comedor",
       "permanent": true
     },
     {
