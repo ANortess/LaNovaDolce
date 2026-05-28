@@ -119,7 +119,7 @@
   transform: scale(1.1);
   box-shadow: 0 0 5px var(--mostaza); /* Resplandor mostaza */
 }
-
+ 
 .bandera-icon {
   width: 30px;  /* Ajusta el tamaño según necesites */
   height: 20px;
