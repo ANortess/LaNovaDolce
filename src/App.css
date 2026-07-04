@@ -445,7 +445,19 @@ html, body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
+@media (max-width: 600px) {
+  .btn-carta {
+    padding: 15px 25px;    /* Reducimos el padding */
+    font-size: 1.1rem;     /* Reducimos el tamaño de la letra */
+    min-width: 180px;      /* Reducimos el ancho mínimo */
+    border-radius: 10px;   /* Ajustamos un poco el redondeado */
+  }
 
+  .contenedor-opciones-carta {
+    gap: 10px;             /* Menos espacio entre botones en móvil */
+    margin-top: 20px;      /* Menos margen superior */
+  }
+}
 
 
 
@@ -462,22 +474,6 @@ html, body {
   margin-bottom: 20px;
   position: relative;
   display: inline-block; /* Para que la línea de abajo ocupe solo el ancho del texto */
-}
-
-.btn-cat-nav {
-  background: none;
-  border: none;
-  color: #ccc;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: 0.85rem;
-  padding: 5px 0px;
-  transition: 0.3s;
-}
-
-.btn-cat-nav.activo {
-  color: var(--mostaza);
 }
 
 

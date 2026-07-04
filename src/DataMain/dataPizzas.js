@@ -7,129 +7,129 @@ export const cartaPizzeria = [
   { 
     id: 100, 
     categoria: "Entrantes",
-    precio: "7,60", 
+    precio: { comedor: "7,80", recoger: "8,00" },
     url: EntrantesImages.ruedaMixta,
     alergenos: ['lacteos']
   },
   { 
     id: 101, 
     categoria: "Entrantes", 
-    precio: "4,40", 
+    precio: { comedor: "4,60", recoger: "5,80" }, 
     url: EntrantesImages.patatas,
-    alergenos: []
+    alergenos: ['gluten']
   },
   { 
     id: 102, 
     categoria: "Entrantes", 
-    precio: "5,00", 
+    precio: { comedor: "5,20", recoger: "5,40" }, 
     url: EntrantesImages.patatasGajo,
-    alergenos: [] 
+    alergenos: ['gluten'] 
   },
   { 
     id: 103, 
     categoria: "Entrantes", 
-    precio: "2,60", 
+    precio: { comedor: "2,80", recoger: "3,00" }, 
     url: EntrantesImages.panAjo,
     alergenos: ['gluten']
   },
   { 
     id: 104, 
     categoria: "Entrantes", 
-    precio: "6,60", 
+    precio: { comedor: "6,80", recoger: "7,00" }, 
     url: EntrantesImages.dados,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 105, 
     categoria: "Entrantes", 
-    precio: "2,60", 
+    precio: { comedor: "2,80", recoger: "3,00" }, 
     url: EntrantesImages.jalapenos,
     alergenos: ['lacteos']
   },
   { 
     id: 106, 
     categoria: "Entrantes", 
-    precio: "8,50", 
+    precio: { comedor: "8,70", recoger: "8,90" }, 
     url: EntrantesImages.periquitos,
     alergenos: ['huevos', 'gluten']
   },
   { 
     id: 107, 
     categoria: "Entrantes", 
-    precio: "2,50", 
+    precio: { comedor: "2,70", recoger: "2,90" }, 
     url: EntrantesImages.croquetas,
     alergenos: ['huevos', 'gluten', 'lacteos']
   },
   { 
     id: 108, 
     categoria: "Entrantes", 
-    precio: "2,30", 
+    precio: { comedor: "2,50", recoger: "2,70" }, 
     url: EntrantesImages.saquitos,
     alergenos: ['lacteos']
   },
   { 
     id: 109, 
     categoria: "Entrantes", 
-    precio: "5,00", 
+    precio: { comedor: "5,20", recoger: "5,40" }, 
     url: EntrantesImages.papasBravas,
-    alergenos: ['huevos'] // Por el allioli
+    alergenos: ['huevos', 'lacteos'] // Por el allioli
   },
   { 
     id: 110, 
     categoria: "Entrantes", 
-    precio: "8,50", 
+    precio: { comedor: "8,70", recoger: "8,90" }, 
     url: EntrantesImages.entranteBerenjena,
     alergenos: ['huevos', 'gluten']
   },
   // #endregion
   
-  // #regionEnsaladas
+  // #region Ensaladas
   { 
     id: 200, 
     categoria: "Ensaladas", 
-    precio: "7,50",
+    precio: { comedor: "7,70", recoger: "7,90" },
     url: EnsaladasImages.ensModena,
     alergenos: ['lacteos']
   },
   { 
     id: 201, 
     categoria: "Ensaladas", 
-    precio: "7,70",
+    precio: { comedor: "7,90", recoger: "8,10" },
     url: EnsaladasImages.ensLaNova,
     alergenos: ['crustaceos', 'pescado']
   },
   { 
     id: 202, 
     categoria: "Ensaladas", 
-    precio: "6,90",
+    precio: { comedor: "7,10", recoger: "7,30" },
     url: EnsaladasImages.ensMixta,
     alergenos: ['pescado', 'huevos']
   },
   { 
     id: 203, 
     categoria: "Ensaladas", 
-    precio: "7,10",
+    precio: { comedor: "7,30", recoger: "7,50" },
     url: EnsaladasImages.ensRica,
     alergenos: ['lacteos']
   },
   { 
     id: 204, 
     categoria: "Ensaladas", 
-    precio: "7,50",
+    precio: { comedor: "7,70", recoger: "7,90" },
     url: EnsaladasImages.ensTropical,
     alergenos: []
   },
   { 
     id: 205, 
     categoria: "Ensaladas", 
-    precio: "7,50",
+    precio: { comedor: "7,70", recoger: "7,90" },
     url: EnsaladasImages.ensExotica,
     alergenos: ['pescado']
   },
   { 
     id: 206, 
     categoria: "Ensaladas",
-    precio: "8,20",
+    precio: { comedor: "8,40", recoger: "8,60" },
     url: EnsaladasImages.ensCesar,
     alergenos: ['gluten', 'lacteos']
   },
@@ -139,203 +139,203 @@ export const cartaPizzeria = [
   { 
     id: 300, 
     categoria: "Pizzas", 
-    precio: { pequena: "6,30", grande: "8,40" },
+    precio: { comedor: { pequena: "6,70", grande: "8,70" }, recoger: { pequena: "6,90", grande: "8,90" } },
     url: PizzasImages.margarita,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 301, 
     categoria: "Pizzas", 
-    precio: { pequena: "6,90", grande: "9,00" },
+    precio: { comedor: { pequena: "7,10", grande: "9,30" }, recoger: { pequena: "7,30", grande: "9,50" } },
     url: PizzasImages.jamon,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 302, 
     categoria: "Pizzas",
-    precio: { pequena: "7,50", grande: "9,80" },
+    precio: { comedor: { pequena: "7,70", grande: "10,10" }, recoger: { pequena: "7,90", grande: "10,30" } },
     url: PizzasImages.catalana,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 303, 
     categoria: "Pizzas",
-    precio: { pequena: "7,50", grande: "9,80" },
+    precio: { comedor: { pequena: "7,70", grande: "10,10" }, recoger: { pequena: "7,90", grande: "10,30" } },
     url: PizzasImages.deBacon,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 304, 
     categoria: "Pizzas",
-    precio: { pequena: "7,50", grande: "9,80" },
+    precio: { comedor: { pequena: "7,70", grande: "10,10" }, recoger: { pequena: "7,90", grande: "10,30" } },
     url: PizzasImages.caprichosa,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 305, 
     categoria: "Pizzas",
-    precio: { pequena: "7,50", grande: "9,80" },
+    precio: { comedor: { pequena: "7,70", grande: "10,10" }, recoger: { pequena: "7,90", grande: "10,30" } },
     url: PizzasImages.napolitana,
     alergenos: ['pescado', 'gluten', 'lacteos']
   },
   { 
     id: 306, 
     categoria: "Pizzas",
-    precio: { pequena: "7,50", grande: "9,80" },
+    precio: { comedor: { pequena: "7,70", grande: "10,10" }, recoger: { pequena: "7,90", grande: "10,30" } },
     url: PizzasImages.romana,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 307, 
     categoria: "Pizzas",
-    precio: { pequena: "8,00", grande: "10,40" },
+    precio: { comedor: { pequena: "8,20", grande: "10,70" }, recoger: { pequena: "8,40", grande: "10,90" } },
     url: PizzasImages.boloñesa,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 308, 
     categoria: "Pizzas",
-    precio: { pequena: "8,20", grande: "10,60" },
+    precio: { comedor: { pequena: "8,60", grande: "11,10" }, recoger: { pequena: "8,80", grande: "11,30" } },
     url: PizzasImages.carbonara,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 309, 
     categoria: "Pizzas",
-    precio: { pequena: "8,90", grande: "10,80" },
+    precio: { comedor: { pequena: "9,50", grande: "12,10" }, recoger: { pequena: "9,70", grande: "12,30" } },
     url: PizzasImages.deSalmon,
     alergenos: ['pescado', 'gluten', 'lacteos']
   },
   { 
     id: 310, 
     categoria: "Pizzas",
-    precio: { pequena: "7,90", grande: "10,20" },
+    precio: { comedor: { pequena: "8,10", grande: "10,50" }, recoger: { pequena: "8,30", grande: "10,70" } },
     url: PizzasImages.deliciosa,
     alergenos: ['pescado', 'huevos', 'gluten', 'lacteos']
   },
   { 
     id: 311, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,80", grande: "10,70" },
+    precio: { comedor: { pequena: "9,10", grande: "11,10" }, recoger: { pequena: "9,30", grande: "11,30" } },
     url: PizzasImages.cuatroEstaciones,
     alergenos: ['pescado', 'huevos', 'gluten', 'lacteos']
   },
   { 
     id: 312, 
     categoria: "Pizzas", 
-    precio: { pequena: "7,80", grande: "10,40" },
+    precio: { comedor: { pequena: "8,10", grande: "10,70" }, recoger: { pequena: "8,30", grande: "10,90" } },
     url: PizzasImages.delMonte,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 313, 
     categoria: "Pizzas", 
-    precio: { pequena: "7,90", grande: "10,20" },
+    precio: { comedor: { pequena: "8,10", grande: "10,50" }, recoger: { pequena: "8,30", grande: "10,70" } },
     url: PizzasImages.peperoni,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 314, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,20", grande: "10,70" },
+    precio: { comedor: { pequena: "8,40", grande: "11,10" }, recoger: { pequena: "8,60", grande: "11,30" } },
     url: PizzasImages.torpedo,
     alergenos: ['huevos', 'gluten', 'lacteos']
   },
   { 
     id: 315, 
     categoria: "Pizzas", 
-    precio: { pequena: "9,20", grande: "11,20" },
+    precio: { comedor: { pequena: "9,50", grande: "12,10" }, recoger: { pequena: "9,70", grande: "12,30" } },
     url: PizzasImages.especial,
     alergenos: ['pescado', 'gluten', 'lacteos']
   },
   { 
     id: 316, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,00", grande: "10,40" },
+    precio: { comedor: { pequena: "8,20", grande: "10,70" }, recoger: { pequena: "8,40", grande: "10,90" } },
     url: PizzasImages.cuatroQuesos,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 317, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,00", grande: "10,40" },
+    precio: { comedor: { pequena: "8,20", grande: "10,70" }, recoger: { pequena: "8,40", grande: "10,90" } },
     url: PizzasImages.mezclada,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 318, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,00", grande: "10,40" },
+    precio: { comedor: { pequena: "8,20", grande: "10,70" }, recoger: { pequena: "8,40", grande: "10,90" } },
     url: PizzasImages.vegetal,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 319, 
     categoria: "Pizzas", 
-    precio: { pequena: "7,60", grande: "10,00" },
+    precio: { comedor: { pequena: "7,80", grande: "10,30" }, recoger: { pequena: "8,00", grande: "10,50" } },
     url: PizzasImages.tropical,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 320, 
     categoria: "Pizzas", 
-    precio: { pequena: "7,60", grande: "10,00" },
+    precio: { comedor: { pequena: "7,80", grande: "10,30" }, recoger: { pequena: "8,00", grande: "10,50" } },
     url: PizzasImages.mixta,
     alergenos: ['pescado', 'gluten', 'lacteos']
   },
   { 
     id: 321, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,30", grande: "10,80" },
+    precio: { comedor: { pequena: "8,70", grande: "11,30" }, recoger: { pequena: "8,90", grande: "11,50" } },
     url: PizzasImages.conCostra,
     alergenos: ['huevos', 'gluten', 'lacteos']
   },
   { 
     id: 322, 
     categoria: "Pizzas", 
-    precio: { pequena: "7,50", grande: "10,00" },
+    precio: { comedor: { pequena: "7,70", grande: "10,30" }, recoger: { pequena: "7,90", grande: "10,50" } },
     url: PizzasImages.siciliana,
     alergenos: ['pescado', 'gluten', 'lacteos']
   },
   { 
     id: 323, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,50", grande: "11,10" },
+    precio: { comedor: { pequena: "8,70", grande: "11,40" }, recoger: { pequena: "8,90", grande: "11,60" } },
     url: PizzasImages.ranchera,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 324, 
     categoria: "Pizzas", 
-    precio: { pequena: "9,30", grande: "11,50" },
+    precio: { comedor: { pequena: "9,50", grande: "11,80" }, recoger: { pequena: "9,70", grande: "12,00" } },
     url: PizzasImages.calzone,
     alergenos: ['pescado', 'huevos', 'gluten', 'lacteos']
   },
   { 
     id: 325, 
     categoria: "Pizzas", 
-    precio: { pequena: "7,80", grande: "10,40" },
+    precio: { comedor: { pequena: "8,10", grande: "10,70" }, recoger: { pequena: "8,30", grande: "10,90" } },
     url: PizzasImages.huertana,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 326, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,90", grande: "10,80" },
+    precio: { comedor: { pequena: "9,10", grande: "11,10" }, recoger: { pequena: "9,30", grande: "11,30" } },
     url: PizzasImages.marinera,
     alergenos: ['crustaceos', 'pescado', 'gluten', 'lacteos']
   },
   { 
     id: 327, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,50", grande: "11,10" },
+    precio: { comedor: { pequena: "8,70", grande: "11,40" }, recoger: { pequena: "8,90", grande: "11,60" } },
     url: PizzasImages.barbacoa,
     alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 328, 
     categoria: "Pizzas", 
-    precio: { pequena: "8,40", grande: "11,00" },
+    precio: { comedor: { pequena: "8,60", grande: "11,30" }, recoger: { pequena: "8,80", grande: "11,50" } },
     url: PizzasImages.pompeya,
     alergenos: ['gluten', 'lacteos']
   },
@@ -345,77 +345,77 @@ export const cartaPizzeria = [
   { 
     id: 400, 
     categoria: "Pastas", 
-    precio: "9,30",
+    precio: { comedor: "9,60", recoger: "9,80" },
     url: PastaImages.lasaña,
-    alergenos: ['lacteos']
+    alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 401, 
     categoria: "Pastas", 
-    precio: "9,20",
+    precio: { comedor: "9,50", recoger: "9,70" },
     url: PastaImages.lasañaEspinacas,
-    alergenos: ['lacteos']
+    alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 402, 
     categoria: "Pastas", 
-    precio: "9,40",
+    precio: { comedor: "9,70", recoger: "9,90" },
     url: PastaImages.lasañaBerejenas,
-    alergenos: ['lacteos']
+    alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 403, 
     categoria: "Pastas", 
-    precio: "9,60",
+    precio: { comedor: "9,90", recoger: "10,10" },
     url: PastaImages.canelones,
-    alergenos: ['lacteos']
+    alergenos: ['gluten', 'lacteos']
   },
   { 
     id: 404, 
     categoria: "Pastas", 
-    precio: "8,00",
+    precio: { comedor: "8,30", recoger: "8,50" },
     url: PastaImages.boloñesaPasta,
     alergenos: []
   },
   { 
     id: 405, 
     categoria: "Pastas", 
-    precio: "8,20",
+    precio: { comedor: "8,50", recoger: "8,70" },
     url: PastaImages.carbonaraPasta,
     alergenos: ['lacteos']
   },
   { 
     id: 406, 
     categoria: "Pastas", 
-    precio: "8,00",
+    precio: { comedor: "8,30", recoger: "8,50" },
     url: PastaImages.alAjoPasta,
     alergenos: []
   },
   { 
     id: 407, 
     categoria: "Pastas", 
-    precio: "7,30",
+    precio: { comedor: "7,60", recoger: "7,80" },
     url: PastaImages.blancosPasta,
     alergenos: []
   },
   { 
     id: 408, 
     categoria: "Pastas", 
-    precio: "8,20",
+    precio: { comedor: "8,50", recoger: "8,70" },
     url: PastaImages.roquefortPasta,
     alergenos: ['lacteos']
   },
   { 
     id: 409, 
     categoria: "Pastas", 
-    precio: "8,20",
+    precio: { comedor: "8,50", recoger: "8,70" },
     url: PastaImages.vesubioPasta,
     alergenos: []
   },
   { 
     id: 410, 
     categoria: "Pastas", 
-    precio: "8,20",
+    precio: { comedor: "8,50", recoger: "8,70" },
     url: PastaImages.cuatroQuesosPasta,
     alergenos: ['lacteos']
   },
@@ -425,35 +425,35 @@ export const cartaPizzeria = [
   { 
     id: 500, 
     categoria: "Pollos", 
-    precio: "13,10",
+    precio: { comedor: "13,40", recoger: "13,60" },
     url: PollosImages.aLaPlancha,
     alergenos: []
   },
   { 
     id: 501, 
     categoria: "Pollos", 
-    precio: "14,20",
+    precio: { comedor: "14,60", recoger: "14,80" },
     url: PollosImages.aLaPimienta,
-    alergenos: ["gluten"]
+    alergenos: ["gluten", "lacteos"]
   },
   { 
     id: 502, 
     categoria: "Pollos", 
-    precio: "14,30",
+    precio: { comedor: "14,70", recoger: "14,90" },
     url: PollosImages.alRoquefort,
     alergenos: ["gluten", "lacteos"]
   },
   { 
     id: 503, 
     categoria: "Pollos", 
-    precio: "14,00",
+    precio: { comedor: "14,50", recoger: "14,70" },
     url: PollosImages.aLaCrema,
     alergenos: ["gluten", "lacteos"]
   },
   { 
     id: 504, 
     categoria: "Pollos", 
-    precio: "14,20",
+    precio: { comedor: "14,40", recoger: "14,60" },
     url: PollosImages.aLaMilanesa,
     alergenos: ["huevos", "gluten"]
   },
@@ -463,65 +463,65 @@ export const cartaPizzeria = [
   { 
     id: 600, 
     categoria: "Salsas", 
-    precio: "2,90",
-    url: SalsasImages.roquefortCaliente, // Asumiendo que tienes este objeto de imágenes
-    alergenos: ["lacteos"]
+    precio: { comedor: "3,10", recoger: "3,30" },
+    url: SalsasImages.roquefortCaliente,
+    alergenos: ["lacteos", "gluten"]
   },
   { 
     id: 601, 
     categoria: "Salsas", 
-    precio: "2,70",
+    precio: { comedor: "2,90", recoger: "3,10" },
     url: SalsasImages.cremaCaliente,
     alergenos: ["lacteos", "gluten"]
   },
   { 
     id: 602, 
     categoria: "Salsas", 
-    precio: "2,80",
+    precio: { comedor: "3,10", recoger: "3,30" },
     url: SalsasImages.pimientaCaliente,
     alergenos: ["lacteos", "gluten"]
   },
   { 
     id: 603, 
     categoria: "Salsas", 
-    precio: "0,50",
+    precio: { comedor: "0,70", recoger: "0,90" },
     url: SalsasImages.bravaKetchupMayonesa,
     alergenos: ["huevos"] // Basado en la mayonesa
   },
   { 
     id: 604, 
     categoria: "Salsas", 
-    precio: "1,20",
+    precio: { comedor: "1,50", recoger: "1,70" },
     url: SalsasImages.cesar,
     alergenos: ["lacteos", "huevos", "pescado"] // Ingredientes típicos César
   },
   { 
     id: 605, 
     categoria: "Salsas", 
-    precio: "1,30",
+    precio: { comedor: "1,50", recoger: "1,70" },
     url: SalsasImages.rosa,
-    alergenos: ["huevos"]
+    alergenos: ["lacteos", "huevos"]
   },
   { 
     id: 606, 
     categoria: "Salsas", 
-    precio: "1,30",
+    precio: { comedor: "1,60", recoger: "1,80" },
     url: SalsasImages.barbacoaSalsa,
     alergenos: []
   },
   { 
     id: 607, 
     categoria: "Salsas", 
-    precio: "2,50",
+    precio: { comedor: "2,80", recoger: "3,00" },
     url: SalsasImages.roquefortFria,
     alergenos: ["lacteos"]
   },
   { 
     id: 608, 
     categoria: "Salsas", 
-    precio: "1,20",
+    precio: { comedor: "1,40", recoger: "1,60" },
     url: SalsasImages.allili,
-    alergenos: ["huevos"]
+    alergenos: ["huevos", "lacteos"]
   },
   // #endregion
 
@@ -529,84 +529,77 @@ export const cartaPizzeria = [
   { 
     id: 700, 
     categoria: "Postres", 
-    precio: "5,00", 
+    precio: { comedor: "5,50", recoger: "5,70" },
     url: PostresImages.tartaQueso, 
     alergenos: ["gluten", "lacteos"] 
   },
   { 
     id: 701, 
     categoria: "Postres", 
-    precio: "5,00", 
+    precio: { comedor: "5,50", recoger: "5,70" },
     url: PostresImages.tarta3Chocolates, 
     alergenos: ["gluten", "lacteos"] 
   },
   { 
     id: 702, 
     categoria: "Postres", 
-    precio: "5,00", 
+    precio: { comedor: "5,50", recoger: "5,70" },
     url: PostresImages.tartaLotus, 
     alergenos: ["huevos", "gluten", "lacteos"] 
   },
   { 
     id: 703, 
     categoria: "Postres", 
-    precio: "5,00", 
+    precio: { comedor: "5,50", recoger: "5,70" },
     url: PostresImages.tartaOreo, 
     alergenos: ["frutos_cascara", "gluten", "lacteos"] 
   },
   { 
-    id: 704, 
-    categoria: "Postres", 
-    precio: "4,00", 
-    url: PostresImages.natillas, 
-    alergenos: ["gluten", "lacteos"] 
-  },
-  { 
     id: 705, 
     categoria: "Postres", 
-    precio: "5,10", 
+    precio: { comedor: "5,60", recoger: "5,80" },
     url: PostresImages.brownie, 
     alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
   },
   { 
     id: 706, 
     categoria: "Postres", 
-    precio: "5,00", 
+    precio: { comedor: "5,50", recoger: "5,70" },
     url: PostresImages.flanTurron, 
     alergenos: ["frutos_cascara", "gluten", "lacteos"] 
   },
   { 
     id: 707, 
     categoria: "Postres", 
-    precio: "3,50", 
+    precio: { comedor: "3,80", recoger: "4,00" },
     url: PostresImages.crepAzucar, 
     alergenos: ["huevos", "gluten", "lacteos"] 
   },
   { 
     id: 708, 
     categoria: "Postres", 
-    precio: "3,80", 
+    precio: { comedor: "4,10", recoger: "4,30" },
     url: PostresImages.crepChocolate, 
     alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
   },
   { 
     id: 709, 
     categoria: "Postres", 
-    precio: "4,00", 
+    precio: { comedor: "4,30", recoger: "4,50" },
     url: PostresImages.crepKinder, 
     alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
   },
   { 
     id: 710, 
     categoria: "Postres", 
-    precio: "5,00", 
+    precio: { comedor: "5,50", recoger: "5,70" },
     url: PostresImages.pizzaChocolate, 
     alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
   },
   { 
     id: 711, 
     categoria: "Postres", 
-    precio: "5,00", 
+    precio: { comedor: "5,50", recoger: "5,70" },
     url: PostresImages.pizzaKinder, 
     alergenos: ["frutos_cascara", "huevos", "gluten", "lacteos"] 
   },
@@ -616,91 +609,91 @@ export const cartaPizzeria = [
   { 
     id: 800, 
     categoria: "Bebidas", 
-    precio: "1,80", 
+    precio: { comedor: "1,80", recoger: "1,90" },
     url: BebidasImages.agua, 
     alergenos: [] 
   },
   { 
     id: 801, 
     categoria: "Bebidas", 
-    precio: "1,50", 
+    precio: { comedor: "1,50" },
     url: BebidasImages.zumos, 
     alergenos: [] 
   },
   { 
     id: 802, 
     categoria: "Bebidas", 
-    precio: "2,30", 
+    precio: { comedor: "2,50", recoger: "2,60" },
     url: BebidasImages.refrescos, 
     alergenos: [] 
   },
   { 
     id: 803, 
     categoria: "Bebidas", 
-    precio: "2,50", 
+    precio: { comedor: "2,70" },
     url: BebidasImages.mahouTercio, 
     alergenos: ["gluten"] 
   },
   { 
     id: 804, 
     categoria: "Bebidas", 
-    precio: "2,90", 
+    precio: { comedor: "3,20" },
     url: BebidasImages.alhambra1925, 
     alergenos: ["gluten"] 
   },
   { 
     id: 805, 
     categoria: "Bebidas", 
-    precio: "1,80", 
+    precio: { comedor: "1,80" },
     url: BebidasImages.mahouQuinto, 
     alergenos: ["gluten"] 
   },
   { 
     id: 806, 
     categoria: "Bebidas", 
-    precio: "2,60", 
+    precio: { comedor: "2,60" },
     url: BebidasImages.sangriaCana, 
     alergenos: [] 
   },
   { 
     id: 807, 
     categoria: "Bebidas", 
-    precio: "4,80", 
+    precio: { comedor: "4,80" },
     url: BebidasImages.sangriaMedia, 
     alergenos: [] 
   },
   { 
     id: 808, 
     categoria: "Bebidas", 
-    precio: "8,30", 
+    precio: { comedor: "8,30" },
     url: BebidasImages.sangriaJarra, 
     alergenos: [] 
   },
   { 
     id: 809, 
     categoria: "Bebidas", 
-    precio: "2,30", 
+    precio: { comedor: "2,80" }, 
     url: BebidasImages.tintoCana, 
     alergenos: [] 
   },
   { 
     id: 810, 
     categoria: "Bebidas", 
-    precio: "4,20", 
+    precio: { comedor: "4,50" }, 
     url: BebidasImages.tintoMedia, 
     alergenos: [] 
   },
   { 
     id: 811, 
     categoria: "Bebidas", 
-    precio: "7,90", 
+    precio: { comedor: "8,10" }, 
     url: BebidasImages.tintoJarra, 
     alergenos: [] 
   },
   { 
     id: 812, 
     categoria: "Bebidas", 
-    precio: "2,80", 
+    precio: { comedor: "2,80", recoger: "2,90" }, 
     url: BebidasImages.botesCerveza, 
     alergenos: ["gluten"] 
   },
@@ -710,63 +703,63 @@ export const cartaPizzeria = [
   { 
     id: 900, 
     categoria: "Vinos", 
-    precio: "1,80", 
+    precio: { comedor: "1,80" }, 
     url: VinosImages.copaCasa, 
     alergenos: ["sulfitos"] 
   },
   { 
     id: 901, 
     categoria: "Vinos", 
-    precio: "2,40", 
+    precio: { comedor: "2,40" }, 
     url: VinosImages.copaOtros, 
     alergenos: ["sulfitos"] 
   },
   { 
     id: 902, 
     categoria: "Vinos", 
-    precio: "4,80", 
+    precio: { comedor: "4,80" }, 
     url: VinosImages.abadiaRoble, 
     alergenos: ["sulfitos"] 
   },
   { 
     id: 903, 
     categoria: "Vinos", 
-    precio: "12,20", 
+    precio: { comedor: "12,20" }, 
     url: VinosImages.tierraBuena, 
     alergenos: ["sulfitos"] 
   },
   { 
     id: 904, 
     categoria: "Vinos", 
-    precio: "12,20", 
+    precio: { comedor: "12,20" }, 
     url: VinosImages.mateusRose, 
     alergenos: ["sulfitos"] 
   },
   { 
     id: 905, 
     categoria: "Vinos", 
-    precio: "14,00", 
+    precio: { comedor: "14,00" }, 
     url: VinosImages.lambrusco, 
     alergenos: ["sulfitos"] 
   },
   { 
     id: 906, 
     categoria: "Vinos", 
-    precio: "18,00", 
+    precio: { comedor: "18,00" }, 
     url: VinosImages.ramonBilbao, 
     alergenos: ["sulfitos"] 
   },
   { 
     id: 907, 
     categoria: "Vinos", 
-    precio: "14,50", 
+    precio: { comedor: "14,50" }, 
     url: VinosImages.marinaAlta, 
     alergenos: ["sulfitos"] 
   },
   { 
     id: 908, 
     categoria: "Vinos", 
-    precio: "18,00", 
+    precio: { comedor: "18,00" }, 
     url: VinosImages.protosRoble, 
     alergenos: ["sulfitos"] 
   },
