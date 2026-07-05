@@ -738,14 +738,14 @@ export const cartaPizzeria = [
   { 
     id: 905, 
     categoria: "Vinos", 
-    precio: { comedor: "14,00" }, 
+    precio: { comedor: "14,10" }, 
     url: VinosImages.lambrusco, 
     alergenos: ["sulfitos"] 
-  },
+  }, 
   { 
     id: 906, 
     categoria: "Vinos", 
-    precio: { comedor: "18,00" }, 
+    precio: { comedor: "18,10" }, 
     url: VinosImages.ramonBilbao, 
     alergenos: ["sulfitos"] 
   },
@@ -759,7 +759,7 @@ export const cartaPizzeria = [
   { 
     id: 908, 
     categoria: "Vinos", 
-    precio: { comedor: "18,00" }, 
+    precio: { comedor: "18,10" }, 
     url: VinosImages.protosRoble, 
     alergenos: ["sulfitos"] 
   },
